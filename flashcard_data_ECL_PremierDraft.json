@@ -1,0 +1,1144 @@
+{
+  "meta": {
+    "expansion": "ECL",
+    "format": "PremierDraft",
+    "top_n": 5,
+    "generated": "2026-06-11"
+  },
+  "cards": [
+    {
+      "name": "Tributary Vaulter",
+      "gihwr": 56.3,
+      "gpwr": 0.0,
+      "alsa": 8.35,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/1/a1db2c83-41d1-4cc6-b9a3-fed504b01127.jpg?1767871741"
+    },
+    {
+      "name": "Liminal Hold",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 4.62,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/5/a5a40c16-7a5c-4ad1-be53-6b1b1be2affe.jpg?1767732486"
+    },
+    {
+      "name": "Wanderbrine Preacher",
+      "gihwr": 55.9,
+      "gpwr": 0.0,
+      "alsa": 7.35,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/3/f/3fc3f5f2-5a83-4358-8f23-42f26f345140.jpg?1767732504"
+    },
+    {
+      "name": "Timid Shieldbearer",
+      "gihwr": 55.2,
+      "gpwr": 0.0,
+      "alsa": 7.6,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/1/c/1c672d38-a1a6-4912-a9a6-b11e7bf0cc67.jpg?1767956979"
+    },
+    {
+      "name": "Shore Lurker",
+      "gihwr": 54.1,
+      "gpwr": 0.0,
+      "alsa": 9.22,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/b/b/bb353c27-e311-4677-9277-cab6820562ce.jpg?1767732498"
+    },
+    {
+      "name": "Temporal Cleansing",
+      "gihwr": 56.7,
+      "gpwr": 0.0,
+      "alsa": 8.41,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/5/0/50ee7315-ec53-43d2-841e-8ec192b850f1.jpg?1767732550"
+    },
+    {
+      "name": "Unexpected Assistance",
+      "gihwr": 56.6,
+      "gpwr": 0.0,
+      "alsa": 7.15,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/7/b/7b540a5f-7f1b-421a-864f-5af469556fc6.jpg?1765451670"
+    },
+    {
+      "name": "Gravelgill Scoundrel",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 7.99,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/3/2/320bc30c-7a8a-411a-9f36-9c69126e131b.jpg?1767871759"
+    },
+    {
+      "name": "Blossombind",
+      "gihwr": 55.6,
+      "gpwr": 0.0,
+      "alsa": 6.04,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/3/8/382b83c0-bbbc-4db8-bc04-cfea79aed1b3.jpg?1767732510"
+    },
+    {
+      "name": "Silvergill Peddler",
+      "gihwr": 55.1,
+      "gpwr": 0.0,
+      "alsa": 9.05,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/f/e/feba2bb6-6005-4ade-a4c5-97bbd54b43a3.jpg?1767732538"
+    },
+    {
+      "name": "Dawnhand Eulogist",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 6.59,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/7/5/75a97f69-f3dc-4d33-8008-c1f1a7c15a2f.jpg?1767732686"
+    },
+    {
+      "name": "Scarblade Scout",
+      "gihwr": 56.7,
+      "gpwr": 0.0,
+      "alsa": 6.43,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/c/2/c2412fea-4591-4345-913f-edc2da9ad975.jpg?1767871946"
+    },
+    {
+      "name": "Bogslither's Embrace",
+      "gihwr": 56.6,
+      "gpwr": 0.0,
+      "alsa": 4.85,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/4/b/4beca2e7-9c6d-493b-b15f-69e483a8dfff.jpg?1767957120"
+    },
+    {
+      "name": "Blight Rot",
+      "gihwr": 55.6,
+      "gpwr": 0.0,
+      "alsa": 4.9,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/5/2/5201bdeb-ba47-459b-ac0d-603367914578.jpg?1767952066"
+    },
+    {
+      "name": "Scarblade's Malice",
+      "gihwr": 54.6,
+      "gpwr": 0.0,
+      "alsa": 9.87,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/e/aea9b5c0-3b32-44be-9773-566b9daafa6b.jpg?1767957161"
+    },
+    {
+      "name": "Flamekin Gildweaver",
+      "gihwr": 56.7,
+      "gpwr": 0.0,
+      "alsa": 7.04,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/b/1/b1628ece-a028-49d4-9065-ee997838c20a.jpg?1767862536"
+    },
+    {
+      "name": "Cinder Strike",
+      "gihwr": 56.3,
+      "gpwr": 0.0,
+      "alsa": 4.96,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/6/f/6fb6faa4-236c-4cae-9140-0981c44d2392.jpg?1767957230"
+    },
+    {
+      "name": "Kulrath Zealot",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 6.19,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/3/5/3502685d-4e57-4c5c-94c6-ae69048cdfbf.jpg?1767871934"
+    },
+    {
+      "name": "Tweeze",
+      "gihwr": 55.1,
+      "gpwr": 0.0,
+      "alsa": 5.89,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/3/c/3ceab0e6-1bb8-487d-ab4b-2da8457b970a.jpg?1767873738"
+    },
+    {
+      "name": "Feed the Flames",
+      "gihwr": 54.5,
+      "gpwr": 0.0,
+      "alsa": 6.19,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/5/9/59740755-c353-4b6c-a84c-3b76133ce3ec.jpg?1767957151"
+    },
+    {
+      "name": "Assert Perfection",
+      "gihwr": 57.6,
+      "gpwr": 0.0,
+      "alsa": 4.61,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/6/9/6995b308-5582-4ca1-ab10-a536d5ca0a6d.jpg?1767732784"
+    },
+    {
+      "name": "Lys Alana Informant",
+      "gihwr": 56.6,
+      "gpwr": 0.0,
+      "alsa": 6.14,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/7/a79649c4-559e-4306-a102-5fd8750629c7.jpg?1767658380"
+    },
+    {
+      "name": "Midnight Tilling",
+      "gihwr": 56.1,
+      "gpwr": 0.0,
+      "alsa": 8.93,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/c/5/c5112bbf-752c-41e7-9c61-4c81e6a77463.jpg?1767732843"
+    },
+    {
+      "name": "Mistmeadow Council",
+      "gihwr": 55.8,
+      "gpwr": 0.0,
+      "alsa": 6.6,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/d/4/d4a7c9bc-81c8-4c31-96a9-eb6ba7715e7f.jpg?1767872109"
+    },
+    {
+      "name": "Safewright Cavalry",
+      "gihwr": 55.8,
+      "gpwr": 0.0,
+      "alsa": 6.66,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/f/7/f7de412a-9731-4bfc-8fbc-c95988a3dd70.jpg?1767957270"
+    },
+    {
+      "name": "Merrow Skyswimmer",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 5.64,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/0/7/075b419a-fd44-4a9a-8c40-474562b7e11a.jpg?1767872219"
+    },
+    {
+      "name": "Flaring Cinder",
+      "gihwr": 55.4,
+      "gpwr": 0.0,
+      "alsa": 8.15,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/0/6/0691a1a9-18e7-44b7-9a34-764b1ab45a76.jpg?1767862636"
+    },
+    {
+      "name": "Wary Farmer",
+      "gihwr": 54.2,
+      "gpwr": 0.0,
+      "alsa": 7.31,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/2/2/22d20c0d-176d-49c9-aa0b-2c5778548cc5.jpg?1767749680"
+    },
+    {
+      "name": "Gangly Stompling",
+      "gihwr": 53.3,
+      "gpwr": 0.0,
+      "alsa": 7.41,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/5/0/502000a7-a3c1-4259-aea5-ff01724396a1.jpg?1767749620"
+    },
+    {
+      "name": "Prideful Feastling",
+      "gihwr": 52.6,
+      "gpwr": 0.0,
+      "alsa": 6.78,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/7/5/7578cb61-f606-4559-a10a-343a583228ab.jpg?1767776681"
+    },
+    {
+      "name": "Rooftop Percher",
+      "gihwr": 55.0,
+      "gpwr": 0.0,
+      "alsa": 7.61,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/2/d/2d89595c-1542-41fe-8d23-997522922698.jpg?1778833441"
+    },
+    {
+      "name": "Evolving Wilds",
+      "gihwr": 55.0,
+      "gpwr": 0.0,
+      "alsa": 6.53,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/c/0/c0318a48-30e4-4ef7-be3d-5e561c5ce428.jpg?1781014290"
+    },
+    {
+      "name": "Foraging Wickermaw",
+      "gihwr": 53.5,
+      "gpwr": 0.0,
+      "alsa": 7.96,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/f/5/f524bc08-caeb-4362-b960-eb8e0e4159d0.jpg?1767957290"
+    },
+    {
+      "name": "Changeling Wayfinder",
+      "gihwr": 53.0,
+      "gpwr": 0.0,
+      "alsa": 6.41,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/6/c/6c6061aa-a4da-4115-85b6-d0aa22f2386c.jpg?1778833433"
+    },
+    {
+      "name": "Firdoch Core",
+      "gihwr": 51.6,
+      "gpwr": 0.0,
+      "alsa": 9.68,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/8/e/8e45cd37-bf97-4742-978d-96f96ed653cd.jpg?1767872077"
+    },
+    {
+      "name": "Wanderbrine Trapper",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 4.22,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/f/4/f4c134ed-adbf-4e88-80e0-75c176ce94c3.jpg?1767956997"
+    },
+    {
+      "name": "Kinsbaile Aspirant",
+      "gihwr": 58.2,
+      "gpwr": 0.0,
+      "alsa": 5.39,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/5/6/56dfdab1-ea3f-4663-a855-a9e72505f85e.jpg?1767732481"
+    },
+    {
+      "name": "Pyrrhic Strike",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 3.42,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/c/c/cce5b16d-07fb-4e64-8ec9-b8b29ba86cff.jpg?1767732492"
+    },
+    {
+      "name": "Thoughtweft Imbuer",
+      "gihwr": 57.6,
+      "gpwr": 0.0,
+      "alsa": 4.32,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/7/e/7e585a6c-2d95-450e-98cb-8794d7d8ecca.jpg?1767871768"
+    },
+    {
+      "name": "Protective Response",
+      "gihwr": 57.3,
+      "gpwr": 0.0,
+      "alsa": 3.77,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/1/1/113975e1-7712-4760-96ad-405f8b4e41e3.jpg?1767956959"
+    },
+    {
+      "name": "Silvergill Mentor",
+      "gihwr": 60.5,
+      "gpwr": 0.0,
+      "alsa": 4.79,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/e/6/e6e37fe8-459c-4992-8ae9-f782cddab2fe.jpg?1768338090"
+    },
+    {
+      "name": "Rimekin Recluse",
+      "gihwr": 60.1,
+      "gpwr": 0.0,
+      "alsa": 3.37,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/b/a/ba6b5368-3262-4002-bf1e-fce62f7f7901.jpg?1767957030"
+    },
+    {
+      "name": "Shinestriker",
+      "gihwr": 58.3,
+      "gpwr": 0.0,
+      "alsa": 4.09,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/2/1/214e78f9-5364-49ab-b17e-0c76549c583e.jpg?1767659586"
+    },
+    {
+      "name": "Wanderwine Farewell",
+      "gihwr": 58.2,
+      "gpwr": 0.0,
+      "alsa": 6.34,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/4/7/473123a0-1366-406b-9b9e-154c0e9c224f.jpg?1767659604"
+    },
+    {
+      "name": "Unwelcome Sprite",
+      "gihwr": 56.4,
+      "gpwr": 0.0,
+      "alsa": 5.82,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/0/902f8d86-fde2-4cdf-88f0-bf63d616f3af.jpg?1767732556"
+    },
+    {
+      "name": "Iron-Shield Elf",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 4.68,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/e/9e0140b2-0185-4adb-b365-2611ce89a0e2.jpg?1767658146"
+    },
+    {
+      "name": "Nameless Inversion",
+      "gihwr": 57.6,
+      "gpwr": 0.0,
+      "alsa": 3.62,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/7/a/7a4944ac-839e-4aa1-8200-78cff36bb2ed.jpg?1767871890"
+    },
+    {
+      "name": "Mudbutton Cursetosser",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 6.36,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/3/5/35bc841a-9a21-4c17-a60a-a3ee01472fcb.jpg?1767871878"
+    },
+    {
+      "name": "Boggart Mischief",
+      "gihwr": 56.8,
+      "gpwr": 0.0,
+      "alsa": 5.04,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/a/a/aaeb9c9c-0f15-49dc-ae6d-2a958680f327.jpg?1767659614"
+    },
+    {
+      "name": "Creakwood Safewright",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 4.33,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/3/b/3bcc24cf-776a-4182-bf77-a611ad90b28f.jpg?1767957099"
+    },
+    {
+      "name": "Flamebraider",
+      "gihwr": 58.8,
+      "gpwr": 0.0,
+      "alsa": 4.15,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/b/8/b8aa428c-5a77-444f-b75e-a113e46fe4e0.jpg?1767732747"
+    },
+    {
+      "name": "Explosive Prodigy",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 3.97,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/5/5/5515ea5e-ce28-4938-a31e-5e48522a5f93.jpg?1767658177"
+    },
+    {
+      "name": "Kindle the Inner Flame",
+      "gihwr": 56.7,
+      "gpwr": 0.0,
+      "alsa": 7.66,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/a/9a2adcea-f6b1-4611-b8b8-f19fdee2c571.jpg?1767871968"
+    },
+    {
+      "name": "Sear",
+      "gihwr": 56.7,
+      "gpwr": 0.0,
+      "alsa": 3.44,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/a/e/aeb4612c-758b-4492-ba03-eb6741b4176e.jpg?1767658325"
+    },
+    {
+      "name": "Soulbright Seeker",
+      "gihwr": 55.8,
+      "gpwr": 0.0,
+      "alsa": 6.86,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/8/9/895ac890-608a-47de-8bc8-9337fd2064e8.jpg?1767957180"
+    },
+    {
+      "name": "Morcant's Eyes",
+      "gihwr": 59.6,
+      "gpwr": 0.0,
+      "alsa": 3.9,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/a/7/a730b254-ff7c-4f89-a559-b44ad7fd6c6c.jpg?1767732849"
+    },
+    {
+      "name": "Virulent Emissary",
+      "gihwr": 58.2,
+      "gpwr": 0.0,
+      "alsa": 3.95,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/0/7/0702efed-915e-466a-96bb-ac09af06b21e.jpg?1767658502"
+    },
+    {
+      "name": "Pitiless Fists",
+      "gihwr": 57.9,
+      "gpwr": 0.0,
+      "alsa": 3.98,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/2/9/295d828b-b2e7-41c7-afbc-5fb5f4eb242c.jpg?1767872922"
+    },
+    {
+      "name": "Lys Alana Dignitary",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 4.67,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/4/94e8d6a9-7aa3-4e93-8e4d-e50da7ff09d2.jpg?1767957201"
+    },
+    {
+      "name": "Moon-Vigil Adherents",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 3.24,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/6/0/60621c37-62e1-4261-ae76-3946b4a0cfa3.jpg?1767957171"
+    },
+    {
+      "name": "Deepchannel Duelist",
+      "gihwr": 64.2,
+      "gpwr": 0.0,
+      "alsa": 3.94,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/1/b/1b742172-7118-45e7-9945-62bd77d94e85.jpg?1767957310"
+    },
+    {
+      "name": "Eclipsed Kithkin",
+      "gihwr": 62.4,
+      "gpwr": 0.0,
+      "alsa": 3.95,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/2/9/29e1cfa4-0ad8-4228-9f7e-cbab114d1d5f.jpg?1767952368"
+    },
+    {
+      "name": "Eclipsed Merrow",
+      "gihwr": 62.3,
+      "gpwr": 0.0,
+      "alsa": 4.2,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/2/3/2352750d-404d-4928-9bdb-1b0db599b70f.jpg?1767952376"
+    },
+    {
+      "name": "Eclipsed Elf",
+      "gihwr": 62.2,
+      "gpwr": 0.0,
+      "alsa": 3.5,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/c/9c8579f3-6125-4f22-b1c2-b7a0cfc50eed.jpg?1767952353"
+    },
+    {
+      "name": "Morcant's Loyalist",
+      "gihwr": 60.9,
+      "gpwr": 0.0,
+      "alsa": 3.3,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/1/7/175c6b1c-8790-41a2-ae15-5031206c410f.jpg?1767952302"
+    },
+    {
+      "name": "Gathering Stone",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 3.02,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/8/1/81dfbfe1-143a-4637-b683-a34cfc51993d.jpg?1767732919"
+    },
+    {
+      "name": "Puca's Eye",
+      "gihwr": 55.4,
+      "gpwr": 0.0,
+      "alsa": 9.71,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/c/3/c3a5ca02-3829-4c42-b0dc-98b660f8a8f0.jpg?1767872205"
+    },
+    {
+      "name": "Eclipsed Realms",
+      "gihwr": 54.2,
+      "gpwr": 0.0,
+      "alsa": 8.12,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/a/1/a174f0db-8b4f-4c37-9583-44c92d37b9c0.jpg?1767862754"
+    },
+    {
+      "name": "Dawn-Blessed Pennant",
+      "gihwr": 53.2,
+      "gpwr": 0.0,
+      "alsa": 6.19,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/2/9/294266b6-0343-4fa5-90b8-0adf7df490e4.jpg?1767658603"
+    },
+    {
+      "name": "Springleaf Drum",
+      "gihwr": 51.6,
+      "gpwr": 0.0,
+      "alsa": 9.94,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/e/1/e15ab0aa-4059-4923-9816-6f7a9e5b5a18.jpg?1767732925"
+    },
+    {
+      "name": "Kinbinding",
+      "gihwr": 64.6,
+      "gpwr": 0.0,
+      "alsa": 1.74,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/b/6/b6e35fd5-de7e-40a8-a23c-00d07fd1ac56.jpg?1767658490"
+    },
+    {
+      "name": "Brigid, Clachan's Heart",
+      "gihwr": 60.2,
+      "gpwr": 0.0,
+      "alsa": 2.34,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/c/b/cb7d5bbb-4f68-4e38-8bb0-a95af21b24c8.jpg?1767887768"
+    },
+    {
+      "name": "Slumbering Walker",
+      "gihwr": 58.5,
+      "gpwr": 0.0,
+      "alsa": 2.19,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/8/1/81e82915-e734-4754-829f-f5da6a7c550d.jpg?1767862426"
+    },
+    {
+      "name": "Kinscaer Sentry",
+      "gihwr": 58.4,
+      "gpwr": 0.0,
+      "alsa": 2.55,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/3/3/333bf101-14e8-4753-99bc-9174f42c4122.jpg?1779245577"
+    },
+    {
+      "name": "Adept Watershaper",
+      "gihwr": 56.8,
+      "gpwr": 0.0,
+      "alsa": 2.4,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/6/e/6e53f246-8347-4632-9d5b-4aeb12f7b762.jpg?1767951683"
+    },
+    {
+      "name": "Sunderflock",
+      "gihwr": 64.7,
+      "gpwr": 0.0,
+      "alsa": 2.42,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/e/5/e5b6221e-cb22-45e4-bb98-2b960afc614c.jpg?1767732544"
+    },
+    {
+      "name": "Champions of the Shoal",
+      "gihwr": 63.3,
+      "gpwr": 0.0,
+      "alsa": 2.65,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/e/1/e1acdd9c-4a6d-4373-950c-f5539b54679f.jpg?1767951924"
+    },
+    {
+      "name": "Disruptor of Currents",
+      "gihwr": 61.8,
+      "gpwr": 0.0,
+      "alsa": 2.53,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/4/c/4c6dbbaa-6844-4d7c-abbb-472a83bb99ab.jpg?1767659142"
+    },
+    {
+      "name": "Sygg, Wanderwine Wisdom",
+      "gihwr": 61.5,
+      "gpwr": 0.0,
+      "alsa": 2.4,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/7/0/70adc870-f0db-4d4b-863b-673c2c258751.jpg?1759144840"
+    },
+    {
+      "name": "Flitterwing Nuisance",
+      "gihwr": 59.9,
+      "gpwr": 0.0,
+      "alsa": 2.57,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/a/d/ad0f6536-5295-4835-8883-35d711dfe6de.jpg?1767862448"
+    },
+    {
+      "name": "Gloom Ripper",
+      "gihwr": 66.4,
+      "gpwr": 0.0,
+      "alsa": 2.46,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/e/9/e9ee5d4f-05d1-4e3a-b8d6-f22d0fddedf7.jpg?1779245520"
+    },
+    {
+      "name": "Taster of Wares",
+      "gihwr": 60.7,
+      "gpwr": 0.0,
+      "alsa": 3.07,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/b/c/bc0b64b6-8984-431c-8a2f-84402b429e2b.jpg?1779246530"
+    },
+    {
+      "name": "Champion of the Weird",
+      "gihwr": 60.0,
+      "gpwr": 0.0,
+      "alsa": 3.33,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/e/6/e600dd01-65ac-489c-a52a-decbc3a9a4f3.jpg?1767659622"
+    },
+    {
+      "name": "Grub, Storied Matriarch",
+      "gihwr": 59.7,
+      "gpwr": 0.0,
+      "alsa": 3.7,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/1/f/1f51adf8-8234-4dae-aedf-7633310d5111.jpg?1767734188"
+    },
+    {
+      "name": "Dawnhand Dissident",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 2.5,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/6/a/6ac1f765-f348-4813-88dc-26376e0f3f33.jpg?1767659632"
+    },
+    {
+      "name": "Ashling, Rekindled",
+      "gihwr": 60.9,
+      "gpwr": 0.0,
+      "alsa": 2.84,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/7/d/7d7faefe-9c0d-45b6-8ea4-5fa666762a2c.jpg?1779244184"
+    },
+    {
+      "name": "End-Blaze Epiphany",
+      "gihwr": 59.9,
+      "gpwr": 0.0,
+      "alsa": 2.74,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/0/f/0f0a90ae-b3b3-4f52-8997-eac514b29e57.jpg?1779245154"
+    },
+    {
+      "name": "Goliath Daydreamer",
+      "gihwr": 56.1,
+      "gpwr": 0.0,
+      "alsa": 3.03,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/8/8/88e8cd13-2a29-4df6-937c-1bed68fbeafa.jpg?1767658300"
+    },
+    {
+      "name": "Scuzzback Scrounger",
+      "gihwr": 55.9,
+      "gpwr": 0.0,
+      "alsa": 3.81,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/0/e/0ea4a895-19c0-47af-ad9c-5db88ea9ae05.jpg?1779245866"
+    },
+    {
+      "name": "Champion of the Path",
+      "gihwr": 54.2,
+      "gpwr": 0.0,
+      "alsa": 3.52,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/e/3/e369cd31-3e22-47eb-bf6a-00d823651710.jpg?1779244574"
+    },
+    {
+      "name": "Trystan, Callous Cultivator",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 2.83,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/2/0/2094f9b6-ce84-47d9-8819-81db14ba483f.jpg?1767658448"
+    },
+    {
+      "name": "Champions of the Perfect",
+      "gihwr": 59.5,
+      "gpwr": 0.0,
+      "alsa": 2.07,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/4/f/4f359211-8be5-4818-b73c-14f24b7ddb21.jpg?1767658362"
+    },
+    {
+      "name": "Bristlebane Battler",
+      "gihwr": 58.4,
+      "gpwr": 0.0,
+      "alsa": 2.12,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/c/8/c857fa32-1b5d-4139-8809-b4d0df44b472.jpg?1779244458"
+    },
+    {
+      "name": "Formidable Speaker",
+      "gihwr": 58.4,
+      "gpwr": 0.0,
+      "alsa": 2.16,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/2/6/265522eb-4f6a-40e7-b374-3833fa63c80b.jpg?1779245436"
+    },
+    {
+      "name": "Sapling Nursery",
+      "gihwr": 55.4,
+      "gpwr": 0.0,
+      "alsa": 2.9,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/3/1/3199bea9-fef7-45fe-8777-2103d84a9347.jpg?1779245848"
+    },
+    {
+      "name": "Ashling's Command",
+      "gihwr": 65.4,
+      "gpwr": 0.0,
+      "alsa": 2.27,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/f/e/fe3a421d-07b6-4b94-b177-aec44c7fe689.jpg?1779244202"
+    },
+    {
+      "name": "Figure of Fable",
+      "gihwr": 63.7,
+      "gpwr": 0.0,
+      "alsa": 1.56,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/e/0/e0ef33dd-5f6d-48fa-8ef6-a8092868d50f.jpg?1779245174"
+    },
+    {
+      "name": "Trystan's Command",
+      "gihwr": 63.1,
+      "gpwr": 0.0,
+      "alsa": 2.13,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/b/a/ba1d99ca-740a-481a-be89-615e40d56d06.jpg?1779246558"
+    },
+    {
+      "name": "Grub's Command",
+      "gihwr": 61.7,
+      "gpwr": 0.0,
+      "alsa": 3.45,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/7/3/73013908-feff-495a-a62e-1e19548ffe6f.jpg?1767662497"
+    },
+    {
+      "name": "Maralen, Fae Ascendant",
+      "gihwr": 61.7,
+      "gpwr": 0.0,
+      "alsa": 2.58,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/c/5/c50f5408-5b5c-41dc-807e-136233403a09.jpg?1779245645"
+    },
+    {
+      "name": "Overgrown Tomb",
+      "gihwr": 54.1,
+      "gpwr": 0.0,
+      "alsa": 5.33,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/4/5/45b92924-baa1-4c9b-9932-9a5eda8f3446.jpg?1759144847"
+    },
+    {
+      "name": "Hallowed Fountain",
+      "gihwr": 54.0,
+      "gpwr": 0.0,
+      "alsa": 5.61,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/e/0/e056b55f-82ed-4fe0-ab0c-bb20fa4a218a.jpg?1759144845"
+    },
+    {
+      "name": "Steam Vents",
+      "gihwr": 53.7,
+      "gpwr": 0.0,
+      "alsa": 5.83,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/b/6/b66daa94-d367-4812-9f18-f35378c1febb.jpg?1759144847"
+    },
+    {
+      "name": "Blood Crypt",
+      "gihwr": 51.9,
+      "gpwr": 0.0,
+      "alsa": 6.12,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/6/d/6da63cc5-4624-4491-abd9-9b600c3fefe2.jpg?1759144844"
+    },
+    {
+      "name": "Temple Garden",
+      "gihwr": 50.9,
+      "gpwr": 0.0,
+      "alsa": 5.57,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/6/c/6cdd2a74-63b3-4ff2-9c5a-a85dee63c3c9.jpg?1759144838"
+    },
+    {
+      "name": "Ajani, Outland Chaperone",
+      "gihwr": 61.9,
+      "gpwr": 0.0,
+      "alsa": 1.58,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/6/1/6124a691-ae83-4d22-a177-0aee65b47064.jpg?1767951721"
+    },
+    {
+      "name": "Curious Colossus",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 1.76,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/5/8/582b6e5d-0bab-471d-af4d-19438c5fd524.jpg?1767658165"
+    },
+    {
+      "name": "Eirdu, Carrier of Dawn",
+      "gihwr": 60.0,
+      "gpwr": 0.0,
+      "alsa": 1.54,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/b/2/b2d9d5ca-7e15-437a-bdfc-5972b42148fe.jpg?1779245109"
+    },
+    {
+      "name": "Morningtide's Light",
+      "gihwr": 55.4,
+      "gpwr": 0.0,
+      "alsa": 4.08,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/1/8/181ee045-5650-479a-8c03-015b38fdcd63.jpg?1779245732"
+    },
+    {
+      "name": "Loch Mare",
+      "gihwr": 61.7,
+      "gpwr": 0.0,
+      "alsa": 1.81,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/a/d/ad6c4baf-a803-45e4-81ac-708a41631a28.jpg?1767862352"
+    },
+    {
+      "name": "Glen Elendra's Answer",
+      "gihwr": 60.2,
+      "gpwr": 0.0,
+      "alsa": 4.44,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/f/a/fa5bfbf9-dca2-42b7-a431-f9afedb54528.jpg?1767659156"
+    },
+    {
+      "name": "Oko, Lorwyn Liege",
+      "gihwr": 56.1,
+      "gpwr": 0.0,
+      "alsa": 1.94,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/1/d/1dab370a-1067-4d94-be1f-10362d4abf5a.jpg?1767734249"
+    },
+    {
+      "name": "Mirrorform",
+      "gihwr": 55.4,
+      "gpwr": 0.0,
+      "alsa": 3.4,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/5/5/55d30256-f5d8-4f61-a3f5-878970ced6d1.jpg?1767659560"
+    },
+    {
+      "name": "Moonshadow",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 2.19,
+      "color": "B",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/2/5/2573e694-eaa0-42ca-b470-2ab507cbcec1.jpg?1779245687"
+    },
+    {
+      "name": "Bitterbloom Bearer",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 2.06,
+      "color": "B",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/7/1/7127164d-f2a3-4d79-b6db-93507ff5ab47.jpg?1759144841"
+    },
+    {
+      "name": "Soul Immolation",
+      "gihwr": 64.6,
+      "gpwr": 0.0,
+      "alsa": 2.23,
+      "color": "R",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/2/3/234b70df-8c34-4da7-946e-b8b55a8df390.jpg?1779246254"
+    },
+    {
+      "name": "Spinerock Tyrant",
+      "gihwr": 61.5,
+      "gpwr": 0.0,
+      "alsa": 1.86,
+      "color": "R",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/4/7/478bbb7a-4b96-4e04-921e-bdf23185de25.jpg?1779246429"
+    },
+    {
+      "name": "Aurora Awakener",
+      "gihwr": 59.9,
+      "gpwr": 0.0,
+      "alsa": 1.71,
+      "color": "G",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/9/1/913977c2-73f9-466b-bd01-827c1736e070.jpg?1767658343"
+    },
+    {
+      "name": "Celestial Reunion",
+      "gihwr": 53.7,
+      "gpwr": 0.0,
+      "alsa": 5.03,
+      "color": "G",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/5/8/583b2863-aca1-4dab-9196-ea453b5d9454.jpg?1779244532"
+    },
+    {
+      "name": "Bloom Tender",
+      "gihwr": 53.6,
+      "gpwr": 0.0,
+      "alsa": 2.57,
+      "color": "G",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/b/a/ba86688d-18f0-4b5c-a797-42bf125a6c9f.jpg?1767658349"
+    },
+    {
+      "name": "Vibrance",
+      "gihwr": 62.1,
+      "gpwr": 0.0,
+      "alsa": 1.76,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/b/9/b9f71c3b-0840-475f-9c17-fdacbc7f3213.jpg?1767658560"
+    },
+    {
+      "name": "Wistfulness",
+      "gihwr": 60.0,
+      "gpwr": 0.0,
+      "alsa": 1.7,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/d/b/db9aa986-ac2a-44bb-a88b-04c5d0d502b2.jpg?1779246622"
+    },
+    {
+      "name": "Deceit",
+      "gihwr": 58.9,
+      "gpwr": 0.0,
+      "alsa": 1.9,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/b/d/bd82c9e4-9871-4e6d-b691-ee00b4b9a3c6.jpg?1779244983"
+    },
+    {
+      "name": "Emptiness",
+      "gihwr": 56.8,
+      "gpwr": 0.0,
+      "alsa": 1.83,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/c/6/c6409eca-bef6-4f3a-8bbb-d69ec5dbfc13.jpg?1779245128"
+    },
+    {
+      "name": "Catharsis",
+      "gihwr": 52.8,
+      "gpwr": 0.0,
+      "alsa": 2.44,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/a/f/affb4500-2704-49fc-bbb4-02ed4bfb3b76.jpg?1779243294"
+    },
+    {
+      "name": "Chronicle of Victory",
+      "gihwr": 62.4,
+      "gpwr": 0.0,
+      "alsa": 1.18,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/b/3/b3c2d68d-690b-41e7-99ed-2d20c7e0a9b4.jpg?1767658597"
+    }
+  ]
+}
