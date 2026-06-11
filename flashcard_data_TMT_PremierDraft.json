@@ -1,0 +1,1090 @@
+{
+  "meta": {
+    "expansion": "TMT",
+    "format": "PremierDraft",
+    "top_n": 5,
+    "generated": "2026-06-11"
+  },
+  "cards": [
+    {
+      "name": "April O'Neil, Kunoichi Trainee",
+      "gihwr": 57.9,
+      "gpwr": 0.0,
+      "alsa": 5.92,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/8/b/8b1982ea-686b-4acd-b677-47571430efb0.jpg?1771586740"
+    },
+    {
+      "name": "Uneasy Alliance",
+      "gihwr": 57.0,
+      "gpwr": 0.0,
+      "alsa": 5.87,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/5/d/5d9a4f9a-1e3a-4de8-a7c0-7158c6703b4e.jpg?1771586776"
+    },
+    {
+      "name": "Jennika, Bad Apple Big Sister",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 8.77,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/5/a5b83101-e3ef-4ffe-a886-4fc2b57a0947.jpg?1771502505"
+    },
+    {
+      "name": "Leonardo, Big Brother",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 7.12,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/e/8/e802838f-cc8c-4313-8c3b-32a6a7248e64.jpg?1771502512"
+    },
+    {
+      "name": "Hamato Guardian Stance",
+      "gihwr": 55.9,
+      "gpwr": 0.0,
+      "alsa": 11.11,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/7/3/735b540b-b472-46fa-a232-d444cabf6c4c.jpg?1771502490"
+    },
+    {
+      "name": "Sewer-veillance Cam",
+      "gihwr": 59.4,
+      "gpwr": 0.0,
+      "alsa": 6.96,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/b/ab47a37b-b66d-4f70-9bf0-4d5ed6b518f3.jpg?1779102308"
+    },
+    {
+      "name": "Return to the Sewers",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 8.22,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/5/2/52e99505-17dc-4051-99f6-e23559fc6c95.jpg?1771586826"
+    },
+    {
+      "name": "Buzz Bots",
+      "gihwr": 59.0,
+      "gpwr": 0.0,
+      "alsa": 6.69,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/7/c/7c375190-f81b-4ab1-a1b6-fe432796821f.jpg?1771502556"
+    },
+    {
+      "name": "Donatello, Turtle Techie",
+      "gihwr": 58.5,
+      "gpwr": 0.0,
+      "alsa": 7.46,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/6/8/683cfef0-f164-4db8-b83f-79eb804e50ae.jpg?1771502569"
+    },
+    {
+      "name": "Mind Transfer Protocol",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 10.13,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/2/d/2ddfcc4d-dd5f-42f1-8f33-a8e8b5354534.jpg?1771502582"
+    },
+    {
+      "name": "Oroku Saki, Shredder Rising",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 6.37,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/e/6/e65ff1f4-a061-4c31-a78e-92af6e7bc56f.jpg?1771586878"
+    },
+    {
+      "name": "Squirrelanoids",
+      "gihwr": 57.6,
+      "gpwr": 0.0,
+      "alsa": 6.82,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/b/e/be08d2b0-375b-434f-9e6d-060809e0ed34.jpg?1771586916"
+    },
+    {
+      "name": "Stomped by the Foot",
+      "gihwr": 57.5,
+      "gpwr": 0.0,
+      "alsa": 5.82,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/3/f/3fdec16f-77f5-4792-9698-b9099a204028.jpg?1771586922"
+    },
+    {
+      "name": "Anchovy & Banana Pizza",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 4.48,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/4/4/44443ad2-ef8c-4106-ba1b-ee3fb6fd8b17.jpg?1771586832"
+    },
+    {
+      "name": "Shredder's Revenge",
+      "gihwr": 55.8,
+      "gpwr": 0.0,
+      "alsa": 10.49,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/7/2/72fadf47-2e0b-4b24-b1bc-7c86780716b6.jpg?1771342364"
+    },
+    {
+      "name": "Manhole Missile",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 5.37,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/2/4/243e392b-48b0-4e90-ae22-9a696f45e878.jpg?1771502635"
+    },
+    {
+      "name": "Mouser Foundry",
+      "gihwr": 59.7,
+      "gpwr": 0.0,
+      "alsa": 6.02,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/8/a/8aae3bd6-a935-44a5-aa4d-a525b00cbf50.jpg?1771502649"
+    },
+    {
+      "name": "Purple Dragon Punks",
+      "gihwr": 54.3,
+      "gpwr": 0.0,
+      "alsa": 10.75,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/b/b/bbe1d7e5-68e2-4458-aa3f-5e97fa8e7cae.jpg?1771586948"
+    },
+    {
+      "name": "Raphael, Tough Turtle",
+      "gihwr": 53.5,
+      "gpwr": 0.0,
+      "alsa": 8.69,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/f/2/f24c90c8-ed04-4b4e-8b19-c7d07a90c6b8.jpg?1771342404"
+    },
+    {
+      "name": "Bot Bashing Time",
+      "gihwr": 53.3,
+      "gpwr": 0.0,
+      "alsa": 9.09,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/0/8/08b3af61-d516-45ca-aede-2f50ba23cb07.jpg?1771586935"
+    },
+    {
+      "name": "Frog Butler",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 4.48,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/d/1/d1a72d09-9cfc-463a-a9ec-3359003d54da.jpg?1771502693"
+    },
+    {
+      "name": "Primordial Pachyderm",
+      "gihwr": 57.9,
+      "gpwr": 0.0,
+      "alsa": 7.9,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/e/1/e1a866e6-4108-4290-9680-8f1652fbcf77.jpg?1771502730"
+    },
+    {
+      "name": "Tenderize",
+      "gihwr": 57.6,
+      "gpwr": 0.0,
+      "alsa": 6.42,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/b/c/bc19807b-09e8-4923-abc3-d4bbe8cde5fc.jpg?1771502744"
+    },
+    {
+      "name": "Ragamuffin Raptor",
+      "gihwr": 56.9,
+      "gpwr": 0.0,
+      "alsa": 8.02,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/2/e/2edc1d40-3154-4ec0-88c7-faf35fd5e560.jpg?1772578991"
+    },
+    {
+      "name": "Guac & Marshmallow Pizza",
+      "gihwr": 54.5,
+      "gpwr": 0.0,
+      "alsa": 10.07,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/5/a5405de0-16c9-4e5a-8ceb-00508e212f12.jpg?1771502701"
+    },
+    {
+      "name": "Mechanized Ninja Cavalry",
+      "gihwr": 58.3,
+      "gpwr": 0.0,
+      "alsa": 5.44,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/2/c/2cb65388-dc6c-4e2a-93ac-49ea484849e9.jpg?1771502774"
+    },
+    {
+      "name": "Nobody",
+      "gihwr": 58.3,
+      "gpwr": 0.0,
+      "alsa": 7.46,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/0/9/0966b8ff-61d3-4394-a357-97c35f042a29.jpg?1771587036"
+    },
+    {
+      "name": "Foot Ninjas",
+      "gihwr": 55.8,
+      "gpwr": 0.0,
+      "alsa": 8.09,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/a/b/abb1ab9c-b067-4b75-8e5b-a893b7948df1.jpg?1771503783"
+    },
+    {
+      "name": "Slithering Cryptid",
+      "gihwr": 55.7,
+      "gpwr": 0.0,
+      "alsa": 8.71,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/6/d/6d35cb39-8832-4cf1-be73-8de49fbea529.jpg?1771502794"
+    },
+    {
+      "name": "Mouser Mark III",
+      "gihwr": 55.4,
+      "gpwr": 0.0,
+      "alsa": 9.46,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/6/0/608a13b4-0b94-4be5-ac4b-e939901e8419.jpg?1771502784"
+    },
+    {
+      "name": "TCRI Building",
+      "gihwr": 60.2,
+      "gpwr": 0.0,
+      "alsa": 8.45,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/8/8/8817a1d6-ef39-4e7c-8277-74aea012803b.jpg?1771587112"
+    },
+    {
+      "name": "Mutant Town",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 8.23,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/c/6/c6eac43d-08b6-45a4-803b-10a321a241d7.jpg?1771587105"
+    },
+    {
+      "name": "Illegitimate Business",
+      "gihwr": 58.6,
+      "gpwr": 0.0,
+      "alsa": 8.02,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/7/1/71597acf-1ce6-46a8-b6c0-88755c8a377c.jpg?1771587098"
+    },
+    {
+      "name": "Omni-Cheese Pizza",
+      "gihwr": 58.5,
+      "gpwr": 0.0,
+      "alsa": 8.07,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/f/2/f2c8397c-2014-4a43-9ed7-41795880011f.jpg?1771587071"
+    },
+    {
+      "name": "Escape Tunnel",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 7.05,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/normal/front/5/d/5df90940-15ea-418c-8547-6c75d69ec6d3.jpg?1771424732"
+    },
+    {
+      "name": "Mighty Mutanimals",
+      "gihwr": 65.0,
+      "gpwr": 0.0,
+      "alsa": 2.69,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/5/d/5dd5369c-174c-450b-b776-553866787f8f.jpg?1771502533"
+    },
+    {
+      "name": "The Last Ronin's Technique",
+      "gihwr": 59.5,
+      "gpwr": 0.0,
+      "alsa": 3.79,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/d/f/dfb18239-d373-4795-8598-c82abae2cb62.jpg?1771342217"
+    },
+    {
+      "name": "Leonardo, Leader in Blue",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 4.05,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/d/6/d6eaae35-d513-43d8-be2d-b97c15e25937.jpg?1771502519"
+    },
+    {
+      "name": "Dimensional Exile",
+      "gihwr": 58.8,
+      "gpwr": 0.0,
+      "alsa": 3.33,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/b/e/be8d96fb-a1be-4fff-b844-e38d185884e1.jpg?1771342164"
+    },
+    {
+      "name": "Lita, Little Orphan Amphibian",
+      "gihwr": 58.8,
+      "gpwr": 0.0,
+      "alsa": 3.23,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/f/9fbaabb5-e981-4cbf-888c-46449412711f.jpg?1771424706"
+    },
+    {
+      "name": "Metalhead",
+      "gihwr": 62.2,
+      "gpwr": 0.0,
+      "alsa": 3.88,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/3/c/3c2d8b09-8694-45ab-be01-f8dc17378cf0.jpg?1771586807"
+    },
+    {
+      "name": "Ooze Spill",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 6.6,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/b/e/beef76b7-856e-48ab-bc73-e4f456c3a100.jpg?1771586813"
+    },
+    {
+      "name": "Ray Fillet, Man Ray",
+      "gihwr": 56.8,
+      "gpwr": 0.0,
+      "alsa": 5.32,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/1/4/14e0892c-a556-43c3-974f-6be44188da2e.jpg?1771502589"
+    },
+    {
+      "name": "Donatello, Way with Machines",
+      "gihwr": 56.4,
+      "gpwr": 0.0,
+      "alsa": 4.54,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/a/3/a3a5b63a-3263-4f06-a643-808c38f64c77.jpg?1771502576"
+    },
+    {
+      "name": "Bespoke B?",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 5.57,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/6/c/6c517308-831b-4e41-a82c-02ddf6383a0c.jpg?1771586788"
+    },
+    {
+      "name": "Dream Beavers",
+      "gihwr": 64.0,
+      "gpwr": 0.0,
+      "alsa": 3.39,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/6/0/600e3bc1-9777-4057-a11e-4f61582636c6.jpg?1771586853"
+    },
+    {
+      "name": "Splinter, Hamato Yoshi",
+      "gihwr": 59.0,
+      "gpwr": 0.0,
+      "alsa": 4.2,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/e/9ea9d072-aa98-405e-a475-26f93cc37e53.jpg?1771586909"
+    },
+    {
+      "name": "Death in the Family",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 3.9,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/2/e/2e4f2148-d398-4f3d-9c59-81c87b6a4588.jpg?1771586845"
+    },
+    {
+      "name": "Lord Dregg, Insect Invader",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 4.6,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/8/d/8d1a9c8a-d0b6-4d83-a168-8078de4b14c7.jpg?1771586872"
+    },
+    {
+      "name": "Shredder's Technique",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 3.5,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/9/9/99a24349-7d11-421b-a161-c1edbb8f53b1.jpg?1771342367"
+    },
+    {
+      "name": "Casey Jones, Jury-Rig Justiciar",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 5.0,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/8/0/808a5bc0-0999-47cf-854c-30db6277efe5.jpg?1760114588"
+    },
+    {
+      "name": "General Traag, Heart of Stone",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 5.53,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/e/0/e02e971f-6008-4c82-acd2-2aed13009ccb.jpg?1771502622"
+    },
+    {
+      "name": "Spicy Oatmeal Pizza",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 4.43,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/c/4/c4aeb45b-13ed-43ad-a366-7be10dec6222.jpg?1771342407"
+    },
+    {
+      "name": "Jennika's Technique",
+      "gihwr": 56.7,
+      "gpwr": 0.0,
+      "alsa": 10.02,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/d/f/df559199-c8b9-455b-aa07-0a042348de96.jpg?1771502629"
+    },
+    {
+      "name": "Wingnut, Bat on the Belfry",
+      "gihwr": 52.6,
+      "gpwr": 0.0,
+      "alsa": 7.1,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/4/0/40b9b1d0-b7d1-473e-b6a9-a29d527c2f35.jpg?1771502679"
+    },
+    {
+      "name": "Courier of Comestibles",
+      "gihwr": 62.8,
+      "gpwr": 0.0,
+      "alsa": 4.32,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/5/3/53f5f704-2265-42bb-bff5-fd9d85bc2bfb.jpg?1771342389"
+    },
+    {
+      "name": "Novel Nunchaku",
+      "gihwr": 58.7,
+      "gpwr": 0.0,
+      "alsa": 4.43,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/f/3/f37ef012-c566-4d16-acf8-6079244907be.jpg?1771502723"
+    },
+    {
+      "name": "Michelangelo, Mutant BFF",
+      "gihwr": 58.5,
+      "gpwr": 0.0,
+      "alsa": 4.08,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/0/2/02f7281f-b50c-4a1c-a2fc-3caeb6ab7d41.jpg?1771502715"
+    },
+    {
+      "name": "Saved by the Shell",
+      "gihwr": 58.2,
+      "gpwr": 0.0,
+      "alsa": 6.07,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/f/6/f6314c7f-41dc-4bbd-99db-3a8a1d2977b2.jpg?1771586974"
+    },
+    {
+      "name": "West Wind Avatar",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 5.02,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/f/4/f4b8f7e6-9bff-430b-b2f5-4308d57d1194.jpg?1771586987"
+    },
+    {
+      "name": "Brilliance Unleashed",
+      "gihwr": 62.2,
+      "gpwr": 0.0,
+      "alsa": 4.31,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/b/7/b7ab2110-5aad-46c9-8dc4-1eac24b6f46b.jpg?1771587000"
+    },
+    {
+      "name": "Tainted Treats",
+      "gihwr": 61.0,
+      "gpwr": 0.0,
+      "alsa": 4.04,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/f/a/fa684608-ecd3-43e2-99a1-71318f133e29.jpg?1771587064"
+    },
+    {
+      "name": "Lessons from Life",
+      "gihwr": 60.4,
+      "gpwr": 0.0,
+      "alsa": 5.07,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/0/f/0f886117-aff3-4db7-9cf5-7cbe94c8cd02.jpg?1771424719"
+    },
+    {
+      "name": "Baxter Stockman",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 4.63,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/1/1/117b1341-2cf0-466e-b3a8-7e1afa42cd4c.jpg?1771586994"
+    },
+    {
+      "name": "Genghis Frog",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 5.27,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/7/d/7df26085-eedb-4bdd-a60a-aabfbe9c3157.jpg?1771342425"
+    },
+    {
+      "name": "Everything Pizza",
+      "gihwr": 64.0,
+      "gpwr": 0.0,
+      "alsa": 5.23,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/d/f/df2cdaa5-9ea0-4aa5-89d3-9edf40fa2a39.jpg?1771476702"
+    },
+    {
+      "name": "Turtle Blimp",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 6.48,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/6/e/6e118fc5-b0ae-4592-8292-d611856ae203.jpg?1771587078"
+    },
+    {
+      "name": "Turtle Lair",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 7.59,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/c/5/c50c4580-979b-4863-86b9-16e258198972.jpg?1771424738"
+    },
+    {
+      "name": "Skateboard",
+      "gihwr": 51.6,
+      "gpwr": 0.0,
+      "alsa": 9.43,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/d/e/deadb6d8-3eea-4261-a07c-8536df89e85c.jpg?1771502813"
+    },
+    {
+      "name": "Henchbots",
+      "gihwr": 51.4,
+      "gpwr": 0.0,
+      "alsa": 6.94,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/normal/front/d/7/d77aa46e-fa57-4427-b0a3-0a957dc994dc.jpg?1771502803"
+    },
+    {
+      "name": "Sally Pride, Lioness Leader",
+      "gihwr": 69.8,
+      "gpwr": 0.0,
+      "alsa": 1.6,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/b/c/bcd8ee6b-7142-4548-8b7a-691a36411851.jpg?1769005568"
+    },
+    {
+      "name": "Agent Bishop, Man in Black",
+      "gihwr": 64.0,
+      "gpwr": 0.0,
+      "alsa": 1.53,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/9/c/9c769202-178c-442a-a9e2-aa08b5ae5c9a.jpg?1769005601"
+    },
+    {
+      "name": "Turncoat Kunoichi",
+      "gihwr": 62.6,
+      "gpwr": 0.0,
+      "alsa": 2.15,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/3/a/3ae61336-a4ee-40cd-9a18-392d96b873a4.jpg?1769685362"
+    },
+    {
+      "name": "Prehistoric Pet",
+      "gihwr": 58.0,
+      "gpwr": 0.0,
+      "alsa": 2.96,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/1/4/148e6acd-a96a-4bea-8cfe-a129cd8d1003.jpg?1769005558"
+    },
+    {
+      "name": "Leonardo, Cutting Edge",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 2.75,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/7/4/74c11ee3-19d1-4ad5-a727-1d74c565d6a5.jpg?1769005535"
+    },
+    {
+      "name": "April O'Neil, Hacktivist",
+      "gihwr": 64.5,
+      "gpwr": 0.0,
+      "alsa": 2.28,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/f/0/f0147f6d-b797-4d5e-aca2-a9d309896eca.jpg?1760102651"
+    },
+    {
+      "name": "Does Machines",
+      "gihwr": 62.3,
+      "gpwr": 0.0,
+      "alsa": 2.85,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/9/8/989da63a-2cbd-41a9-9bbb-99f4ad1c6a25.jpg?1774102268"
+    },
+    {
+      "name": "Kitsune, Dragon's Daughter",
+      "gihwr": 61.8,
+      "gpwr": 0.0,
+      "alsa": 2.62,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/a/8/a87a9257-4535-4286-8b59-a842ac45d05e.jpg?1769005699"
+    },
+    {
+      "name": "Krang, Master Mind",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 2.62,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/d/2/d27fa497-e842-4812-80fe-28517544e1c5.jpg?1760102684"
+    },
+    {
+      "name": "Donatello, Gadget Master",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 2.96,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/8/b/8b5dd830-dab8-4628-845f-3d17973f9ffa.jpg?1769005622"
+    },
+    {
+      "name": "Armaggon, Future Shark",
+      "gihwr": 64.7,
+      "gpwr": 0.0,
+      "alsa": 2.14,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/5/9/5989378b-0eac-43cf-bc83-8f7765536789.jpg?1769005763"
+    },
+    {
+      "name": "Rat King, Verminister",
+      "gihwr": 59.9,
+      "gpwr": 0.0,
+      "alsa": 2.21,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/b/e/be464d88-8933-46e8-97b0-3be05f1976a3.jpg?1769005882"
+    },
+    {
+      "name": "Savanti Romero, Time's Exile",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 2.06,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/0/1/01cb8ded-7f77-4b75-b799-23e9f5efb513.jpg?1769005872"
+    },
+    {
+      "name": "Ninja Teen",
+      "gihwr": 59.6,
+      "gpwr": 0.0,
+      "alsa": 2.25,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/0/8/0825a28f-f60b-4f80-83e3-cad6f9b266ce.jpg?1777939770"
+    },
+    {
+      "name": "Shark Shredder, Killer Clone",
+      "gihwr": 58.3,
+      "gpwr": 0.0,
+      "alsa": 1.83,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/8/f/8f946b3d-7d2a-4210-a909-d16078757e3b.jpg?1769006593"
+    },
+    {
+      "name": "Ravenous Robots",
+      "gihwr": 61.6,
+      "gpwr": 0.0,
+      "alsa": 2.61,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/3/b/3b303ea3-9f4d-4c28-9446-285a23f841a0.jpg?1769006169"
+    },
+    {
+      "name": "Raphael, the Nightwatcher",
+      "gihwr": 58.9,
+      "gpwr": 0.0,
+      "alsa": 2.71,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/6/a/6af50b50-3776-4383-b493-7c5dd732c965.jpg?1769006162"
+    },
+    {
+      "name": "Improvised Arsenal",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 3.2,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/0/0/003265d9-b2fc-4916-afc8-53ed2d6aa053.jpg?1769006146"
+    },
+    {
+      "name": "Slash, Reptile Rampager",
+      "gihwr": 56.8,
+      "gpwr": 0.0,
+      "alsa": 2.47,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/0/2/025aafbc-5b24-4f5b-9b4a-81f6b9cb5ef3.jpg?1769006188"
+    },
+    {
+      "name": "Casey Jones, Vigilante",
+      "gihwr": 51.1,
+      "gpwr": 0.0,
+      "alsa": 6.15,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/a/6/a6a3258d-2e9b-4862-b2e3-bbfae9bd4d33.jpg?1769005927"
+    },
+    {
+      "name": "Leatherhead, Swamp Stalker",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 2.21,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/b/1/b1f6b5b5-12ca-468d-bc53-dd0cde60e7b6.jpg?1769006176"
+    },
+    {
+      "name": "Michelangelo, Weirdness to 11",
+      "gihwr": 60.5,
+      "gpwr": 0.0,
+      "alsa": 2.3,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/1/8/18477047-218d-4b2a-a086-37431b6a3025.jpg?1769006195"
+    },
+    {
+      "name": "Transdimensional Bovine",
+      "gihwr": 59.6,
+      "gpwr": 0.0,
+      "alsa": 2.85,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/d/e/de124563-205c-4f40-8c13-4ae203599912.jpg?1769006238"
+    },
+    {
+      "name": "Mutagen Man, Living Ooze",
+      "gihwr": 58.7,
+      "gpwr": 0.0,
+      "alsa": 2.23,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/9/f/9f9085f0-3702-462c-8c81-b4576236792d.jpg?1769006218"
+    },
+    {
+      "name": "Groundchuck & Dirtbag",
+      "gihwr": 58.5,
+      "gpwr": 0.0,
+      "alsa": 2.84,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/1/5/1563592e-0f21-4488-a3ec-ca766386e423.jpg?1769006182"
+    },
+    {
+      "name": "Don & Leo, Problem Solvers",
+      "gihwr": 62.8,
+      "gpwr": 0.0,
+      "alsa": 1.54,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/d/2/d239beaf-4f5b-494e-be5c-ffa8b6e28bde.jpg?1769006269"
+    },
+    {
+      "name": "Mikey & Don, Party Planners",
+      "gihwr": 62.0,
+      "gpwr": 0.0,
+      "alsa": 1.79,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/6/3/6353df1a-9a1b-41fd-985b-8c8acba36c23.jpg?1769006263"
+    },
+    {
+      "name": "Raph & Mikey, Troublemakers",
+      "gihwr": 61.2,
+      "gpwr": 0.0,
+      "alsa": 1.76,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/8/7/8795fba4-0ff3-4c04-a81c-60408608a00c.jpg?1769006366"
+    },
+    {
+      "name": "Krang & Shredder",
+      "gihwr": 56.6,
+      "gpwr": 0.0,
+      "alsa": 1.57,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/9/b/9b5437e2-e3f4-4c19-a2aa-a75f65a001bb.jpg?1769006256"
+    },
+    {
+      "name": "Bebop & Rocksteady",
+      "gihwr": 56.5,
+      "gpwr": 0.0,
+      "alsa": 4.05,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/5/3/535461bd-f763-408b-816f-64b7bfb9210d.jpg?1760102796"
+    },
+    {
+      "name": "Shadowspear",
+      "gihwr": 61.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/9/3/939c6e19-4b27-4023-bb9c-ae440f91e21c.jpg?1581481207"
+    },
+    {
+      "name": "Chrome Dome",
+      "gihwr": 60.9,
+      "gpwr": 0.0,
+      "alsa": 2.26,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/9/9/994a01eb-2689-49e7-be23-0713da9da9a8.jpg?1769006406"
+    },
+    {
+      "name": "Weather Maker",
+      "gihwr": 60.5,
+      "gpwr": 0.0,
+      "alsa": 2.48,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/a/a/aaba62c1-760b-491b-8047-869bb1d3f67e.jpg?1769006491"
+    },
+    {
+      "name": "Undercity Sewers",
+      "gihwr": 59.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/2/b/2b5801fb-2026-4f25-98bc-ebb2f99684b9.jpg?1759236533"
+    },
+    {
+      "name": "The Ooze",
+      "gihwr": 58.4,
+      "gpwr": 0.0,
+      "alsa": 1.6,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/normal/front/1/f/1f9bd4da-4626-40ba-95f4-14e3de36f989.jpg?1769006428"
+    },
+    {
+      "name": "Triceraton Commander",
+      "gihwr": 62.0,
+      "gpwr": 0.0,
+      "alsa": 1.84,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/6/4/6445b690-71ce-4371-ae9c-bac0e70dda81.jpg?1769005579"
+    },
+    {
+      "name": "Leonardo, Sewer Samurai",
+      "gihwr": 61.1,
+      "gpwr": 0.0,
+      "alsa": 1.98,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/0/e/0e3a0a26-c163-4f31-bed8-1be52a35feea.jpg?1764512256"
+    },
+    {
+      "name": "Donatello, Mutant Mechanic",
+      "gihwr": 59.1,
+      "gpwr": 0.0,
+      "alsa": 2.05,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/3/2/3271b821-8efc-49e2-96fd-c48e2b2585c6.jpg?1769005688"
+    },
+    {
+      "name": "Mondo Gecko",
+      "gihwr": 54.0,
+      "gpwr": 0.0,
+      "alsa": 3.5,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/6/6/665e44f9-bc0d-40aa-83a4-f7fe64f2506d.jpg?1769005708"
+    },
+    {
+      "name": "The Cloning of Shredder",
+      "gihwr": 61.1,
+      "gpwr": 0.0,
+      "alsa": 1.8,
+      "color": "B",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/9/4/94449d88-2df4-4850-8ffa-d6d193835dda.jpg?1771603451"
+    },
+    {
+      "name": "Super Shredder",
+      "gihwr": 59.4,
+      "gpwr": 0.0,
+      "alsa": 1.56,
+      "color": "B",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/3/7/37a497b8-e908-4ddc-996e-a8470df72afb.jpg?1760102707"
+    },
+    {
+      "name": "Raphael, Ninja Destroyer",
+      "gihwr": 50.9,
+      "gpwr": 0.0,
+      "alsa": 3.63,
+      "color": "R",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/e/e/eeffadda-cb71-4434-89bf-36db1a36da0b.jpg?1769006156"
+    },
+    {
+      "name": "Michelangelo, Improviser",
+      "gihwr": 56.8,
+      "gpwr": 0.0,
+      "alsa": 2.31,
+      "color": "G",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/9/5/955848c0-5092-4e13-97c9-5978d44d5586.jpg?1769006201"
+    },
+    {
+      "name": "The Last Ronin",
+      "gihwr": 69.5,
+      "gpwr": 0.0,
+      "alsa": 1.83,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/7/2/72ab3ccf-3ddb-4dd1-9cfb-98802a18d954.jpg?1771603465"
+    },
+    {
+      "name": "Dark Leo & Shredder",
+      "gihwr": 62.7,
+      "gpwr": 0.0,
+      "alsa": 2.06,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/b/a/bab93474-2f98-49a1-874f-b794bf81bd0c.jpg?1769006250"
+    },
+    {
+      "name": "North Wind Avatar",
+      "gihwr": 62.0,
+      "gpwr": 0.0,
+      "alsa": 2.65,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/4/1/41439cfe-bb3e-42f3-9d81-de9db537ce68.jpg?1769006359"
+    },
+    {
+      "name": "Umezawa's Jitte",
+      "gihwr": 67.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/3/b/3b6e5956-f795-451b-bb24-56462d1ced27.jpg?1779102270"
+    },
+    {
+      "name": "Technodrome",
+      "gihwr": 58.9,
+      "gpwr": 0.0,
+      "alsa": 2.29,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/2/8/287f5ab0-b15b-4507-8a24-585f9a9841ad.jpg?1769006421"
+    },
+    {
+      "name": "Sword of Sinew and Steel",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/c/0/c081e5cf-81e2-4afb-a912-8267de29e88d.jpg?1562202493"
+    },
+    {
+      "name": "Krang, Utrom Warlord",
+      "gihwr": 55.1,
+      "gpwr": 0.0,
+      "alsa": 2.5,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/normal/front/8/8/88d36c32-d6f9-46e4-9cc8-08e6c0ff05d2.jpg?1769006413"
+    }
+  ]
+}
