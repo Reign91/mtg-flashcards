@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTG Draft Flashcards</title>
+<style>
+  :root {
+    --bg: #0f0f1a; --surface: #1a1a2e; --card: #16213e;
+    --accent: #e94560; --gold: #f0a500; --text: #eaeaea;
+    --muted: #888; --border: #2a2a4a;
+    --W: #f9f6e8; --U: #0e5aa7; --B: #2a2a2a; --R: #b22222;
+    --G: #1a5c2e; --M: #8b6914; --C: #5a5a6e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; }
+
+  /* ── HEADER ── */
+  header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 12px 20px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  header h1 { font-size: 1.2rem; color: var(--gold); flex: 1; }
+  #loadBtn { background: var(--accent); color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: .9rem; }
+  #fileInput { display: none; }
+  #setLabel { font-size: .85rem; color: var(--muted); }
+
+  /* ── FILTERS ── */
+  #filters { background: var(--surface); padding: 10px 20px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; border-bottom: 1px solid var(--border); }
+  .filter-group { display: flex; gap: 6px; flex-wrap: wrap; }
+  .filter-group label { font-size: .75rem; color: var(--muted); margin-right: 4px; }
+  .pill { padding: 4px 12px; border-radius: 20px; border: 1px solid var(--border); background: var(--card); cursor: pointer; font-size: .78rem; transition: all .2s; }
+  .pill:hover { border-color: var(--gold); }
+  .pill.active { background: var(--gold); color: #000; border-color: var(--gold); font-weight: 600; }
+  .pill.color-W.active { background: var(--W); color: #333; border-color: #ccc; }
+  .pill.color-U.active { background: var(--U); color: #fff; }
+  .pill.color-B.active { background: #555; color: #fff; border-color: #777; }
+  .pill.color-R.active { background: var(--R); color: #fff; }
+  .pill.color-G.active { background: var(--G); color: #fff; }
+  .pill.color-M.active { background: var(--M); color: #fff; }
+
+  /* ── MAIN ── */
+  #main { display: flex; flex-direction: column; align-items: center; padding: 30px 16px; min-height: 60vh; }
+
+  /* ── PROGRESS ── */
+  #progress { width: 100%; max-width: 540px; margin-bottom: 16px; }
+  #progBar { height: 4px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  #progFill { height: 100%; background: var(--accent); width: 0; transition: width .3s; }
+  #progText { font-size: .8rem; color: var(--muted); margin-top: 4px; text-align: center; }
+
+  /* ── CARD ── */
+  #cardWrapper { perspective: 1000px; width: 100%; max-width: 420px; height: 520px; cursor: pointer; }
+  #flashcard { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transition: transform .45s cubic-bezier(.4,0,.2,1); }
+  #flashcard.flipped { transform: rotateY(180deg); }
+  .face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 16px; overflow: hidden; }
+
+  /* front */
+  .front { background: var(--card); border: 2px solid var(--border); display: flex; flex-direction: column; }
+  .card-header { padding: 14px 16px 10px; display: flex; justify-content: space-between; align-items: center; }
+  .rarity-badge { font-size: .7rem; font-weight: 700; text-transform: uppercase; padding: 3px 8px; border-radius: 10px; }
+  .rarity-common  { background: #444; color: #ccc; }
+  .rarity-uncommon{ background: #5a7a8a; color: #dff; }
+  .rarity-rare    { background: #4a3d6a; color: #dcd; }
+  .rarity-mythic  { background: #8b3a00; color: #ffd; }
+  .color-dot { width: 22px; height: 22px; border-radius: 50%; border: 2px solid rgba(255,255,255,.2); }
+  .dot-W { background: var(--W); }
+  .dot-U { background: var(--U); }
+  .dot-B { background: #666; }
+  .dot-R { background: var(--R); }
+  .dot-G { background: var(--G); }
+  .dot-M { background: linear-gradient(135deg, var(--U), var(--R)); }
+  .dot-C { background: #888; }
+
+  .card-img-area { flex: 1; display: flex; align-items: center; justify-content: center; background: #0a0a18; overflow: hidden; }
+  .card-img-area img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  .card-img-placeholder { text-align: center; color: var(--muted); }
+  .card-img-placeholder .big-name { font-size: 1.5rem; font-weight: 700; color: var(--text); margin-top: 8px; padding: 0 12px; }
+
+  .card-footer { padding: 12px 16px; text-align: center; font-size: .8rem; color: var(--muted); }
+
+  /* back */
+  .back { background: var(--card); border: 2px solid var(--gold); transform: rotateY(180deg); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 28px 24px; gap: 18px; }
+  .back-name { font-size: 1.4rem; font-weight: 700; text-align: center; color: var(--gold); }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+  .stat-box { background: var(--surface); border-radius: 10px; padding: 12px; text-align: center; }
+  .stat-val { font-size: 1.5rem; font-weight: 700; }
+  .stat-lbl { font-size: .7rem; color: var(--muted); margin-top: 3px; }
+  .grade-badge { font-size: 2.2rem; font-weight: 900; }
+  .grade-A\+,.grade-A { color: #4caf50; }
+  .grade-B\+,.grade-B { color: #8bc34a; }
+  .grade-C\+,.grade-C { color: #ffeb3b; }
+  .grade-D    { color: #ff9800; }
+  .grade-F    { color: var(--accent); }
+  .rank-line { font-size: .9rem; color: var(--text); text-align: center; }
+  .rank-line span { color: var(--gold); font-weight: 700; }
+
+  /* ── CONTROLS ── */
+  #controls { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; justify-content: center; }
+  .btn { padding: 10px 22px; border-radius: 8px; border: none; cursor: pointer; font-size: .9rem; font-weight: 600; transition: opacity .2s; }
+  .btn:hover { opacity: .85; }
+  .btn-prev { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+  .btn-next { background: var(--accent); color: #fff; }
+  .btn-flip { background: var(--gold); color: #000; }
+  .btn-shuffle { background: var(--surface); color: var(--text); border: 1px solid var(--border); }
+
+  /* ── EMPTY STATE ── */
+  #empty { text-align: center; color: var(--muted); padding: 60px 20px; }
+  #empty h2 { font-size: 1.4rem; color: var(--text); margin-bottom: 8px; }
+
+  /* ── LEGEND ── */
+  #legend { font-size: .72rem; color: var(--muted); margin-top: 8px; text-align: center; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🃏 MTG Draft Flashcards</h1>
+  <button id="loadBtn" onclick="document.getElementById('fileInput').click()">📂 Load JSON</button>
+  <input type="file" id="fileInput" accept=".json">
+  <span id="setLabel">No data loaded</span>
+</header>
+
+<div id="filters" style="display:none">
+  <div class="filter-group">
+    <label>Rarity:</label>
+    <span class="pill active" data-filter="rarity" data-val="all">All</span>
+    <span class="pill" data-filter="rarity" data-val="common">Common</span>
+    <span class="pill" data-filter="rarity" data-val="uncommon">Uncommon</span>
+    <span class="pill" data-filter="rarity" data-val="rare">Rare</span>
+    <span class="pill" data-filter="rarity" data-val="mythic">Mythic</span>
+  </div>
+  <div class="filter-group">
+    <label>Color:</label>
+    <span class="pill active" data-filter="color" data-val="all">All</span>
+    <span class="pill color-W" data-filter="color" data-val="W">☀ White</span>
+    <span class="pill color-U" data-filter="color" data-val="U">💧 Blue</span>
+    <span class="pill color-B" data-filter="color" data-val="B">💀 Black</span>
+    <span class="pill color-R" data-filter="color" data-val="R">🔥 Red</span>
+    <span class="pill color-G" data-filter="color" data-val="G">🌲 Green</span>
+    <span class="pill color-M" data-filter="color" data-val="M">✨ Multi</span>
+  </div>
+</div>
+
+<div id="main">
+  <div id="empty">
+    <h2>Welcome to MTG Draft Flashcards</h2>
+    <p>Run <strong>17lands_fetch.py</strong> to generate your data file,<br>then click <strong>Load JSON</strong> to start studying.</p>
+    <br>
+    <p style="font-size:.85rem">Need help? See the Python script instructions above.</p>
+  </div>
+
+  <div id="studyArea" style="display:none; width:100%; max-width:540px">
+    <div id="progress">
+      <div id="progBar"><div id="progFill"></div></div>
+      <div id="progText"></div>
+    </div>
+
+    <div id="cardWrapper" onclick="flipCard()">
+      <div id="flashcard">
+        <div class="face front" id="frontFace"></div>
+        <div class="face back"  id="backFace"></div>
+      </div>
+    </div>
+
+    <div id="legend">Click card to reveal stats · Tap Prev/Next to navigate</div>
+
+    <div id="controls">
+      <button class="btn btn-prev" onclick="navigate(-1)">◀ Prev</button>
+      <button class="btn btn-flip" onclick="flipCard()">↩ Flip</button>
+      <button class="btn btn-shuffle" onclick="shuffleDeck()">🔀 Shuffle</button>
+      <button class="btn btn-next" onclick="navigate(1)">Next ▶</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let allCards = [], deck = [], idx = 0, flipped = false, meta = {};
+let filterRarity = 'all', filterColor = 'all';
+
+// ── FILE LOAD ──────────────────────────────────────────────────────────────
+document.getElementById('fileInput').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = ev => {
+    try {
+      const d = JSON.parse(ev.target.result);
+      allCards = d.cards || [];
+      meta = d.meta || {};
+      document.getElementById('setLabel').textContent =
+        `${meta.expansion || ''} · ${meta.format || ''} · ${allCards.length} cards`;
+      document.getElementById('filters').style.display = 'flex';
+      applyFilters();
+    } catch { alert('Invalid JSON file.'); }
+  };
+  r.readAsText(f);
+});
+
+// ── FILTERS ───────────────────────────────────────────────────────────────
+document.querySelectorAll('.pill').forEach(p => {
+  p.addEventListener('click', () => {
+    const f = p.dataset.filter, v = p.dataset.val;
+    document.querySelectorAll(`.pill[data-filter="${f}"]`).forEach(x => x.classList.remove('active'));
+    p.classList.add('active');
+    if (f === 'rarity') filterRarity = v;
+    if (f === 'color')  filterColor  = v;
+    applyFilters();
+  });
+});
+
+function applyFilters() {
+  deck = allCards.filter(c =>
+    (filterRarity === 'all' || c.rarity === filterRarity) &&
+    (filterColor  === 'all' || c.color  === filterColor)
+  );
+  idx = 0; flipped = false;
+  if (deck.length) {
+    document.getElementById('empty').style.display = 'none';
+    document.getElementById('studyArea').style.display = 'block';
+    render();
+  } else {
+    document.getElementById('studyArea').style.display = 'none';
+    document.getElementById('empty').style.display = 'block';
+    document.getElementById('empty').innerHTML = '<h2>No cards match</h2><p>Try different filters.</p>';
+  }
+}
+
+// ── RENDER ─────────────────────────────────────────────────────────────────
+function render() {
+  const card = deck[idx];
+  document.getElementById('flashcard').classList.remove('flipped');
+  flipped = false;
+
+  // progress
+  document.getElementById('progFill').style.width = ((idx+1)/deck.length*100)+'%';
+  document.getElementById('progText').textContent = `${idx+1} / ${deck.length}`;
+
+  // front
+  const color = card.color || 'C';
+  const imgHtml = card.image
+    ? `<img src="${card.image}" alt="${card.name}" loading="lazy">`
+    : `<div class="card-img-placeholder">
+         <div style="font-size:3rem">🃏</div>
+         <div class="big-name">${card.name}</div>
+       </div>`;
+
+  document.getElementById('frontFace').innerHTML = `
+    <div class="card-header">
+      <span class="rarity-badge rarity-${card.rarity}">${card.rarity}</span>
+      <div class="color-dot dot-${color}"></div>
+    </div>
+    <div class="card-img-area">${imgHtml}</div>
+    <div class="card-footer">Click to reveal win rate & stats</div>
+  `;
+
+  // back — grade calculation
+  const grade = gihwrGrade(card.gihwr, deck);
+  const rankInColor = getRank(card);
+
+  document.getElementById('backFace').innerHTML = `
+    <div class="back-name">${card.name}</div>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-val" style="color:#4caf50">${card.gihwr}%</div>
+        <div class="stat-lbl">GIH Win Rate</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val grade-badge ${gradeClass(grade)}">${grade}</div>
+        <div class="stat-lbl">Grade</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val" style="color:#64b5f6">${card.alsa}</div>
+        <div class="stat-lbl">Avg Pick (ALSA)</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-val" style="color:#ffb74d">${card.gpwr || '—'}%</div>
+        <div class="stat-lbl">GP Win Rate</div>
+      </div>
+    </div>
+    <div class="rank-line">Rank <span>#${rankInColor.rank}</span> ${card.rarity} in <span>${colorName(color)}</span></div>
+  `;
+}
+
+// ── HELPERS ────────────────────────────────────────────────────────────────
+function gihwrGrade(wr, pool) {
+  const vals = pool.filter(c=>c.gihwr>0).map(c=>c.gihwr);
+  if (!vals.length) return '?';
+  const mean = vals.reduce((a,b)=>a+b,0)/vals.length;
+  const std  = Math.sqrt(vals.reduce((a,b)=>a+(b-mean)**2,0)/vals.length);
+  const z = (wr - mean) / (std||1);
+  if (z >= 2.0)  return 'A+';
+  if (z >= 1.33) return 'A';
+  if (z >= 0.67) return 'B+';
+  if (z >= 0.0)  return 'B';
+  if (z >= -0.67)return 'C+';
+  if (z >= -1.33)return 'C';
+  if (z >= -1.67)return 'D';
+  return 'F';
+}
+
+function gradeClass(g) { return 'grade-' + g.replace('+','\\+'); }
+
+function getRank(card) {
+  const peers = allCards
+    .filter(c => c.rarity === card.rarity && c.color === card.color)
+    .sort((a,b) => b.gihwr - a.gihwr);
+  return { rank: peers.findIndex(c=>c.name===card.name)+1, total: peers.length };
+}
+
+function colorName(c) {
+  const map = {W:'White',U:'Blue',B:'Black',R:'Red',G:'Green',M:'Multicolor',C:'Colorless'};
+  return map[c]||c;
+}
+
+// ── NAVIGATION ────────────────────────────────────────────────────────────
+function navigate(dir) {
+  idx = (idx + dir + deck.length) % deck.length;
+  render();
+}
+
+function flipCard() {
+  flipped = !flipped;
+  document.getElementById('flashcard').classList.toggle('flipped', flipped);
+}
+
+function shuffleDeck() {
+  for (let i = deck.length-1; i>0; i--) {
+    const j = Math.floor(Math.random()*(i+1));
+    [deck[i],deck[j]] = [deck[j],deck[i]];
+  }
+  idx = 0; render();
+}
+
+// Keyboard nav
+document.addEventListener('keydown', e => {
+  if (!deck.length) return;
+  if (e.key==='ArrowRight'||e.key==='d') navigate(1);
+  if (e.key==='ArrowLeft' ||e.key==='a') navigate(-1);
+  if (e.key===' '||e.key==='f') { e.preventDefault(); flipCard(); }
+});
+</script>
+</body>
+</html>
