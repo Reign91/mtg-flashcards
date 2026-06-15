@@ -294,9 +294,9 @@ const COLOR_ORDER  = ['W','U','B','R','G','M','C'];
 const RARITY_ORDER = ['common','uncommon','rare','mythic'];
 
 let allCards=[], deck=[], idx=0, flipped=false;
-let filterRarity='all', filterColor='all';
+let filterRarities=new Set(['all']), filterColors=new Set(['all']);
 let selectedFile='', currentMeta={}, currentMode='study';
-let quizRarity='all', quizColor='all', quizCount=20;
+let quizRarities=new Set(['all']), quizColors=new Set(['all']), quizCount=20;
 let quizQuestions=[], quizIdx=0, quizScore=0, quizMissed=[], quizLocked=false;
 
 // ── SCREEN MANAGER ─────────────────────────────────────────────────────────
@@ -404,8 +404,8 @@ function goHome() {
 // ── STUDY ──────────────────────────────────────────────────────────────────
 function applyFilters() {
   deck = allCards.filter(c =>
-    (filterRarity==='all'||c.rarity===filterRarity) &&
-    (filterColor==='all' ||c.color===filterColor)
+    (filterRarities.has('all') || filterRarities.has(c.rarity)) &&
+    (filterColors.has('all')   || filterColors.has(c.color))
   );
   idx=0; flipped=false;
   if (deck.length) render();
@@ -453,18 +453,46 @@ function shuffleDeck() { deck=shuffle([...deck]); idx=0; render(); }
 document.querySelectorAll('[data-qfilter]').forEach(p => {
   p.onclick = () => {
     const f=p.dataset.qfilter, v=p.dataset.val;
-    document.querySelectorAll(`[data-qfilter="${f}"]`).forEach(x=>x.classList.remove('active'));
-    p.classList.add('active');
-    if(f==='rarity') quizRarity=v;
-    if(f==='color')  quizColor=v;
-    if(f==='count')  quizCount=v==='all'?9999:parseInt(v);
+
+    if (f === 'count') {
+      document.querySelectorAll(`[data-qfilter="count"]`).forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+      quizCount = v==='all' ? 9999 : parseInt(v);
+      return;
+    }
+
+    // Multi-select for rarity and color
+    const set = f==='rarity' ? quizRarities : quizColors;
+
+    if (v === 'all') {
+      // Selecting All clears everything else
+      set.clear(); set.add('all');
+      document.querySelectorAll(`[data-qfilter="${f}"]`).forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+    } else {
+      // Deselect All if a specific option is chosen
+      set.delete('all');
+      document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.remove('active');
+      if (set.has(v)) {
+        set.delete(v);
+        p.classList.remove('active');
+        // If nothing selected, revert to All
+        if (set.size === 0) {
+          set.add('all');
+          document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.add('active');
+        }
+      } else {
+        set.add(v);
+        p.classList.add('active');
+      }
+    }
   };
 });
 
 function startQuiz() {
   let pool = allCards.filter(c =>
-    (quizRarity==='all'||c.rarity===quizRarity) &&
-    (quizColor==='all' ||c.color===quizColor)
+    (quizRarities.has('all') || quizRarities.has(c.rarity)) &&
+    (quizColors.has('all')   || quizColors.has(c.color))
   );
   if (pool.length < 4) { alert('Need at least 4 cards. Try broader filters.'); return; }
   pool = shuffle([...pool]);
@@ -559,10 +587,22 @@ function reviewMissed() {
 document.querySelectorAll('.pill[data-filter]').forEach(p => {
   p.onclick = () => {
     const f=p.dataset.filter, v=p.dataset.val;
-    document.querySelectorAll(`.pill[data-filter="${f}"]`).forEach(x=>x.classList.remove('active'));
-    p.classList.add('active');
-    if(f==='rarity') filterRarity=v;
-    if(f==='color')  filterColor=v;
+    const set = f==='rarity' ? filterRarities : filterColors;
+
+    if (v === 'all') {
+      set.clear(); set.add('all');
+      document.querySelectorAll(`.pill[data-filter="${f}"]`).forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+    } else {
+      set.delete('all');
+      document.querySelector(`.pill[data-filter="${f}"][data-val="all"]`).classList.remove('active');
+      if (set.has(v)) {
+        set.delete(v); p.classList.remove('active');
+        if (set.size===0) { set.add('all'); document.querySelector(`.pill[data-filter="${f}"][data-val="all"]`).classList.add('active'); }
+      } else {
+        set.add(v); p.classList.add('active');
+      }
+    }
     applyFilters();
   };
 });
