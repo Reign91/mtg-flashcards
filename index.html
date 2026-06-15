@@ -5,170 +5,205 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0f0f1a">
 <title>MTG Draft Flashcards</title>
 <link rel="manifest" id="manifestLink">
 <style>
-  :root {
-    --bg:#0f0f1a; --surface:#1a1a2e; --card:#16213e;
-    --accent:#e94560; --gold:#f0a500; --text:#eaeaea;
-    --muted:#888; --border:#2a2a4a;
-    --correct:#4caf50; --wrong:#e94560;
-  }
-  * { box-sizing:border-box; margin:0; padding:0; }
-  body { background:var(--bg); color:var(--text); font-family:'Segoe UI',sans-serif; min-height:100vh; }
+:root {
+  --bg:#0f0f1a; --surface:#1a1a2e; --card:#16213e;
+  --accent:#e94560; --gold:#f0a500; --text:#eaeaea;
+  --muted:#888; --border:#2a2a4a;
+  --correct:#4caf50; --wrong:#e94560;
+}
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:var(--bg); color:var(--text); font-family:'Segoe UI',sans-serif; min-height:100vh; }
 
-  header { background:var(--surface); border-bottom:1px solid var(--border); padding:12px 16px; display:flex; align-items:center; gap:10px; }
-  header h1 { font-size:1.1rem; color:var(--gold); flex:1; }
-  #homeBtn { background:var(--surface); color:var(--muted); border:1px solid var(--border); padding:6px 12px; border-radius:6px; cursor:pointer; font-size:.85rem; display:none; }
+header { background:var(--surface); border-bottom:1px solid var(--border); padding:12px 16px; display:flex; align-items:center; gap:10px; }
+header h1 { font-size:1.1rem; color:var(--gold); flex:1; }
+#homeBtn { background:var(--surface); color:var(--muted); border:1px solid var(--border); padding:6px 12px; border-radius:6px; cursor:pointer; font-size:.85rem; display:none; }
 
-  #modeTabs { background:var(--surface); border-bottom:1px solid var(--border); display:none; }
-  .mode-tab { display:inline-block; width:25%; padding:10px; text-align:center; font-size:.78rem; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; }
-  .mode-tab.active { color:var(--gold); border-bottom-color:var(--gold); font-weight:700; }
+#modeTabs { background:var(--surface); border-bottom:1px solid var(--border); display:none; }
+.mode-tab { display:inline-block; width:25%; padding:10px; text-align:center; font-size:.78rem; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; }
+.mode-tab.active { color:var(--gold); border-bottom-color:var(--gold); font-weight:700; }
 
-  #setScreen, #loadScreen, #studyScreen, #quizSetupScreen, #quizScreen, #quizResultScreen, #statsScreen { display:none; }
+#setScreen,#loadScreen,#studyScreen,#rankSetupScreen,#rankScreen,#rankResultScreen,#quizSetupScreen,#quizScreen,#quizResultScreen,#statsScreen { display:none; }
 
-  /* ── SET SCREEN ── */
-  #setScreen { padding:24px 16px; max-width:600px; margin:0 auto; }
-  #setScreen h2 { font-size:1.3rem; color:var(--gold); margin-bottom:6px; }
-  #setScreen p  { color:var(--muted); font-size:.85rem; margin-bottom:20px; line-height:1.5; }
-  .set-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin-bottom:20px; }
-  .set-card { background:var(--card); border:2px solid var(--border); border-radius:10px; padding:14px 12px; cursor:pointer; transition:all .2s; text-align:center; }
-  .set-card:hover, .set-card.selected { border-color:var(--gold); background:#1e1e3a; }
-  .set-card .set-code { font-size:1.2rem; font-weight:700; color:var(--gold); }
-  .set-card .set-fmt  { font-size:.7rem; color:var(--muted); margin-top:2px; }
-  .no-sets { text-align:center; color:var(--muted); padding:30px; font-size:.9rem; }
-  #refreshBtn { background:var(--surface); color:var(--text); border:1px solid var(--border); padding:10px 18px; border-radius:8px; cursor:pointer; font-size:.85rem; width:100%; margin-bottom:12px; }
-  #loadSetBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; }
-  #loadSetBtn:disabled { opacity:.5; cursor:not-allowed; }
-  #errorBox { display:none; background:#2a1a1a; border:1px solid var(--accent); border-radius:10px; padding:14px; margin-top:16px; color:#ffaaaa; font-size:.82rem; }
+/* SET SCREEN */
+#setScreen { padding:24px 16px; max-width:600px; margin:0 auto; }
+#setScreen h2 { font-size:1.3rem; color:var(--gold); margin-bottom:6px; }
+#setScreen p { color:var(--muted); font-size:.85rem; margin-bottom:20px; line-height:1.5; }
+.set-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin-bottom:20px; }
+.set-card { background:var(--card); border:2px solid var(--border); border-radius:10px; padding:14px 12px; cursor:pointer; transition:all .2s; text-align:center; }
+.set-card:hover,.set-card.selected { border-color:var(--gold); background:#1e1e3a; }
+.set-card .set-code { font-size:1.2rem; font-weight:700; color:var(--gold); }
+.set-card .set-fmt { font-size:.7rem; color:var(--muted); margin-top:2px; }
+.no-sets { text-align:center; color:var(--muted); padding:30px; font-size:.9rem; }
+#refreshBtn { background:var(--surface); color:var(--text); border:1px solid var(--border); padding:10px 18px; border-radius:8px; cursor:pointer; font-size:.85rem; width:100%; margin-bottom:12px; }
+#loadSetBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; }
+#loadSetBtn:disabled { opacity:.5; cursor:not-allowed; }
+#errorBox { display:none; background:#2a1a1a; border:1px solid var(--accent); border-radius:10px; padding:14px; margin-top:16px; color:#ffaaaa; font-size:.82rem; }
 
-  /* ── LOADING ── */
-  #loadScreen { flex-direction:column; align-items:center; justify-content:center; padding:60px 20px; text-align:center; min-height:60vh; }
-  .spinner { width:48px; height:48px; border:4px solid var(--border); border-top-color:var(--gold); border-radius:50%; animation:spin 1s linear infinite; margin-bottom:20px; }
-  @keyframes spin { to { transform:rotate(360deg); } }
-  #loadMsg { color:var(--text); font-size:1rem; margin-bottom:8px; }
-  #loadSub { color:var(--muted); font-size:.8rem; }
-  #loadProg { width:260px; height:4px; background:var(--border); border-radius:4px; margin-top:16px; overflow:hidden; }
-  #loadFill { height:100%; background:var(--gold); width:0; transition:width .3s; }
+/* LOADING */
+#loadScreen { flex-direction:column; align-items:center; justify-content:center; padding:60px 20px; text-align:center; min-height:60vh; }
+.spinner { width:48px; height:48px; border:4px solid var(--border); border-top-color:var(--gold); border-radius:50%; animation:spin 1s linear infinite; margin-bottom:20px; }
+@keyframes spin { to { transform:rotate(360deg); } }
+#loadMsg { color:var(--text); font-size:1rem; margin-bottom:8px; }
+#loadSub { color:var(--muted); font-size:.8rem; }
+#loadProg { width:260px; height:4px; background:var(--border); border-radius:4px; margin-top:16px; overflow:hidden; }
+#loadFill { height:100%; background:var(--gold); width:0; transition:width .3s; }
 
-  /* ── FILTERS ── */
-  #filters { background:var(--surface); padding:8px 14px; display:none; gap:8px; flex-wrap:wrap; border-bottom:1px solid var(--border); }
-  .filter-group { display:flex; gap:5px; flex-wrap:wrap; align-items:center; }
-  .filter-group label { font-size:.72rem; color:var(--muted); }
-  .pill { padding:4px 10px; border-radius:20px; border:1px solid var(--border); background:var(--card); cursor:pointer; font-size:.75rem; transition:all .2s; }
-  .pill.active { background:var(--gold); color:#000; border-color:var(--gold); font-weight:600; }
-  .pill.color-W.active{background:#f9f6e8;color:#333;border-color:#ccc;}
-  .pill.color-U.active{background:#0e5aa7;color:#fff;}
-  .pill.color-B.active{background:#555;color:#fff;border-color:#777;}
-  .pill.color-R.active{background:#b22222;color:#fff;}
-  .pill.color-G.active{background:#1a5c2e;color:#fff;}
-  .pill.color-M.active{background:#8b6914;color:#fff;}
+/* FILTERS */
+#filters { background:var(--surface); padding:8px 14px; display:none; gap:8px; flex-wrap:wrap; border-bottom:1px solid var(--border); }
+.filter-group { display:flex; gap:5px; flex-wrap:wrap; align-items:center; }
+.filter-group label { font-size:.72rem; color:var(--muted); }
+.pill { padding:4px 10px; border-radius:20px; border:1px solid var(--border); background:var(--card); cursor:pointer; font-size:.75rem; transition:all .2s; }
+.pill.active { background:var(--gold); color:#000; border-color:var(--gold); font-weight:600; }
+.pill.color-W.active{background:#f9f6e8;color:#333;border-color:#ccc;}
+.pill.color-U.active{background:#0e5aa7;color:#fff;}
+.pill.color-B.active{background:#555;color:#fff;border-color:#777;}
+.pill.color-R.active{background:#b22222;color:#fff;}
+.pill.color-G.active{background:#1a5c2e;color:#fff;}
+.pill.color-M.active{background:#8b6914;color:#fff;}
 
-  /* ── STUDY ── */
-  #studyScreen { flex-direction:column; align-items:center; padding:20px 16px; }
-  #progress { width:100%; max-width:480px; margin-bottom:14px; }
-  #progBar { height:4px; background:var(--border); border-radius:4px; overflow:hidden; }
-  #progFill { height:100%; background:var(--accent); width:0; transition:width .3s; }
-  #progText { font-size:.75rem; color:var(--muted); margin-top:4px; text-align:center; }
-  #cardWrapper { perspective:1000px; width:100%; max-width:400px; height:500px; cursor:pointer; }
-  #flashcard { width:100%; height:100%; position:relative; transform-style:preserve-3d; transition:transform .45s cubic-bezier(.4,0,.2,1); }
-  #flashcard.flipped { transform:rotateY(180deg); }
-  .face { position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:16px; overflow:hidden; }
-  .front { background:var(--card); border:2px solid var(--border); display:flex; flex-direction:column; }
-  .card-header { padding:12px 14px 8px; display:flex; justify-content:space-between; align-items:center; }
-  .rarity-badge { font-size:.68rem; font-weight:700; text-transform:uppercase; padding:3px 8px; border-radius:10px; }
-  .rarity-common{background:#444;color:#ccc;} .rarity-uncommon{background:#5a7a8a;color:#dff;}
-  .rarity-rare{background:#4a3d6a;color:#dcd;} .rarity-mythic{background:#8b3a00;color:#ffd;}
-  .color-dot{width:20px;height:20px;border-radius:50%;border:2px solid rgba(255,255,255,.2);}
-  .dot-W{background:#f9f6e8;} .dot-U{background:#0e5aa7;} .dot-B{background:#666;}
-  .dot-R{background:#b22222;} .dot-G{background:#1a5c2e;} .dot-M{background:linear-gradient(135deg,#0e5aa7,#b22222);} .dot-C{background:#888;}
-  .card-img-area { flex:1; display:flex; align-items:center; justify-content:center; background:#0a0a18; overflow:hidden; }
-  .card-img-area img { max-width:100%; max-height:100%; object-fit:contain; }
-  .card-img-placeholder { text-align:center; color:var(--muted); padding:0 12px; }
-  .card-img-placeholder .big-name { font-size:1.3rem; font-weight:700; color:var(--text); margin-top:8px; }
-  .card-footer { padding:10px; text-align:center; font-size:.75rem; color:var(--muted); }
-  .back { background:var(--card); border:2px solid var(--gold); transform:rotateY(180deg); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 20px; gap:14px; }
-  .back-name { font-size:1.3rem; font-weight:700; text-align:center; color:var(--gold); }
-  .stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; width:100%; }
-  .stat-box { background:var(--surface); border-radius:10px; padding:10px; text-align:center; }
-  .stat-val { font-size:1.4rem; font-weight:700; }
-  .stat-lbl { font-size:.68rem; color:var(--muted); margin-top:2px; }
-  .rank-line { font-size:.85rem; color:var(--text); text-align:center; }
-  .rank-line span { color:var(--gold); font-weight:700; }
-  #controls { display:flex; gap:10px; margin-top:16px; justify-content:center; }
-  .btn { padding:12px 18px; border-radius:8px; border:none; cursor:pointer; font-size:.9rem; font-weight:600; min-height:48px; min-width:70px; }
-  .btn-prev    { background:var(--surface); color:var(--text); border:1px solid var(--border); }
-  .btn-next    { background:var(--accent); color:#fff; }
-  .btn-flip    { background:var(--gold); color:#000; }
-  .btn-shuffle { background:var(--surface); color:var(--text); border:1px solid var(--border); }
-  #legend { font-size:.7rem; color:var(--muted); margin-top:8px; text-align:center; }
+/* STUDY */
+#studyScreen { flex-direction:column; align-items:center; padding:20px 16px; }
+#progress { width:100%; max-width:480px; margin-bottom:14px; }
+#progBar { height:4px; background:var(--border); border-radius:4px; overflow:hidden; }
+#progFill { height:100%; background:var(--accent); width:0; transition:width .3s; }
+#progText { font-size:.75rem; color:var(--muted); margin-top:4px; text-align:center; }
+#cardWrapper { perspective:1000px; width:100%; max-width:400px; height:500px; cursor:pointer; }
+#flashcard { width:100%; height:100%; position:relative; transform-style:preserve-3d; transition:transform .45s cubic-bezier(.4,0,.2,1); }
+#flashcard.flipped { transform:rotateY(180deg); }
+.face { position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:16px; overflow:hidden; }
+.front { background:var(--card); border:2px solid var(--border); display:flex; flex-direction:column; }
+.card-header { padding:12px 14px 8px; display:flex; justify-content:space-between; align-items:center; }
+.rarity-badge { font-size:.68rem; font-weight:700; text-transform:uppercase; padding:3px 8px; border-radius:10px; }
+.rarity-common{background:#444;color:#ccc;} .rarity-uncommon{background:#5a7a8a;color:#dff;}
+.rarity-rare{background:#4a3d6a;color:#dcd;} .rarity-mythic{background:#8b3a00;color:#ffd;}
+.color-dot{width:20px;height:20px;border-radius:50%;border:2px solid rgba(255,255,255,.2);}
+.dot-W{background:#f9f6e8;} .dot-U{background:#0e5aa7;} .dot-B{background:#666;}
+.dot-R{background:#b22222;} .dot-G{background:#1a5c2e;} .dot-M{background:linear-gradient(135deg,#0e5aa7,#b22222);} .dot-C{background:#888;}
+.card-img-area { flex:1; display:flex; align-items:center; justify-content:center; background:#0a0a18; overflow:hidden; }
+.card-img-area img { max-width:100%; max-height:100%; object-fit:contain; }
+.card-img-placeholder { text-align:center; color:var(--muted); padding:0 12px; }
+.card-img-placeholder .big-name { font-size:1.3rem; font-weight:700; color:var(--text); margin-top:8px; }
+.card-footer { padding:10px; text-align:center; font-size:.75rem; color:var(--muted); }
+.back { background:var(--card); border:2px solid var(--gold); transform:rotateY(180deg); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:24px 20px; gap:14px; }
+.back-name { font-size:1.3rem; font-weight:700; text-align:center; color:var(--gold); }
+.stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; width:100%; }
+.stat-box { background:var(--surface); border-radius:10px; padding:10px; text-align:center; }
+.stat-val { font-size:1.4rem; font-weight:700; }
+.stat-lbl { font-size:.68rem; color:var(--muted); margin-top:2px; }
+.rank-line { font-size:.85rem; color:var(--text); text-align:center; }
+.rank-line span { color:var(--gold); font-weight:700; }
+#controls { display:flex; gap:10px; margin-top:16px; justify-content:center; }
+.btn { padding:12px 18px; border-radius:8px; border:none; cursor:pointer; font-size:.9rem; font-weight:600; min-height:48px; min-width:70px; }
+.btn-prev{background:var(--surface);color:var(--text);border:1px solid var(--border);}
+.btn-next{background:var(--accent);color:#fff;}
+.btn-flip{background:var(--gold);color:#000;}
+.btn-shuffle{background:var(--surface);color:var(--text);border:1px solid var(--border);}
+#legend { font-size:.7rem; color:var(--muted); margin-top:8px; text-align:center; }
 
-  /* ── QUIZ SETUP ── */
-  #quizSetupScreen { padding:20px 16px; max-width:600px; margin:0 auto; }
-  #quizSetupScreen h2 { font-size:1.2rem; color:var(--gold); margin-bottom:16px; }
-  .setup-section { margin-bottom:18px; }
-  .setup-section label { font-size:.8rem; color:var(--muted); display:block; margin-bottom:8px; }
-  .pill-row { display:flex; gap:6px; flex-wrap:wrap; }
-  #startRankBtn, #startQuizBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; margin-top:8px; }
+/* RANK SETUP */
+#rankSetupScreen { padding:20px 16px; max-width:600px; margin:0 auto; }
+#rankSetupScreen h2 { font-size:1.2rem; color:var(--gold); margin-bottom:16px; }
+.setup-section { margin-bottom:18px; }
+.setup-section label { font-size:.8rem; color:var(--muted); display:block; margin-bottom:8px; }
+.pill-row { display:flex; gap:6px; flex-wrap:wrap; }
+#startRankBtn,#startQuizBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; margin-top:8px; }
 
-  /* ── QUIZ ── */
-  #quizScreen { flex-direction:column; align-items:center; padding:16px; }
-  #quizProgress { width:100%; max-width:500px; margin-bottom:12px; }
-  #quizProgBar { height:4px; background:var(--border); border-radius:4px; overflow:hidden; }
-  #quizProgFill { height:100%; background:var(--gold); width:0; transition:width .4s; }
-  #quizProgText { font-size:.78rem; color:var(--muted); margin-top:4px; text-align:center; }
-  #quizQuestion { font-size:.95rem; color:var(--text); text-align:center; margin-bottom:14px; font-weight:600; }
-  #quizGrid { display:grid; grid-template-columns:1fr 1fr; gap:10px; width:100%; max-width:500px; }
-  .quiz-option { background:var(--card); border:2px solid var(--border); border-radius:12px; overflow:hidden; cursor:pointer; transition:all .2s; }
-  .quiz-option:hover { border-color:var(--gold); }
-  .quiz-option img { width:100%; aspect-ratio:3/4; object-fit:cover; display:block; }
-  .quiz-option .opt-name { padding:6px 8px; font-size:.72rem; text-align:center; color:var(--text); background:var(--surface); }
-  .quiz-option .opt-wr { padding:2px 8px 6px; font-size:.78rem; text-align:center; font-weight:700; display:none; }
-  .quiz-option .opt-placeholder { width:100%; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; background:#0a0a18; font-size:.85rem; color:var(--muted); padding:8px; text-align:center; }
-  .quiz-option.correct { border-color:var(--correct)!important; border-width:4px!important; background:#0d2e14; }
-  .quiz-option.wrong   { border-color:var(--wrong)!important;   border-width:4px!important; background:#2e0d0d; }
-  .quiz-option.correct .opt-wr { display:block; color:var(--correct); font-size:.9rem; }
-  .quiz-option.wrong   .opt-wr { display:block; color:var(--wrong);   font-size:.9rem; }
-  .quiz-option.reveal  .opt-wr { display:block; color:var(--muted);   font-size:.9rem; }
+/* RANK SCREEN */
+#rankScreen { flex-direction:column; align-items:center; padding:16px; }
+#rankHeader { width:100%; max-width:600px; display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+#rankHeader h3 { font-size:.95rem; color:var(--text); }
+#rankHeader span { font-size:.78rem; color:var(--muted); }
+#rankInstructions { font-size:.78rem; color:var(--muted); text-align:center; margin-bottom:12px; }
+#rankList { display:flex; flex-direction:row; gap:6px; margin-bottom:16px; overflow-x:auto; padding:6px 4px; width:100%; }
+.rank-item { display:inline-flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:4px; padding:6px 4px; cursor:grab; border:2px solid var(--border); border-radius:8px; background:var(--card); width:100px; min-width:100px; max-width:100px; flex-shrink:0; flex-grow:0; overflow:hidden; text-align:center; }
+  .rank-item.drag-over { border-color:var(--gold); background:#1e1e3a; }
+.rank-item:active { cursor:grabbing; opacity:.85; }
+.rank-item.dragging { opacity:.4; border-color:var(--gold); }
+.rank-item.drag-over { border-color:var(--gold); background:#1e1e3a; }
+#submitRankBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; max-width:600px; }
 
-  /* ── QUIZ RESULT ── */
-  #quizResultScreen { flex-direction:column; align-items:center; padding:24px 16px; max-width:500px; margin:0 auto; }
-  .result-score { font-size:3rem; font-weight:900; color:var(--gold); margin-bottom:4px; }
-  .result-label { font-size:1rem; color:var(--muted); margin-bottom:12px; }
-  .result-grade { font-size:1.4rem; font-weight:700; margin-bottom:20px; }
-  #missedList { width:100%; margin-bottom:20px; }
-  #missedList h3 { font-size:.9rem; color:var(--muted); margin-bottom:10px; }
-  .missed-item { background:var(--card); border-radius:8px; padding:10px 12px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; font-size:.82rem; }
-  .missed-item .mi-name { color:var(--text); }
-  .missed-item .mi-wr  { color:var(--accent); font-weight:700; }
-  .result-btns { display:flex; flex-direction:column; gap:10px; width:100%; }
-  .btn-review { background:var(--gold); color:#000; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
-  .btn-again  { background:var(--surface); color:var(--text); border:1px solid var(--border); padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
-  .btn-home   { background:var(--surface); color:var(--muted); border:1px solid var(--border); padding:12px; border-radius:8px; font-size:.9rem; cursor:pointer; }
+/* RANK RESULT */
+#rankResultScreen { flex-direction:column; align-items:center; padding:16px; }
+#rankResultScore { font-size:1.1rem; color:var(--gold); font-weight:700; margin-bottom:6px; text-align:center; }
+#rankResultGrade { font-size:1rem; color:var(--muted); margin-bottom:20px; text-align:center; }
+.rank-compare { display:grid; grid-template-columns:1fr 1fr; gap:12px; width:100%; max-width:600px; margin-bottom:20px; }
+.rank-col h3 { font-size:.8rem; color:var(--muted); text-align:center; margin-bottom:8px; text-transform:uppercase; }
+.rank-result-item { background:var(--card); border-radius:10px; padding:8px 10px; margin-bottom:6px; display:flex; align-items:center; gap:8px; }
+.rri-num { font-size:.9rem; font-weight:900; min-width:22px; text-align:center; }
+.rri-img { width:36px; height:50px; object-fit:cover; border-radius:4px; background:#0a0a18; flex-shrink:0; }
+.rri-img-ph { width:36px; height:50px; background:#0a0a18; border-radius:4px; display:flex; align-items:center; justify-content:center; font-size:.8rem; flex-shrink:0; }
+.rri-info { flex:1; min-width:0; }
+.rri-name { font-size:.7rem; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.rri-wr { font-size:.75rem; font-weight:700; margin-top:2px; }
+.rri-match { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+.rank-result-btns { display:flex; flex-direction:column; gap:10px; width:100%; max-width:600px; }
+.btn-rank-again { background:var(--gold); color:#000; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
+.btn-rank-back { background:var(--surface); color:var(--text); border:1px solid var(--border); padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
 
-  /* ── STATS SCREEN ── */
-  #statsScreen { padding:20px 16px; max-width:600px; margin:0 auto; }
-  #statsScreen h2 { font-size:1.2rem; color:var(--gold); margin-bottom:16px; }
-  .stats-overview { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:24px; }
-  .stat-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; text-align:center; }
-  .stat-card .sc-val { font-size:1.8rem; font-weight:900; color:var(--gold); }
-  .stat-card .sc-lbl { font-size:.72rem; color:var(--muted); margin-top:4px; }
-  .stat-card .sc-sub { font-size:.68rem; color:var(--muted); margin-top:2px; }
-  .stats-section { margin-bottom:24px; }
-  .stats-section h3 { font-size:.9rem; color:var(--muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:.05em; }
-  .history-item { background:var(--card); border-radius:8px; padding:10px 14px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; }
-  .hi-left .hi-set  { font-size:.85rem; font-weight:700; color:var(--text); }
-  .hi-left .hi-date { font-size:.7rem; color:var(--muted); margin-top:2px; }
-  .hi-right .hi-score { font-size:1.1rem; font-weight:700; }
-  .hi-right .hi-pct   { font-size:.72rem; color:var(--muted); text-align:right; }
-  .missed-card-item { background:var(--card); border-radius:8px; padding:8px 14px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; font-size:.82rem; }
-  .mc-name { color:var(--text); }
-  .mc-count { background:var(--accent); color:#fff; border-radius:10px; padding:2px 8px; font-size:.72rem; font-weight:700; }
-  .btn-clear { background:transparent; color:var(--accent); border:1px solid var(--accent); padding:10px 18px; border-radius:8px; font-size:.85rem; cursor:pointer; width:100%; margin-top:8px; }
-  .empty-stats { text-align:center; color:var(--muted); padding:30px 0; font-size:.9rem; }
-  .streak-badge { display:inline-block; background:linear-gradient(135deg,#f0a500,#e94560); color:#fff; border-radius:20px; padding:4px 14px; font-size:.8rem; font-weight:700; margin-bottom:16px; }
+/* QUIZ SETUP */
+#quizSetupScreen { padding:20px 16px; max-width:600px; margin:0 auto; }
+#quizSetupScreen h2 { font-size:1.2rem; color:var(--gold); margin-bottom:16px; }
+
+/* QUIZ */
+#quizScreen { flex-direction:column; align-items:center; padding:16px; }
+#quizProgress { width:100%; max-width:500px; margin-bottom:12px; }
+#quizProgBar { height:4px; background:var(--border); border-radius:4px; overflow:hidden; }
+#quizProgFill { height:100%; background:var(--gold); width:0; transition:width .4s; }
+#quizProgText { font-size:.78rem; color:var(--muted); margin-top:4px; text-align:center; }
+#quizQuestion { font-size:.95rem; color:var(--text); text-align:center; margin-bottom:14px; font-weight:600; }
+#quizGrid { display:grid; grid-template-columns:1fr 1fr; gap:10px; width:100%; max-width:500px; }
+.quiz-option { background:var(--card); border:2px solid var(--border); border-radius:12px; overflow:hidden; cursor:pointer; transition:all .2s; }
+.quiz-option:hover { border-color:var(--gold); }
+.quiz-option img { width:100%; aspect-ratio:3/4; object-fit:cover; display:block; }
+.quiz-option .opt-name { padding:6px 8px; font-size:.72rem; text-align:center; color:var(--text); background:var(--surface); }
+.quiz-option .opt-wr { padding:2px 8px 6px; font-size:.78rem; text-align:center; font-weight:700; display:none; }
+.quiz-option .opt-placeholder { width:100%; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; background:#0a0a18; font-size:.85rem; color:var(--muted); padding:8px; text-align:center; }
+.quiz-option.correct { border-color:var(--correct)!important; border-width:4px!important; background:#0d2e14; }
+.quiz-option.wrong { border-color:var(--wrong)!important; border-width:4px!important; background:#2e0d0d; }
+.quiz-option.correct .opt-wr { display:block; color:var(--correct); font-size:.9rem; }
+.quiz-option.wrong .opt-wr { display:block; color:var(--wrong); font-size:.9rem; }
+.quiz-option.reveal .opt-wr { display:block; color:var(--muted); font-size:.9rem; }
+
+/* QUIZ RESULT */
+#quizResultScreen { flex-direction:column; align-items:center; padding:24px 16px; max-width:500px; margin:0 auto; }
+.result-score { font-size:3rem; font-weight:900; color:var(--gold); margin-bottom:4px; }
+.result-label { font-size:1rem; color:var(--muted); margin-bottom:12px; }
+.result-grade { font-size:1.4rem; font-weight:700; margin-bottom:20px; }
+#missedList { width:100%; margin-bottom:20px; }
+#missedList h3 { font-size:.9rem; color:var(--muted); margin-bottom:10px; }
+.missed-item { background:var(--card); border-radius:8px; padding:10px 12px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; font-size:.82rem; }
+.missed-item .mi-name { color:var(--text); }
+.missed-item .mi-wr { color:var(--accent); font-weight:700; }
+.result-btns { display:flex; flex-direction:column; gap:10px; width:100%; }
+.btn-review { background:var(--gold); color:#000; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
+.btn-again { background:var(--surface); color:var(--text); border:1px solid var(--border); padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
+.btn-home { background:var(--surface); color:var(--muted); border:1px solid var(--border); padding:12px; border-radius:8px; font-size:.9rem; cursor:pointer; }
+
+/* STATS */
+#statsScreen { padding:20px 16px; max-width:600px; margin:0 auto; }
+#statsScreen h2 { font-size:1.2rem; color:var(--gold); margin-bottom:16px; }
+.stats-overview { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:24px; }
+.stat-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; text-align:center; }
+.stat-card .sc-val { font-size:1.8rem; font-weight:900; color:var(--gold); }
+.stat-card .sc-lbl { font-size:.72rem; color:var(--muted); margin-top:4px; }
+.stat-card .sc-sub { font-size:.68rem; color:var(--muted); margin-top:2px; }
+.stats-section { margin-bottom:24px; }
+.stats-section h3 { font-size:.9rem; color:var(--muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:.05em; }
+.history-item { background:var(--card); border-radius:8px; padding:10px 14px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; }
+.hi-left .hi-set { font-size:.85rem; font-weight:700; color:var(--text); }
+.hi-left .hi-date { font-size:.7rem; color:var(--muted); margin-top:2px; }
+.hi-right .hi-score { font-size:1.1rem; font-weight:700; }
+.hi-right .hi-pct { font-size:.72rem; color:var(--muted); text-align:right; }
+.missed-card-item { background:var(--card); border-radius:8px; padding:8px 14px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; font-size:.82rem; }
+.mc-name { color:var(--text); }
+.mc-count { background:var(--accent); color:#fff; border-radius:10px; padding:2px 8px; font-size:.72rem; font-weight:700; }
+.btn-clear { background:transparent; color:var(--accent); border:1px solid var(--accent); padding:10px 18px; border-radius:8px; font-size:.85rem; cursor:pointer; width:100%; margin-top:8px; }
+.empty-stats { text-align:center; color:var(--muted); padding:30px 0; font-size:.9rem; }
+.streak-badge { display:inline-block; background:linear-gradient(135deg,#f0a500,#e94560); color:#fff; border-radius:20px; padding:4px 14px; font-size:.8rem; font-weight:700; margin-bottom:16px; }
 </style>
 </head>
 <body>
@@ -185,7 +220,6 @@
   <span class="mode-tab" onclick="switchMode('stats')">📊 Stats</span>
 </div>
 
-<!-- FILTERS -->
 <div id="filters">
   <div class="filter-group">
     <label>Rarity:</label>
@@ -207,7 +241,6 @@
   </div>
 </div>
 
-<!-- SET SCREEN -->
 <div id="setScreen">
   <h2>Your Sets</h2>
   <p>These are the JSON files uploaded to your GitHub. Run the Python script for a new set, upload the JSON to GitHub, then tap Refresh.</p>
@@ -217,7 +250,6 @@
   <button id="loadSetBtn" onclick="loadSelectedSet()" disabled>Select a set first</button>
 </div>
 
-<!-- LOADING -->
 <div id="loadScreen">
   <div class="spinner"></div>
   <div id="loadMsg">Loading…</div>
@@ -225,7 +257,6 @@
   <div id="loadProg"><div id="loadFill"></div></div>
 </div>
 
-<!-- STUDY -->
 <div id="studyScreen">
   <div id="progress">
     <div id="progBar"><div id="progFill"></div></div>
@@ -234,19 +265,18 @@
   <div id="cardWrapper" onclick="flipCard()">
     <div id="flashcard">
       <div class="face front" id="frontFace"></div>
-      <div class="face back"  id="backFace"></div>
+      <div class="face back" id="backFace"></div>
     </div>
   </div>
   <div id="legend">Tap card to flip · Swipe left/right to navigate</div>
   <div id="controls">
-    <button class="btn btn-prev"    onclick="navigate(-1)">◀ Prev</button>
-    <button class="btn btn-flip"    onclick="flipCard()">↩ Flip</button>
+    <button class="btn btn-prev" onclick="navigate(-1)">◀ Prev</button>
+    <button class="btn btn-flip" onclick="flipCard()">↩ Flip</button>
     <button class="btn btn-shuffle" onclick="shuffleDeck()">🔀</button>
-    <button class="btn btn-next"    onclick="navigate(1)">Next ▶</button>
+    <button class="btn btn-next" onclick="navigate(1)">Next ▶</button>
   </div>
 </div>
 
-<!-- RANK SETUP -->
 <div id="rankSetupScreen">
   <h2>🏆 Rank Mode Setup</h2>
   <div class="setup-section">
@@ -284,38 +314,29 @@
   <button id="startRankBtn" onclick="startRank()">Start Ranking</button>
 </div>
 
-<!-- RANK SCREEN -->
 <div id="rankScreen">
   <div id="rankHeader">
     <h3>🏆 Rank Best → Worst</h3>
     <span id="rankCountLabel"></span>
   </div>
-  <div id="rankInstructions">Drag cards left/right to rank them · Best pick on the left (#1)</div>
+  <div id="rankInstructions">Drag cards left/right · Best pick on the left (#1)</div>
   <div id="rankList"></div>
   <button id="submitRankBtn" onclick="submitRanking()">Submit My Ranking</button>
 </div>
 
-<!-- RANK RESULT -->
 <div id="rankResultScreen">
   <div id="rankResultScore"></div>
   <div id="rankResultGrade"></div>
   <div class="rank-compare">
-    <div class="rank-col">
-      <h3>📋 Your Order</h3>
-      <div id="yourRanking"></div>
-    </div>
-    <div class="rank-col">
-      <h3>✅ Correct Order</h3>
-      <div id="correctRanking"></div>
-    </div>
+    <div class="rank-col"><h3>📋 Your Order</h3><div id="yourRanking"></div></div>
+    <div class="rank-col"><h3>✅ Correct Order</h3><div id="correctRanking"></div></div>
   </div>
   <div class="rank-result-btns">
     <button class="btn-rank-again" onclick="switchMode('rank')">🔁 Rank Again</button>
-    <button class="btn-rank-back"  onclick="switchMode('study')">📖 Back to Study</button>
+    <button class="btn-rank-back" onclick="switchMode('study')">📖 Back to Study</button>
   </div>
 </div>
 
-<!-- QUIZ SETUP -->
 <div id="quizSetupScreen">
   <h2>🎯 Quiz Setup</h2>
   <div class="setup-section">
@@ -353,7 +374,6 @@
   <button id="startQuizBtn" onclick="startQuiz()">Start Quiz</button>
 </div>
 
-<!-- QUIZ -->
 <div id="quizScreen">
   <div id="quizProgress">
     <div id="quizProgBar"><div id="quizProgFill"></div></div>
@@ -363,7 +383,6 @@
   <div id="quizGrid"></div>
 </div>
 
-<!-- QUIZ RESULT -->
 <div id="quizResultScreen">
   <div class="result-score" id="resultScore"></div>
   <div class="result-label" id="resultLabel"></div>
@@ -372,24 +391,23 @@
   <div class="result-btns">
     <button class="btn-review" id="reviewBtn" onclick="reviewMissed()" style="display:none">📖 Review Missed Cards</button>
     <button class="btn-again" onclick="showScreen('quizSetup')">🔁 Play Again</button>
-    <button class="btn-home"  onclick="switchMode('stats')">📊 View Stats</button>
+    <button class="btn-home" onclick="switchMode('stats')">📊 View Stats</button>
   </div>
 </div>
 
-<!-- STATS SCREEN -->
 <div id="statsScreen">
   <h2>📊 Your Stats</h2>
   <div id="streakBadge"></div>
   <div class="stats-overview" id="statsOverview"></div>
-  <div class="stats-section" id="setStatsSection">
+  <div class="stats-section">
     <h3>By Set</h3>
     <div id="setStatsList"></div>
   </div>
-  <div class="stats-section" id="historySection">
+  <div class="stats-section">
     <h3>Recent Quizzes</h3>
     <div id="historyList"></div>
   </div>
-  <div class="stats-section" id="missedSection">
+  <div class="stats-section">
     <h3>Most Missed Cards</h3>
     <div id="missedCardsList"></div>
   </div>
@@ -397,614 +415,335 @@
 </div>
 
 <script>
-const GITHUB_USER = 'Reign91';
-const GITHUB_REPO = 'mtg-flashcards';
-const BASE_URL    = `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/`;
-const API_URL     = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/`;
-const STATS_KEY   = 'mtg_flashcard_stats';
+const GITHUB_USER='Reign91', GITHUB_REPO='mtg-flashcards';
+const BASE_URL=`https://${GITHUB_USER}.github.io/${GITHUB_REPO}/`;
+const API_URL=`https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/`;
+const STATS_KEY='mtg_flashcard_stats';
+const COLOR_ORDER=['W','U','B','R','G','M','C'];
+const RARITY_ORDER=['common','uncommon','rare','mythic'];
+const DOT_COLORS={W:'#f9f6e8',U:'#0e5aa7',B:'#555',R:'#b22222',G:'#1a5c2e',M:'linear-gradient(135deg,#0e5aa7,#b22222)',C:'#888'};
+const RARITY_COLORS={common:'#888',uncommon:'#5a7a8a',rare:'#9a7aaa',mythic:'#cc6600'};
+const COLOR_NAMES={W:'White',U:'Blue',B:'Black',R:'Red',G:'Green',M:'Multicolor',C:'Colorless'};
 
-const COLOR_ORDER  = ['W','U','B','R','G','M','C'];
-const RARITY_ORDER = ['common','uncommon','rare','mythic'];
+let allCards=[],deck=[],idx=0,flipped=false;
+let filterRarities=new Set(['all']),filterColors=new Set(['all']);
+let selectedFile='',currentMeta={},currentMode='study';
+let quizRarities=new Set(['all']),quizColors=new Set(['all']),quizCount=20;
+let quizQuestions=[],quizIdx=0,quizScore=0,quizMissed=[],quizLocked=false;
+let rankRarities=new Set(['all']),rankColors=new Set(['all']),rankCount=10;
+let rankCards=[],dragSrcIdx=null;
 
-let allCards=[], deck=[], idx=0, flipped=false;
-let filterRarities=new Set(['all']), filterColors=new Set(['all']);
-let selectedFile='', currentMeta={}, currentMode='study';
-let quizRarities=new Set(['all']), quizColors=new Set(['all']), quizCount=20;
-let quizQuestions=[], quizIdx=0, quizScore=0, quizMissed=[], quizLocked=false;
-
-// ── STATS STORAGE ──────────────────────────────────────────────────────────
-function loadStats() {
-  try { return JSON.parse(localStorage.getItem(STATS_KEY)) || defaultStats(); }
-  catch { return defaultStats(); }
-}
-
-function defaultStats() {
-  return {
-    totalQuizzes: 0,
-    totalQuestions: 0,
-    totalCorrect: 0,
-    bestStreak: 0,
-    currentStreak: 0,
-    lastQuizDate: null,
-    history: [],       // last 20 quizzes
-    missedCards: {},   // name → count
-    bySets: {},        // set → { quizzes, questions, correct, best }
-  };
-}
-
-function saveStats(stats) {
-  localStorage.setItem(STATS_KEY, JSON.stringify(stats));
-}
-
-function recordQuizResult(score, total, missed) {
-  const stats = loadStats();
-  const set   = currentMeta.expansion || 'Unknown';
-  const pct   = Math.round(score/total*100);
-  const date  = new Date().toLocaleDateString();
-
-  stats.totalQuizzes++;
-  stats.totalQuestions += total;
-  stats.totalCorrect   += score;
-
-  // Streak — consecutive quizzes with >= 50%
-  if (pct >= 50) {
-    stats.currentStreak++;
-    stats.bestStreak = Math.max(stats.bestStreak, stats.currentStreak);
-  } else {
-    stats.currentStreak = 0;
-  }
-  stats.lastQuizDate = date;
-
-  // History (keep last 20)
-  stats.history.unshift({ set, score, total, pct, date });
-  if (stats.history.length > 20) stats.history.pop();
-
-  // Missed cards
-  missed.forEach(m => {
-    stats.missedCards[m.correct.name] = (stats.missedCards[m.correct.name] || 0) + 1;
-  });
-
-  // By set
-  if (!stats.bySets[set]) stats.bySets[set] = { quizzes:0, questions:0, correct:0, best:0 };
-  stats.bySets[set].quizzes++;
-  stats.bySets[set].questions += total;
-  stats.bySets[set].correct   += score;
-  stats.bySets[set].best = Math.max(stats.bySets[set].best, pct);
-
-  saveStats(stats);
-}
-
-function clearStats() {
-  if (confirm('Clear all your stats? This cannot be undone.')) {
-    localStorage.removeItem(STATS_KEY);
-    renderStats();
-  }
-}
-
-// ── RENDER STATS ───────────────────────────────────────────────────────────
-function renderStats() {
-  const s = loadStats();
-  const overallPct = s.totalQuestions > 0
-    ? Math.round(s.totalCorrect / s.totalQuestions * 100) : 0;
-
-  // Streak badge
-  const sb = document.getElementById('streakBadge');
-  sb.innerHTML = s.currentStreak > 1
-    ? `<div class="streak-badge">🔥 ${s.currentStreak} Quiz Streak!</div>` : '';
-
-  // Overview cards
-  document.getElementById('statsOverview').innerHTML = `
-    <div class="stat-card"><div class="sc-val">${s.totalQuizzes}</div><div class="sc-lbl">Total Quizzes</div></div>
-    <div class="stat-card"><div class="sc-val">${overallPct}%</div><div class="sc-lbl">Overall Accuracy</div><div class="sc-sub">${s.totalCorrect}/${s.totalQuestions} correct</div></div>
-    <div class="stat-card"><div class="sc-val">${s.bestStreak}</div><div class="sc-lbl">Best Streak</div></div>
-    <div class="stat-card"><div class="sc-val">${s.lastQuizDate||'—'}</div><div class="sc-lbl">Last Quiz</div></div>
-  `;
-
-  // By set
-  const setList = document.getElementById('setStatsList');
-  const setKeys = Object.keys(s.bySets);
-  if (setKeys.length) {
-    setList.innerHTML = setKeys.map(set => {
-      const d   = s.bySets[set];
-      const pct = Math.round(d.correct/d.questions*100);
-      const col = pct>=70?'#4caf50':pct>=50?'#ffeb3b':'#e94560';
-      return `<div class="history-item">
-        <div class="hi-left"><div class="hi-set">${set}</div><div class="hi-date">${d.quizzes} quiz${d.quizzes!==1?'zes':''} · Best: ${d.best}%</div></div>
-        <div class="hi-right"><div class="hi-score" style="color:${col}">${pct}%</div><div class="hi-pct">${d.correct}/${d.questions}</div></div>
-      </div>`;
-    }).join('');
-  } else {
-    setList.innerHTML = '<div class="empty-stats">No set data yet. Take a quiz!</div>';
-  }
-
-  // History
-  const histList = document.getElementById('historyList');
-  if (s.history.length) {
-    histList.innerHTML = s.history.slice(0,10).map(h => {
-      const col = h.pct>=70?'#4caf50':h.pct>=50?'#ffeb3b':'#e94560';
-      return `<div class="history-item">
-        <div class="hi-left"><div class="hi-set">${h.set}</div><div class="hi-date">${h.date}</div></div>
-        <div class="hi-right"><div class="hi-score" style="color:${col}">${h.score}/${h.total}</div><div class="hi-pct">${h.pct}%</div></div>
-      </div>`;
-    }).join('');
-  } else {
-    histList.innerHTML = '<div class="empty-stats">No quiz history yet.</div>';
-  }
-
-  // Most missed cards
-  const mc = document.getElementById('missedCardsList');
-  const missed = Object.entries(s.missedCards).sort((a,b)=>b[1]-a[1]).slice(0,10);
-  if (missed.length) {
-    mc.innerHTML = missed.map(([name,count]) =>
-      `<div class="missed-card-item"><span class="mc-name">${name}</span><span class="mc-count">Missed ${count}×</span></div>`
-    ).join('');
-  } else {
-    mc.innerHTML = '<div class="empty-stats">No missed cards yet. Keep quizzing!</div>';
-  }
-}
-
-// ── SCREEN MANAGER ─────────────────────────────────────────────────────────
+// ── SCREEN ─────────────────────────────────────────────────────────────────
 function showScreen(s) {
-  ['setScreen','loadScreen','studyScreen','rankSetupScreen','rankScreen','rankResultScreen','quizSetupScreen','quizScreen','quizResultScreen','statsScreen']
-    .forEach(id => {
-      const el   = document.getElementById(id);
-      const show = (
-        (s==='set'         && id==='setScreen') ||
-        (s==='load'        && id==='loadScreen') ||
-        (s==='study'       && id==='studyScreen') ||
-        (s==='rankSetup'   && id==='rankSetupScreen') ||
-        (s==='rank'        && id==='rankScreen') ||
-        (s==='rankResult'  && id==='rankResultScreen') ||
-        (s==='quizSetup'   && id==='quizSetupScreen') ||
-        (s==='quiz'        && id==='quizScreen') ||
-        (s==='quizResult'  && id==='quizResultScreen') ||
-        (s==='stats'       && id==='statsScreen')
-      );
-      const block = ['setScreen','rankSetupScreen','rankResultScreen','quizSetupScreen','quizResultScreen','statsScreen'].includes(id);
-      el.style.display = show ? (block ? 'block' : 'flex') : 'none';
-    });
+  const map={set:'setScreen',load:'loadScreen',study:'studyScreen',rankSetup:'rankSetupScreen',rank:'rankScreen',rankResult:'rankResultScreen',quizSetup:'quizSetupScreen',quiz:'quizScreen',quizResult:'quizResultScreen',stats:'statsScreen'};
+  Object.entries(map).forEach(([key,id])=>{
+    const el=document.getElementById(id);
+    const show=s===key;
+    const flex=['loadScreen','studyScreen','rankScreen','rankResultScreen','quizScreen'].includes(id);
+    el.style.display=show?(flex?'flex':'block'):'none';
+  });
+}
+
+// ── STATS ──────────────────────────────────────────────────────────────────
+function loadStats(){try{return JSON.parse(localStorage.getItem(STATS_KEY))||defaultStats();}catch{return defaultStats();}}
+function defaultStats(){return{totalQuizzes:0,totalQuestions:0,totalCorrect:0,bestStreak:0,currentStreak:0,lastQuizDate:null,history:[],missedCards:{},bySets:{}};}
+function saveStats(s){localStorage.setItem(STATS_KEY,JSON.stringify(s));}
+function recordQuizResult(score,total,missed){
+  const s=loadStats(),set=currentMeta.expansion||'Unknown',pct=Math.round(score/total*100),date=new Date().toLocaleDateString();
+  s.totalQuizzes++;s.totalQuestions+=total;s.totalCorrect+=score;
+  if(pct>=50){s.currentStreak++;s.bestStreak=Math.max(s.bestStreak,s.currentStreak);}else{s.currentStreak=0;}
+  s.lastQuizDate=date;
+  s.history.unshift({set,score,total,pct,date});
+  if(s.history.length>20)s.history.pop();
+  missed.forEach(m=>{s.missedCards[m.correct.name]=(s.missedCards[m.correct.name]||0)+1;});
+  if(!s.bySets[set])s.bySets[set]={quizzes:0,questions:0,correct:0,best:0};
+  s.bySets[set].quizzes++;s.bySets[set].questions+=total;s.bySets[set].correct+=score;
+  s.bySets[set].best=Math.max(s.bySets[set].best,pct);
+  saveStats(s);
+}
+function clearStats(){if(confirm('Clear all your stats?')){localStorage.removeItem(STATS_KEY);renderStats();}}
+function renderStats(){
+  const s=loadStats(),overallPct=s.totalQuestions>0?Math.round(s.totalCorrect/s.totalQuestions*100):0;
+  document.getElementById('streakBadge').innerHTML=s.currentStreak>1?`<div class="streak-badge">🔥 ${s.currentStreak} Quiz Streak!</div>`:'';
+  document.getElementById('statsOverview').innerHTML=`
+    <div class="stat-card"><div class="sc-val">${s.totalQuizzes}</div><div class="sc-lbl">Total Quizzes</div></div>
+    <div class="stat-card"><div class="sc-val">${overallPct}%</div><div class="sc-lbl">Overall Accuracy</div><div class="sc-sub">${s.totalCorrect}/${s.totalQuestions}</div></div>
+    <div class="stat-card"><div class="sc-val">${s.bestStreak}</div><div class="sc-lbl">Best Streak</div></div>
+    <div class="stat-card"><div class="sc-val">${s.lastQuizDate||'—'}</div><div class="sc-lbl">Last Quiz</div></div>`;
+  const setKeys=Object.keys(s.bySets);
+  document.getElementById('setStatsList').innerHTML=setKeys.length?setKeys.map(set=>{
+    const d=s.bySets[set],pct=Math.round(d.correct/d.questions*100),col=pct>=70?'#4caf50':pct>=50?'#ffeb3b':'#e94560';
+    return`<div class="history-item"><div class="hi-left"><div class="hi-set">${set}</div><div class="hi-date">${d.quizzes} quiz${d.quizzes!==1?'zes':''} · Best: ${d.best}%</div></div><div class="hi-right"><div class="hi-score" style="color:${col}">${pct}%</div><div class="hi-pct">${d.correct}/${d.questions}</div></div></div>`;
+  }).join(''):'<div class="empty-stats">No set data yet.</div>';
+  document.getElementById('historyList').innerHTML=s.history.length?s.history.slice(0,10).map(h=>{
+    const col=h.pct>=70?'#4caf50':h.pct>=50?'#ffeb3b':'#e94560';
+    return`<div class="history-item"><div class="hi-left"><div class="hi-set">${h.set}</div><div class="hi-date">${h.date}</div></div><div class="hi-right"><div class="hi-score" style="color:${col}">${h.score}/${h.total}</div><div class="hi-pct">${h.pct}%</div></div></div>`;
+  }).join(''):'<div class="empty-stats">No quiz history yet.</div>';
+  const missed=Object.entries(s.missedCards).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  document.getElementById('missedCardsList').innerHTML=missed.length?missed.map(([name,count])=>`<div class="missed-card-item"><span class="mc-name">${name}</span><span class="mc-count">Missed ${count}×</span></div>`).join(''):'<div class="empty-stats">No missed cards yet.</div>';
 }
 
 // ── SET SCAN ───────────────────────────────────────────────────────────────
-async function scanSets() {
+async function scanSets(){
   showScreen('set');
-  const grid = document.getElementById('setGrid');
-  grid.innerHTML = '<div class="no-sets">Scanning GitHub…</div>';
+  const grid=document.getElementById('setGrid');
+  grid.innerHTML='<div class="no-sets">Scanning GitHub…</div>';
   hideError();
-  try {
-    const r = await fetch(API_URL);
-    if (!r.ok) throw new Error(`GitHub API error: ${r.status}`);
-    const files = await r.json();
-    const jsonFiles = files.filter(f => f.name.startsWith('flashcard_data_') && f.name.endsWith('.json'));
-    if (!jsonFiles.length) { grid.innerHTML = '<div class="no-sets">No flashcard JSON files found.</div>'; return; }
-    grid.innerHTML = '';
-    jsonFiles.forEach(f => {
-      const parts = f.name.replace('flashcard_data_','').replace('.json','').split('_');
-      const code  = parts[0], fmt = parts.slice(1).join(' ') || 'PremierDraft';
-      const el    = document.createElement('div');
-      el.className = 'set-card';
-      el.innerHTML = `<div class="set-code">${code}</div><div class="set-fmt">${fmt}</div>`;
-      el.onclick   = () => selectSet(f.name, el, code, fmt);
+  try{
+    const r=await fetch(API_URL);
+    if(!r.ok)throw new Error(`GitHub API error: ${r.status}`);
+    const files=await r.json();
+    const jsonFiles=files.filter(f=>f.name.startsWith('flashcard_data_')&&f.name.endsWith('.json'));
+    if(!jsonFiles.length){grid.innerHTML='<div class="no-sets">No flashcard JSON files found.</div>';return;}
+    grid.innerHTML='';
+    jsonFiles.forEach(f=>{
+      const parts=f.name.replace('flashcard_data_','').replace('.json','').split('_');
+      const code=parts[0],fmt=parts.slice(1).join(' ')||'PremierDraft';
+      const el=document.createElement('div');
+      el.className='set-card';
+      el.innerHTML=`<div class="set-code">${code}</div><div class="set-fmt">${fmt}</div>`;
+      el.onclick=()=>selectSet(f.name,el,code,fmt);
       grid.appendChild(el);
     });
-  } catch(e) { grid.innerHTML=''; showError('Could not reach GitHub. '+e.message); }
+  }catch(e){grid.innerHTML='';showError('Could not reach GitHub. '+e.message);}
 }
-
-function selectSet(filename, el, code, fmt) {
+function selectSet(filename,el,code,fmt){
   document.querySelectorAll('.set-card').forEach(x=>x.classList.remove('selected'));
-  el.classList.add('selected');
-  selectedFile = filename;
-  const btn = document.getElementById('loadSetBtn');
-  btn.disabled = false;
-  btn.textContent = `Study ${code} — ${fmt}`;
+  el.classList.add('selected');selectedFile=filename;
+  const btn=document.getElementById('loadSetBtn');
+  btn.disabled=false;btn.textContent=`Study ${code} — ${fmt}`;
 }
-
-async function loadSelectedSet() {
-  if (!selectedFile) return;
+async function loadSelectedSet(){
+  if(!selectedFile)return;
   showScreen('load');
-  document.getElementById('homeBtn').style.display  = 'none';
-  document.getElementById('modeTabs').style.display = 'none';
-  document.getElementById('filters').style.display  = 'none';
-  setMsg('Loading flashcard data…',''); setProgress(10);
-  try {
-    const r = await fetch(`${BASE_URL}${selectedFile}`);
-    if (!r.ok) throw new Error(`Could not load ${selectedFile} (${r.status}).`);
-    const data = await r.json();
-    allCards    = sortCards(data.cards||[]);
-    currentMeta = data.meta||{};
-    if (!allCards.length) throw new Error('No cards found.');
-    setProgress(100); await sleep(200);
-    document.getElementById('homeBtn').style.display  = 'block';
-    document.getElementById('modeTabs').style.display = 'block';
+  document.getElementById('homeBtn').style.display='none';
+  document.getElementById('modeTabs').style.display='none';
+  document.getElementById('filters').style.display='none';
+  setMsg('Loading flashcard data…','');setProgress(10);
+  try{
+    const r=await fetch(`${BASE_URL}${selectedFile}`);
+    if(!r.ok)throw new Error(`Could not load ${selectedFile} (${r.status}).`);
+    const data=await r.json();
+    allCards=sortCards(data.cards||[]);currentMeta=data.meta||{};
+    if(!allCards.length)throw new Error('No cards found.');
+    setProgress(100);await sleep(200);
+    document.getElementById('homeBtn').style.display='block';
+    document.getElementById('modeTabs').style.display='block';
     switchMode('study');
-  } catch(e) { showScreen('set'); showError(e.message); }
+  }catch(e){showScreen('set');showError(e.message);}
 }
 
-// ── MODE SWITCH ────────────────────────────────────────────────────────────
-function switchMode(mode) {
-  currentMode = mode;
-  document.querySelectorAll('.mode-tab').forEach((t,i) => {
-    t.classList.toggle('active',
-      (i===0&&mode==='study')||(i===1&&mode==='rank')||
-      (i===2&&mode==='quiz') ||(i===3&&mode==='stats'));
+// ── MODE ───────────────────────────────────────────────────────────────────
+function switchMode(mode){
+  currentMode=mode;
+  document.querySelectorAll('.mode-tab').forEach((t,i)=>{
+    t.classList.toggle('active',(i===0&&mode==='study')||(i===1&&mode==='rank')||(i===2&&mode==='quiz')||(i===3&&mode==='stats'));
   });
-  document.getElementById('filters').style.display = mode==='study'?'flex':'none';
-  if      (mode==='study') { showScreen('study'); applyFilters(); }
-  else if (mode==='rank')  { showScreen('rankSetup'); }
-  else if (mode==='quiz')  { showScreen('quizSetup'); }
-  else if (mode==='stats') { showScreen('stats'); renderStats(); }
+  document.getElementById('filters').style.display=mode==='study'?'flex':'none';
+  if(mode==='study'){showScreen('study');applyFilters();}
+  else if(mode==='rank'){showScreen('rankSetup');}
+  else if(mode==='quiz'){showScreen('quizSetup');}
+  else if(mode==='stats'){showScreen('stats');renderStats();}
 }
-
-function goHome() {
-  document.getElementById('homeBtn').style.display  = 'none';
-  document.getElementById('modeTabs').style.display = 'none';
-  document.getElementById('filters').style.display  = 'none';
+function goHome(){
+  document.getElementById('homeBtn').style.display='none';
+  document.getElementById('modeTabs').style.display='none';
+  document.getElementById('filters').style.display='none';
   scanSets();
 }
 
 // ── STUDY ──────────────────────────────────────────────────────────────────
-function applyFilters() {
-  deck = allCards.filter(c =>
-    (filterRarities.has('all')||filterRarities.has(c.rarity)) &&
-    (filterColors.has('all')  ||filterColors.has(c.color))
-  );
-  idx=0; flipped=false;
-  if (deck.length) render();
+function applyFilters(){
+  deck=allCards.filter(c=>(filterRarities.has('all')||filterRarities.has(c.rarity))&&(filterColors.has('all')||filterColors.has(c.color)));
+  idx=0;flipped=false;if(deck.length)render();
 }
-
-function render() {
-  const c = deck[idx];
-  document.getElementById('flashcard').classList.remove('flipped');
-  flipped = false;
-  document.getElementById('progFill').style.width = ((idx+1)/deck.length*100)+'%';
-  document.getElementById('progText').textContent = `${idx+1} / ${deck.length} · ${currentMeta.expansion||''} ${currentMeta.format||''}`;
-  const imgHtml = c.image
-    ? `<img src="${c.image}" alt="${c.name}" loading="lazy">`
-    : `<div class="card-img-placeholder"><div style="font-size:3rem">🃏</div><div class="big-name">${c.name}</div></div>`;
-  document.getElementById('frontFace').innerHTML = `
-    <div class="card-header">
-      <span class="rarity-badge rarity-${c.rarity}">${c.rarity}</span>
-      <div class="color-dot dot-${c.color}"></div>
-    </div>
-    <div class="card-img-area">${imgHtml}</div>
-    <div class="card-footer">Tap to reveal stats</div>`;
-  const grade = calcGrade(c.gihwr);
-  const cname = {W:'White',U:'Blue',B:'Black',R:'Red',G:'Green',M:'Multicolor',C:'Colorless'};
-  const rank  = getRank(c);
-  document.getElementById('backFace').innerHTML = `
-    <div class="back-name">${c.name}</div>
-    <div class="stats-grid">
-      <div class="stat-box"><div class="stat-val" style="color:#4caf50">${c.gihwr}%</div><div class="stat-lbl">GIH Win Rate</div></div>
-      <div class="stat-box"><div class="stat-val" style="color:${gradeColor(grade)};font-size:2rem;font-weight:900">${grade}</div><div class="stat-lbl">Grade</div></div>
-      <div class="stat-box"><div class="stat-val" style="color:#64b5f6">${c.alsa}</div><div class="stat-lbl">Avg Pick</div></div>
-      <div class="stat-box"><div class="stat-val" style="color:#ffb74d">${c.gpwr||'—'}%</div><div class="stat-lbl">GP Win Rate</div></div>
-    </div>
-    <div class="rank-line">Rank <span>#${rank}</span> ${c.rarity} in <span>${cname[c.color]||c.color}</span></div>`;
+function render(){
+  const c=deck[idx];
+  document.getElementById('flashcard').classList.remove('flipped');flipped=false;
+  document.getElementById('progFill').style.width=((idx+1)/deck.length*100)+'%';
+  document.getElementById('progText').textContent=`${idx+1} / ${deck.length} · ${currentMeta.expansion||''} ${currentMeta.format||''}`;
+  const imgHtml=c.image?`<img src="${c.image}" alt="${c.name}" loading="lazy">`:`<div class="card-img-placeholder"><div style="font-size:3rem">🃏</div><div class="big-name">${c.name}</div></div>`;
+  document.getElementById('frontFace').innerHTML=`<div class="card-header"><span class="rarity-badge rarity-${c.rarity}">${c.rarity}</span><div class="color-dot dot-${c.color}"></div></div><div class="card-img-area">${imgHtml}</div><div class="card-footer">Tap to reveal stats</div>`;
+  const grade=calcGrade(c.gihwr),rank=getRank(c);
+  document.getElementById('backFace').innerHTML=`<div class="back-name">${c.name}</div><div class="stats-grid"><div class="stat-box"><div class="stat-val" style="color:#4caf50">${c.gihwr}%</div><div class="stat-lbl">GIH Win Rate</div></div><div class="stat-box"><div class="stat-val" style="color:${gradeColor(grade)};font-size:2rem;font-weight:900">${grade}</div><div class="stat-lbl">Grade</div></div><div class="stat-box"><div class="stat-val" style="color:#64b5f6">${c.alsa}</div><div class="stat-lbl">Avg Pick</div></div><div class="stat-box"><div class="stat-val" style="color:#ffb74d">${c.gpwr||'—'}%</div><div class="stat-lbl">GP Win Rate</div></div></div><div class="rank-line">Rank <span>#${rank}</span> ${c.rarity} in <span>${COLOR_NAMES[c.color]||c.color}</span></div>`;
 }
+function navigate(dir){idx=(idx+dir+deck.length)%deck.length;render();}
+function flipCard(){flipped=!flipped;document.getElementById('flashcard').classList.toggle('flipped',flipped);}
+function shuffleDeck(){deck=shuffle([...deck]);idx=0;render();}
 
-function navigate(dir) { idx=(idx+dir+deck.length)%deck.length; render(); }
-function flipCard() { flipped=!flipped; document.getElementById('flashcard').classList.toggle('flipped',flipped); }
-function shuffleDeck() { deck=shuffle([...deck]); idx=0; render(); }
-
-// ── QUIZ ───────────────────────────────────────────────────────────────────
-document.querySelectorAll('[data-qfilter]').forEach(p => {
-  p.onclick = () => {
-    const f=p.dataset.qfilter, v=p.dataset.val;
-    if (f==='count') {
-      document.querySelectorAll(`[data-qfilter="count"]`).forEach(x=>x.classList.remove('active'));
-      p.classList.add('active');
-      quizCount = v==='all'?9999:parseInt(v);
-      return;
-    }
-    const set = f==='rarity'?quizRarities:quizColors;
-    if (v==='all') {
-      set.clear(); set.add('all');
-      document.querySelectorAll(`[data-qfilter="${f}"]`).forEach(x=>x.classList.remove('active'));
-      p.classList.add('active');
-    } else {
-      set.delete('all');
-      document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.remove('active');
-      if (set.has(v)) {
-        set.delete(v); p.classList.remove('active');
-        if (set.size===0) { set.add('all'); document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.add('active'); }
-      } else { set.add(v); p.classList.add('active'); }
-    }
+// ── RANK ───────────────────────────────────────────────────────────────────
+document.querySelectorAll('[data-rfilter]').forEach(p=>{
+  p.onclick=()=>{
+    const f=p.dataset.rfilter,v=p.dataset.val;
+    if(f==='count'){document.querySelectorAll(`[data-rfilter="count"]`).forEach(x=>x.classList.remove('active'));p.classList.add('active');rankCount=v==='all'?9999:parseInt(v);return;}
+    const set=f==='rarity'?rankRarities:rankColors;
+    if(v==='all'){set.clear();set.add('all');document.querySelectorAll(`[data-rfilter="${f}"]`).forEach(x=>x.classList.remove('active'));p.classList.add('active');}
+    else{set.delete('all');document.querySelector(`[data-rfilter="${f}"][data-val="all"]`).classList.remove('active');if(set.has(v)){set.delete(v);p.classList.remove('active');if(set.size===0){set.add('all');document.querySelector(`[data-rfilter="${f}"][data-val="all"]`).classList.add('active');}}else{set.add(v);p.classList.add('active');}}
   };
 });
 
-function startQuiz() {
-  let pool = allCards.filter(c =>
-    (quizRarities.has('all')||quizRarities.has(c.rarity)) &&
-    (quizColors.has('all')  ||quizColors.has(c.color))
-  );
-  if (pool.length<4) { alert('Need at least 4 cards. Try broader filters.'); return; }
-  pool = shuffle([...pool]);
-  const total = Math.min(quizCount, pool.length);
-  quizQuestions = [];
-  for (let i=0; i<total; i++) {
-    const group   = shuffle([...pool]).slice(0,4);
-    const correct = group.reduce((best,c)=>c.gihwr>best.gihwr?c:best, group[0]);
-    quizQuestions.push({ correct, options: shuffle(group) });
-  }
-  quizIdx=0; quizScore=0; quizMissed=[];
-  showScreen('quiz');
-  renderQuizQuestion();
+function startRank(){
+  let pool=allCards.filter(c=>(rankRarities.has('all')||rankRarities.has(c.rarity))&&(rankColors.has('all')||rankColors.has(c.color)));
+  if(pool.length<2){alert('Not enough cards. Try broader filters.');return;}
+  const top=[...pool].sort((a,b)=>b.gihwr-a.gihwr).slice(0,Math.min(rankCount,pool.length));
+  rankCards=shuffle([...top]);
+  document.getElementById('rankCountLabel').textContent=`${rankCards.length} cards`;
+  renderRankList();showScreen('rank');
 }
 
-function renderQuizQuestion() {
-  if (quizIdx>=quizQuestions.length) { endQuiz(); return; }
-  quizLocked = false;
-  const q = quizQuestions[quizIdx];
-  document.getElementById('quizProgFill').style.width = (quizIdx/quizQuestions.length*100)+'%';
-  document.getElementById('quizProgText').textContent = `Question ${quizIdx+1} of ${quizQuestions.length} · Score: ${quizScore}`;
-  const grid = document.getElementById('quizGrid');
-  grid.innerHTML = '';
-  q.options.forEach(card => {
-    const div = document.createElement('div');
-    div.className = 'quiz-option';
-    const imgHtml = card.image
-      ? `<img src="${card.image}" alt="${card.name}" loading="lazy">`
-      : `<div class="opt-placeholder">${card.name}</div>`;
-    div.innerHTML = `${imgHtml}<div class="opt-name">${card.name}</div><div class="opt-wr">${card.gihwr}% GIH WR</div>`;
-    div.onclick = () => pickQuizOption(div, card, q.correct);
-    grid.appendChild(div);
-  });
-}
+function renderRankList(){
+  const list=document.getElementById('rankList');
+  list.innerHTML='';
+  rankCards.forEach((card,i)=>{
+    const div=document.createElement('div');
+    div.className='rank-item';
+    div.draggable=true;
+    div.dataset.idx=i;
 
-function pickQuizOption(el, picked, correct) {
-  if (quizLocked) return;
-  quizLocked = true;
-  const allOpts = document.querySelectorAll('.quiz-option');
-  allOpts.forEach(opt=>opt.classList.add('reveal'));
-  const isCorrect = picked.gihwr===correct.gihwr;
-  if (isCorrect) {
-    el.classList.remove('reveal'); el.classList.add('correct'); quizScore++;
-  } else {
-    el.classList.remove('reveal'); el.classList.add('wrong');
-    allOpts.forEach(opt=>{
-      if (opt.querySelector('.opt-name')?.textContent===correct.name) {
-        opt.classList.remove('reveal'); opt.classList.add('correct');
-      }
-    });
-    quizMissed.push({ picked, correct });
-  }
-  quizIdx++;
-  setTimeout(renderQuizQuestion, 3000);
-}
+    // Build canvas thumbnail
+    const canvas=document.createElement('canvas');
+    canvas.width=90;canvas.height=126;
+    canvas.style.cssText='width:90px;height:126px;border-radius:6px;flex-shrink:0;display:block;';
+    const ctx=canvas.getContext('2d');
+    ctx.fillStyle='#0a0a18';ctx.fillRect(0,0,60,60);
 
-function endQuiz() {
-  const total = quizQuestions.length;
-  const pct   = Math.round(quizScore/total*100);
-  recordQuizResult(quizScore, total, quizMissed);
-  document.getElementById('resultScore').textContent = `${quizScore}/${total}`;
-  document.getElementById('resultLabel').textContent = `${pct}% correct`;
-  document.getElementById('resultGrade').textContent =
-    pct>=95?'🏆 Perfect Drafter!':pct>=80?'🌟 Strong Pick!':pct>=65?'👍 Getting There!':pct>=50?'📚 Keep Studying!':'💪 Practice Makes Perfect!';
-  const ml = document.getElementById('missedList');
-  if (quizMissed.length) {
-    ml.innerHTML = `<h3>❌ Missed (${quizMissed.length} cards)</h3>`+
-      quizMissed.map(m=>`<div class="missed-item"><span class="mi-name">${m.correct.name}</span><span class="mi-wr">${m.correct.gihwr}%</span></div>`).join('');
-    document.getElementById('reviewBtn').style.display='block';
-  } else {
-    ml.innerHTML='<h3 style="color:var(--correct)">✓ Perfect score!</h3>';
-    document.getElementById('reviewBtn').style.display='none';
-  }
-  showScreen('quizResult');
-}
-
-function reviewMissed() {
-  deck=quizMissed.map(m=>m.correct); idx=0; flipped=false;
-  document.getElementById('filters').style.display='none';
-  showScreen('study'); render();
-}
-
-// ── RANK MODE ──────────────────────────────────────────────────────────────
-let rankRarities=new Set(['all']), rankColors=new Set(['all']), rankCount=10;
-let rankCards=[], dragSrcIdx=null;
-
-document.querySelectorAll('[data-rfilter]').forEach(p => {
-  p.onclick = () => {
-    const f=p.dataset.rfilter, v=p.dataset.val;
-    if (f==='count') {
-      document.querySelectorAll(`[data-rfilter="count"]`).forEach(x=>x.classList.remove('active'));
-      p.classList.add('active');
-      rankCount = v==='all'?9999:parseInt(v);
-      return;
-    }
-    const set = f==='rarity'?rankRarities:rankColors;
-    if (v==='all') {
-      set.clear(); set.add('all');
-      document.querySelectorAll(`[data-rfilter="${f}"]`).forEach(x=>x.classList.remove('active'));
-      p.classList.add('active');
+    if(card.image){
+      const img=new Image();
+      img.onload=()=>{
+        // Draw full card
+        ctx.drawImage(img,0,0,img.width,img.height,0,0,90,126);
+      };
+      img.onerror=()=>{
+        ctx.fillStyle='#1a1a2e';ctx.fillRect(0,0,60,60);
+        ctx.fillStyle='#888';ctx.font='20px serif';
+        ctx.textAlign='center';ctx.fillText('🃏',30,38);
+      };
+      img.src=card.image;
     } else {
-      set.delete('all');
-      document.querySelector(`[data-rfilter="${f}"][data-val="all"]`).classList.remove('active');
-      if (set.has(v)) {
-        set.delete(v); p.classList.remove('active');
-        if (set.size===0) { set.add('all'); document.querySelector(`[data-rfilter="${f}"][data-val="all"]`).classList.add('active'); }
-      } else { set.add(v); p.classList.add('active'); }
+      ctx.fillStyle='#888';ctx.font='20px serif';
+      ctx.textAlign='center';ctx.fillText('🃏',30,38);
     }
-  };
-});
 
-function startRank() {
-  let pool = allCards.filter(c =>
-    (rankRarities.has('all')||rankRarities.has(c.rarity)) &&
-    (rankColors.has('all')  ||rankColors.has(c.color))
-  );
-  if (pool.length < 2) { alert('Not enough cards. Try broader filters.'); return; }
-  // Pick from top cards by GIH WR, then shuffle so order isn't a hint
-  const top = [...pool].sort((a,b)=>b.gihwr-a.gihwr).slice(0, Math.min(rankCount, pool.length));
-  rankCards = shuffle([...top]);
-  document.getElementById('rankCountLabel').textContent = `${rankCards.length} cards`;
-  renderRankList();
-  showScreen('rank');
-}
+    div.appendChild(canvas);
 
-function renderRankList() {
-  const list = document.getElementById('rankList');
-  list.innerHTML = '';
-  rankCards.forEach((card, i) => {
-    const div = document.createElement('div');
-    div.className = 'rank-item';
-    div.draggable = true;
-    div.dataset.idx = i;
-    const imgHtml = card.image
-      ? `<div class="rank-img-wrap"><img src="${card.image}" alt="${card.name}" loading="lazy"></div>`
-      : `<div class="rank-img-placeholder">🃏</div>`;
-    div.innerHTML = `
-      <div class="rank-num">${i+1}</div>
-      ${imgHtml}
-      <div class="rank-name">${card.name}</div>`;
+    const nameEl=document.createElement('div');
+    nameEl.style.cssText='font-size:.55rem;font-weight:600;color:#eaeaea;text-align:center;line-height:1.3;word-break:break-word;max-width:92px;';
+    nameEl.textContent=card.name;
 
-    // Drag events
-    div.addEventListener('dragstart', e => {
-      dragSrcIdx = i;
-      setTimeout(() => div.classList.add('dragging'), 0);
-      e.dataTransfer.effectAllowed = 'move';
-    });
-    div.addEventListener('dragend', () => div.classList.remove('dragging'));
-    div.addEventListener('dragover', e => { e.preventDefault(); div.classList.add('drag-over'); });
-    div.addEventListener('dragleave', () => div.classList.remove('drag-over'));
-    div.addEventListener('drop', e => {
-      e.preventDefault();
-      div.classList.remove('drag-over');
-      if (dragSrcIdx === null || dragSrcIdx === i) return;
-      const moved = rankCards.splice(dragSrcIdx, 1)[0];
-      rankCards.splice(i, 0, moved);
-      dragSrcIdx = null;
-      renderRankList();
-    });
+    const numEl=document.createElement('div');
+    numEl.style.cssText='font-size:.75rem;font-weight:900;color:#f0a500;line-height:1;';
+    numEl.textContent=i+1;
 
-    // Touch drag support
-    let touchStartY = 0, touchItem = null;
-    div.addEventListener('touchstart', e => {
-      touchStartY = e.touches[0].clientY;
-      touchItem = i;
-      div.classList.add('dragging');
-    }, {passive:true});
-    div.addEventListener('touchmove', e => {
-      e.preventDefault();
-      const touch = e.touches[0];
-      const els = document.elementsFromPoint(touch.clientX, touch.clientY);
-      const target = els.find(el => el.classList.contains('rank-item') && el !== div);
-      document.querySelectorAll('.rank-item').forEach(el => el.classList.remove('drag-over'));
-      if (target) target.classList.add('drag-over');
-    }, {passive:false});
-    div.addEventListener('touchend', e => {
-      div.classList.remove('dragging');
-      document.querySelectorAll('.rank-item').forEach(el => el.classList.remove('drag-over'));
-      const touch = e.changedTouches[0];
-      const els = document.elementsFromPoint(touch.clientX, touch.clientY);
-      const target = els.find(el => el.classList.contains('rank-item') && el !== div);
-      if (target && touchItem !== null) {
-        const targetIdx = parseInt(target.dataset.idx);
-        const moved = rankCards.splice(touchItem, 1)[0];
-        rankCards.splice(targetIdx, 0, moved);
-        touchItem = null;
-        renderRankList();
-      }
-    }, {passive:true});
+    div.prepend(numEl);
+    div.appendChild(nameEl);
+
+    div.addEventListener('dragstart',e=>{dragSrcIdx=i;setTimeout(()=>div.classList.add('dragging'),0);e.dataTransfer.effectAllowed='move';});
+    div.addEventListener('dragend',()=>div.classList.remove('dragging'));
+    div.addEventListener('dragover',e=>{e.preventDefault();div.classList.add('drag-over');});
+    div.addEventListener('dragleave',()=>div.classList.remove('drag-over'));
+    div.addEventListener('drop',e=>{e.preventDefault();div.classList.remove('drag-over');if(dragSrcIdx===null||dragSrcIdx===i)return;const moved=rankCards.splice(dragSrcIdx,1)[0];rankCards.splice(i,0,moved);dragSrcIdx=null;renderRankList();});
+
+    let touchItem=null;
+    div.addEventListener('touchstart',e=>{touchItem=i;div.classList.add('dragging');},{passive:true});
+    div.addEventListener('touchmove',e=>{e.preventDefault();const t=e.touches[0];document.elementsFromPoint(t.clientX,t.clientY).forEach(el=>{if(el.classList.contains('rank-item')&&el!==div)el.classList.add('drag-over');else if(el.classList.contains('rank-item'))el.classList.remove('drag-over');});},{passive:false});
+    div.addEventListener('touchend',e=>{div.classList.remove('dragging');document.querySelectorAll('.rank-item').forEach(el=>el.classList.remove('drag-over'));const t=e.changedTouches[0];const target=document.elementsFromPoint(t.clientX,t.clientY).find(el=>el.classList.contains('rank-item')&&el!==div);if(target&&touchItem!==null){const ti=parseInt(target.dataset.idx);const moved=rankCards.splice(touchItem,1)[0];rankCards.splice(ti,0,moved);touchItem=null;renderRankList();}},{passive:true});
 
     list.appendChild(div);
   });
 }
 
-function submitRanking() {
-  const correctOrder = [...rankCards].sort((a,b)=>b.gihwr-a.gihwr);
-  // Score: for each card, check position distance
-  let totalScore = 0;
-  rankCards.forEach((card, userPos) => {
-    const correctPos = correctOrder.findIndex(c=>c.name===card.name);
-    const maxDist = rankCards.length - 1;
-    const dist = Math.abs(userPos - correctPos);
-    totalScore += (maxDist - dist) / maxDist;
-  });
-  const pct = Math.round((totalScore / rankCards.length) * 100);
-
-  document.getElementById('rankResultScore').textContent =
-    `${pct}% accuracy on ${rankCards.length} cards`;
-  document.getElementById('rankResultGrade').textContent =
-    pct>=90?'🏆 Expert Drafter!':pct>=75?'🌟 Strong Ranking!':pct>=60?'👍 Good Instincts!':pct>=45?'📚 Keep Studying!':'💪 Practice More!';
-
-  // Your order
-  const yourDiv = document.getElementById('yourRanking');
-  yourDiv.innerHTML = rankCards.map((card, i) => {
-    const correctPos = correctOrder.findIndex(c=>c.name===card.name);
-    const dist = Math.abs(i - correctPos);
-    const dotColor = dist===0?'#4caf50':dist<=1?'#ffeb3b':'#e94560';
-    const imgHtml = card.image
-      ? `<img class="rri-img" src="${card.image}" loading="lazy">`
-      : `<div class="rri-img-ph">🃏</div>`;
-    return `<div class="rank-result-item">
-      <div class="rri-num" style="color:var(--gold)">${i+1}</div>
-      ${imgHtml}
-      <div class="rri-info">
-        <div class="rri-name">${card.name}</div>
-        <div class="rri-wr" style="color:#888">${card.gihwr}%</div>
-      </div>
-      <div class="rri-match" style="background:${dotColor}"></div>
-    </div>`;
-  }).join('');
-
-  // Correct order
-  const correctDiv = document.getElementById('correctRanking');
-  correctDiv.innerHTML = correctOrder.map((card, i) => {
-    const userPos = rankCards.findIndex(c=>c.name===card.name);
-    const dist = Math.abs(i - userPos);
-    const dotColor = dist===0?'#4caf50':dist<=1?'#ffeb3b':'#e94560';
-    const imgHtml = card.image
-      ? `<img class="rri-img" src="${card.image}" loading="lazy">`
-      : `<div class="rri-img-ph">🃏</div>`;
-    return `<div class="rank-result-item">
-      <div class="rri-num" style="color:#4caf50">${i+1}</div>
-      ${imgHtml}
-      <div class="rri-info">
-        <div class="rri-name">${card.name}</div>
-        <div class="rri-wr" style="color:#4caf50">${card.gihwr}%</div>
-      </div>
-      <div class="rri-match" style="background:${dotColor}"></div>
-    </div>`;
-  }).join('');
-
+function submitRanking(){
+  const correctOrder=[...rankCards].sort((a,b)=>b.gihwr-a.gihwr);
+  let totalScore=0;
+  rankCards.forEach((card,userPos)=>{const cp=correctOrder.findIndex(c=>c.name===card.name);const md=rankCards.length-1;totalScore+=(md-Math.abs(userPos-cp))/md;});
+  const pct=Math.round((totalScore/rankCards.length)*100);
+  document.getElementById('rankResultScore').textContent=`${pct}% accuracy on ${rankCards.length} cards`;
+  document.getElementById('rankResultGrade').textContent=pct>=90?'🏆 Expert Drafter!':pct>=75?'🌟 Strong Ranking!':pct>=60?'👍 Good Instincts!':pct>=45?'📚 Keep Studying!':'💪 Practice More!';
+  const mkItem=(card,num,wr,dotCol)=>{
+    const imgHtml=card.image?`<img class="rri-img" src="${card.image}" loading="lazy">`:`<div class="rri-img-ph">🃏</div>`;
+    return`<div class="rank-result-item"><div class="rri-num" style="color:${dotCol}">${num}</div>${imgHtml}<div class="rri-info"><div class="rri-name">${card.name}</div><div class="rri-wr" style="color:${wr>0?'#4caf50':'#888'}">${card.gihwr}%</div></div><div class="rri-match" style="background:${dotCol}"></div></div>`;
+  };
+  document.getElementById('yourRanking').innerHTML=rankCards.map((card,i)=>{const cp=correctOrder.findIndex(c=>c.name===card.name);const dist=Math.abs(i-cp);const col=dist===0?'#4caf50':dist<=1?'#ffeb3b':'#e94560';return mkItem(card,i+1,card.gihwr,col);}).join('');
+  document.getElementById('correctRanking').innerHTML=correctOrder.map((card,i)=>{const up=rankCards.findIndex(c=>c.name===card.name);const dist=Math.abs(i-up);const col=dist===0?'#4caf50':dist<=1?'#ffeb3b':'#e94560';return mkItem(card,i+1,card.gihwr,col);}).join('');
   showScreen('rankResult');
 }
 
+// ── QUIZ ───────────────────────────────────────────────────────────────────
+document.querySelectorAll('[data-qfilter]').forEach(p=>{
+  p.onclick=()=>{
+    const f=p.dataset.qfilter,v=p.dataset.val;
+    if(f==='count'){document.querySelectorAll(`[data-qfilter="count"]`).forEach(x=>x.classList.remove('active'));p.classList.add('active');quizCount=v==='all'?9999:parseInt(v);return;}
+    const set=f==='rarity'?quizRarities:quizColors;
+    if(v==='all'){set.clear();set.add('all');document.querySelectorAll(`[data-qfilter="${f}"]`).forEach(x=>x.classList.remove('active'));p.classList.add('active');}
+    else{set.delete('all');document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.remove('active');if(set.has(v)){set.delete(v);p.classList.remove('active');if(set.size===0){set.add('all');document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.add('active');}}else{set.add(v);p.classList.add('active');}}
+  };
+});
+
+function startQuiz(){
+  let pool=allCards.filter(c=>(quizRarities.has('all')||quizRarities.has(c.rarity))&&(quizColors.has('all')||quizColors.has(c.color)));
+  if(pool.length<4){alert('Need at least 4 cards. Try broader filters.');return;}
+  pool=shuffle([...pool]);
+  const total=Math.min(quizCount,pool.length);quizQuestions=[];
+  for(let i=0;i<total;i++){const group=shuffle([...pool]).slice(0,4);const correct=group.reduce((best,c)=>c.gihwr>best.gihwr?c:best,group[0]);quizQuestions.push({correct,options:shuffle(group)});}
+  quizIdx=0;quizScore=0;quizMissed=[];showScreen('quiz');renderQuizQuestion();
+}
+
+function renderQuizQuestion(){
+  if(quizIdx>=quizQuestions.length){endQuiz();return;}
+  quizLocked=false;
+  const q=quizQuestions[quizIdx];
+  document.getElementById('quizProgFill').style.width=(quizIdx/quizQuestions.length*100)+'%';
+  document.getElementById('quizProgText').textContent=`Question ${quizIdx+1} of ${quizQuestions.length} · Score: ${quizScore}`;
+  const grid=document.getElementById('quizGrid');grid.innerHTML='';
+  q.options.forEach(card=>{
+    const div=document.createElement('div');div.className='quiz-option';
+    const imgHtml=card.image?`<img src="${card.image}" alt="${card.name}" loading="lazy">`:`<div class="opt-placeholder">${card.name}</div>`;
+    div.innerHTML=`${imgHtml}<div class="opt-name">${card.name}</div><div class="opt-wr">${card.gihwr}% GIH WR</div>`;
+    div.onclick=()=>pickQuizOption(div,card,q.correct);
+    grid.appendChild(div);
+  });
+}
+
+function pickQuizOption(el,picked,correct){
+  if(quizLocked)return;quizLocked=true;
+  const allOpts=document.querySelectorAll('.quiz-option');
+  allOpts.forEach(opt=>opt.classList.add('reveal'));
+  const isCorrect=picked.gihwr===correct.gihwr;
+  if(isCorrect){el.classList.remove('reveal');el.classList.add('correct');quizScore++;}
+  else{el.classList.remove('reveal');el.classList.add('wrong');allOpts.forEach(opt=>{if(opt.querySelector('.opt-name')?.textContent===correct.name){opt.classList.remove('reveal');opt.classList.add('correct');}});quizMissed.push({picked,correct});}
+  quizIdx++;setTimeout(renderQuizQuestion,3000);
+}
+
+function endQuiz(){
+  const total=quizQuestions.length,pct=Math.round(quizScore/total*100);
+  recordQuizResult(quizScore,total,quizMissed);
+  document.getElementById('resultScore').textContent=`${quizScore}/${total}`;
+  document.getElementById('resultLabel').textContent=`${pct}% correct`;
+  document.getElementById('resultGrade').textContent=pct>=95?'🏆 Perfect Drafter!':pct>=80?'🌟 Strong Pick!':pct>=65?'👍 Getting There!':pct>=50?'📚 Keep Studying!':'💪 Practice Makes Perfect!';
+  const ml=document.getElementById('missedList');
+  if(quizMissed.length){ml.innerHTML=`<h3>❌ Missed (${quizMissed.length} cards)</h3>`+quizMissed.map(m=>`<div class="missed-item"><span class="mi-name">${m.correct.name}</span><span class="mi-wr">${m.correct.gihwr}%</span></div>`).join('');document.getElementById('reviewBtn').style.display='block';}
+  else{ml.innerHTML='<h3 style="color:var(--correct)">✓ Perfect score!</h3>';document.getElementById('reviewBtn').style.display='none';}
+  showScreen('quizResult');
+}
+
+function reviewMissed(){deck=quizMissed.map(m=>m.correct);idx=0;flipped=false;document.getElementById('filters').style.display='none';showScreen('study');render();}
+
 // ── STUDY FILTERS ──────────────────────────────────────────────────────────
-document.querySelectorAll('.pill[data-filter]').forEach(p => {
-  p.onclick = () => {
-    const f=p.dataset.filter, v=p.dataset.val;
-    const set = f==='rarity'?filterRarities:filterColors;
-    if (v==='all') {
-      set.clear(); set.add('all');
-      document.querySelectorAll(`.pill[data-filter="${f}"]`).forEach(x=>x.classList.remove('active'));
-      p.classList.add('active');
-    } else {
-      set.delete('all');
-      document.querySelector(`.pill[data-filter="${f}"][data-val="all"]`).classList.remove('active');
-      if (set.has(v)) {
-        set.delete(v); p.classList.remove('active');
-        if (set.size===0) { set.add('all'); document.querySelector(`.pill[data-filter="${f}"][data-val="all"]`).classList.add('active'); }
-      } else { set.add(v); p.classList.add('active'); }
-    }
+document.querySelectorAll('.pill[data-filter]').forEach(p=>{
+  p.onclick=()=>{
+    const f=p.dataset.filter,v=p.dataset.val;
+    const set=f==='rarity'?filterRarities:filterColors;
+    if(v==='all'){set.clear();set.add('all');document.querySelectorAll(`.pill[data-filter="${f}"]`).forEach(x=>x.classList.remove('active'));p.classList.add('active');}
+    else{set.delete('all');document.querySelector(`.pill[data-filter="${f}"][data-val="all"]`).classList.remove('active');if(set.has(v)){set.delete(v);p.classList.remove('active');if(set.size===0){set.add('all');document.querySelector(`.pill[data-filter="${f}"][data-val="all"]`).classList.add('active');}}else{set.add(v);p.classList.add('active');}}
     applyFilters();
   };
 });
 
 // Keyboard + Swipe
-document.addEventListener('keydown', e=>{
-  if(currentMode!=='study'||!deck.length) return;
-  if(e.key==='ArrowRight'||e.key==='d') navigate(1);
-  if(e.key==='ArrowLeft' ||e.key==='a') navigate(-1);
-  if(e.key===' '||e.key==='f'){e.preventDefault();flipCard();}
-});
+document.addEventListener('keydown',e=>{if(currentMode!=='study'||!deck.length)return;if(e.key==='ArrowRight'||e.key==='d')navigate(1);if(e.key==='ArrowLeft'||e.key==='a')navigate(-1);if(e.key===' '||e.key==='f'){e.preventDefault();flipCard();}});
 let tx=0,ty=0;
 document.addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
-document.addEventListener('touchend',e=>{
-  if(currentMode!=='study'||!deck.length) return;
-  const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
-  if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>50) dx<0?navigate(1):navigate(-1);
-},{passive:true});
+document.addEventListener('touchend',e=>{if(currentMode!=='study'||!deck.length)return;const dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;if(Math.abs(dx)>Math.abs(dy)&&Math.abs(dx)>50)dx<0?navigate(1):navigate(-1);},{passive:true});
 
 // ── HELPERS ────────────────────────────────────────────────────────────────
 function sortCards(cards){return[...cards].sort((a,b)=>{const ri=RARITY_ORDER.indexOf(a.rarity)-RARITY_ORDER.indexOf(b.rarity);if(ri!==0)return ri;const ci=COLOR_ORDER.indexOf(a.color)-COLOR_ORDER.indexOf(b.color);if(ci!==0)return ci;return b.gihwr-a.gihwr;});}
@@ -1021,9 +760,8 @@ function sleep(ms){return new Promise(r=>setTimeout(r,ms));}
 // ── PWA ────────────────────────────────────────────────────────────────────
 const mf={name:"MTG Draft Flashcards",short_name:"MTG Cards",start_url:".",display:"standalone",background_color:"#0f0f1a",theme_color:"#0f0f1a",icons:[{src:"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='24' fill='%230f0f1a'/><text y='130' x='20' font-size='130'>🃏</text></svg>",sizes:"192x192",type:"image/svg+xml"}]};
 document.getElementById('manifestLink').href=URL.createObjectURL(new Blob([JSON.stringify(mf)],{type:'application/json'}));
-if('serviceWorker'in navigator){const sw=`const C='mtg-v5';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['./', './index.html']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'text/javascript'}))).catch(()=>{});}
+if('serviceWorker'in navigator){const sw=`const C='mtg-v6';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['./', './index.html']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'text/javascript'}))).catch(()=>{});}
 
-// Start
 showScreen('set');
 scanSets();
 </script>
