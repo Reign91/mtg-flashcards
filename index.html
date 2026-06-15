@@ -24,11 +24,10 @@
   #homeBtn { background:var(--surface); color:var(--muted); border:1px solid var(--border); padding:6px 12px; border-radius:6px; cursor:pointer; font-size:.85rem; display:none; }
 
   #modeTabs { background:var(--surface); border-bottom:1px solid var(--border); display:none; }
-  .mode-tab { display:inline-block; width:50%; padding:10px; text-align:center; font-size:.85rem; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; }
+  .mode-tab { display:inline-block; width:33.33%; padding:10px; text-align:center; font-size:.85rem; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; }
   .mode-tab.active { color:var(--gold); border-bottom-color:var(--gold); font-weight:700; }
 
-  /* all screens hidden by default */
-  #setScreen, #loadScreen, #studyScreen, #quizSetupScreen, #quizScreen, #quizResultScreen { display:none; }
+  #setScreen, #loadScreen, #studyScreen, #quizSetupScreen, #quizScreen, #quizResultScreen, #statsScreen { display:none; }
 
   /* ── SET SCREEN ── */
   #setScreen { padding:24px 16px; max-width:600px; margin:0 auto; }
@@ -43,7 +42,7 @@
   #refreshBtn { background:var(--surface); color:var(--text); border:1px solid var(--border); padding:10px 18px; border-radius:8px; cursor:pointer; font-size:.85rem; width:100%; margin-bottom:12px; }
   #loadSetBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; }
   #loadSetBtn:disabled { opacity:.5; cursor:not-allowed; }
-  #errorBox { display:none; background:#2a1a1a; border:1px solid var(--accent); border-radius:10px; padding:14px; margin-top:16px; color:#ffaaaa; font-size:.82rem; line-height:1.5; }
+  #errorBox { display:none; background:#2a1a1a; border:1px solid var(--accent); border-radius:10px; padding:14px; margin-top:16px; color:#ffaaaa; font-size:.82rem; }
 
   /* ── LOADING ── */
   #loadScreen { flex-direction:column; align-items:center; justify-content:center; padding:60px 20px; text-align:center; min-height:60vh; }
@@ -67,7 +66,7 @@
   .pill.color-G.active{background:#1a5c2e;color:#fff;}
   .pill.color-M.active{background:#8b6914;color:#fff;}
 
-  /* ── STUDY SCREEN ── */
+  /* ── STUDY ── */
   #studyScreen { flex-direction:column; align-items:center; padding:20px 16px; }
   #progress { width:100%; max-width:480px; margin-bottom:14px; }
   #progBar { height:4px; background:var(--border); border-radius:4px; overflow:hidden; }
@@ -114,7 +113,7 @@
   .pill-row { display:flex; gap:6px; flex-wrap:wrap; }
   #startQuizBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; margin-top:8px; }
 
-  /* ── QUIZ SCREEN ── */
+  /* ── QUIZ ── */
   #quizScreen { flex-direction:column; align-items:center; padding:16px; }
   #quizProgress { width:100%; max-width:500px; margin-bottom:12px; }
   #quizProgBar { height:4px; background:var(--border); border-radius:4px; overflow:hidden; }
@@ -128,8 +127,8 @@
   .quiz-option .opt-name { padding:6px 8px; font-size:.72rem; text-align:center; color:var(--text); background:var(--surface); }
   .quiz-option .opt-wr { padding:2px 8px 6px; font-size:.78rem; text-align:center; font-weight:700; display:none; }
   .quiz-option .opt-placeholder { width:100%; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; background:#0a0a18; font-size:.85rem; color:var(--muted); padding:8px; text-align:center; }
-  .quiz-option.correct { border-color:var(--correct) !important; border-width:4px !important; background:#0d2e14; }
-  .quiz-option.wrong   { border-color:var(--wrong) !important;   border-width:4px !important; background:#2e0d0d; }
+  .quiz-option.correct { border-color:var(--correct)!important; border-width:4px!important; background:#0d2e14; }
+  .quiz-option.wrong   { border-color:var(--wrong)!important;   border-width:4px!important; background:#2e0d0d; }
   .quiz-option.correct .opt-wr { display:block; color:var(--correct); font-size:.9rem; }
   .quiz-option.wrong   .opt-wr { display:block; color:var(--wrong);   font-size:.9rem; }
   .quiz-option.reveal  .opt-wr { display:block; color:var(--muted);   font-size:.9rem; }
@@ -137,17 +136,39 @@
   /* ── QUIZ RESULT ── */
   #quizResultScreen { flex-direction:column; align-items:center; padding:24px 16px; max-width:500px; margin:0 auto; }
   .result-score { font-size:3rem; font-weight:900; color:var(--gold); margin-bottom:4px; }
-  .result-label { font-size:1rem; color:var(--muted); margin-bottom:24px; }
+  .result-label { font-size:1rem; color:var(--muted); margin-bottom:12px; }
   .result-grade { font-size:1.4rem; font-weight:700; margin-bottom:20px; }
   #missedList { width:100%; margin-bottom:20px; }
   #missedList h3 { font-size:.9rem; color:var(--muted); margin-bottom:10px; }
   .missed-item { background:var(--card); border-radius:8px; padding:10px 12px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; font-size:.82rem; }
   .missed-item .mi-name { color:var(--text); }
-  .missed-item .mi-wr { color:var(--accent); font-weight:700; }
+  .missed-item .mi-wr  { color:var(--accent); font-weight:700; }
   .result-btns { display:flex; flex-direction:column; gap:10px; width:100%; }
   .btn-review { background:var(--gold); color:#000; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
   .btn-again  { background:var(--surface); color:var(--text); border:1px solid var(--border); padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; }
   .btn-home   { background:var(--surface); color:var(--muted); border:1px solid var(--border); padding:12px; border-radius:8px; font-size:.9rem; cursor:pointer; }
+
+  /* ── STATS SCREEN ── */
+  #statsScreen { padding:20px 16px; max-width:600px; margin:0 auto; }
+  #statsScreen h2 { font-size:1.2rem; color:var(--gold); margin-bottom:16px; }
+  .stats-overview { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:24px; }
+  .stat-card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; text-align:center; }
+  .stat-card .sc-val { font-size:1.8rem; font-weight:900; color:var(--gold); }
+  .stat-card .sc-lbl { font-size:.72rem; color:var(--muted); margin-top:4px; }
+  .stat-card .sc-sub { font-size:.68rem; color:var(--muted); margin-top:2px; }
+  .stats-section { margin-bottom:24px; }
+  .stats-section h3 { font-size:.9rem; color:var(--muted); margin-bottom:10px; text-transform:uppercase; letter-spacing:.05em; }
+  .history-item { background:var(--card); border-radius:8px; padding:10px 14px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; }
+  .hi-left .hi-set  { font-size:.85rem; font-weight:700; color:var(--text); }
+  .hi-left .hi-date { font-size:.7rem; color:var(--muted); margin-top:2px; }
+  .hi-right .hi-score { font-size:1.1rem; font-weight:700; }
+  .hi-right .hi-pct   { font-size:.72rem; color:var(--muted); text-align:right; }
+  .missed-card-item { background:var(--card); border-radius:8px; padding:8px 14px; margin-bottom:6px; display:flex; justify-content:space-between; align-items:center; font-size:.82rem; }
+  .mc-name { color:var(--text); }
+  .mc-count { background:var(--accent); color:#fff; border-radius:10px; padding:2px 8px; font-size:.72rem; font-weight:700; }
+  .btn-clear { background:transparent; color:var(--accent); border:1px solid var(--accent); padding:10px 18px; border-radius:8px; font-size:.85rem; cursor:pointer; width:100%; margin-top:8px; }
+  .empty-stats { text-align:center; color:var(--muted); padding:30px 0; font-size:.9rem; }
+  .streak-badge { display:inline-block; background:linear-gradient(135deg,#f0a500,#e94560); color:#fff; border-radius:20px; padding:4px 14px; font-size:.8rem; font-weight:700; margin-bottom:16px; }
 </style>
 </head>
 <body>
@@ -160,6 +181,7 @@
 <div id="modeTabs">
   <span class="mode-tab active" onclick="switchMode('study')">📖 Study</span>
   <span class="mode-tab" onclick="switchMode('quiz')">🎯 Quiz</span>
+  <span class="mode-tab" onclick="switchMode('stats')">📊 Stats</span>
 </div>
 
 <!-- FILTERS -->
@@ -280,8 +302,28 @@
   <div class="result-btns">
     <button class="btn-review" id="reviewBtn" onclick="reviewMissed()" style="display:none">📖 Review Missed Cards</button>
     <button class="btn-again" onclick="showScreen('quizSetup')">🔁 Play Again</button>
-    <button class="btn-home"  onclick="switchMode('study')">📖 Back to Study</button>
+    <button class="btn-home"  onclick="switchMode('stats')">📊 View Stats</button>
   </div>
+</div>
+
+<!-- STATS SCREEN -->
+<div id="statsScreen">
+  <h2>📊 Your Stats</h2>
+  <div id="streakBadge"></div>
+  <div class="stats-overview" id="statsOverview"></div>
+  <div class="stats-section" id="setStatsSection">
+    <h3>By Set</h3>
+    <div id="setStatsList"></div>
+  </div>
+  <div class="stats-section" id="historySection">
+    <h3>Recent Quizzes</h3>
+    <div id="historyList"></div>
+  </div>
+  <div class="stats-section" id="missedSection">
+    <h3>Most Missed Cards</h3>
+    <div id="missedCardsList"></div>
+  </div>
+  <button class="btn-clear" onclick="clearStats()">🗑 Clear All Stats</button>
 </div>
 
 <script>
@@ -289,6 +331,7 @@ const GITHUB_USER = 'Reign91';
 const GITHUB_REPO = 'mtg-flashcards';
 const BASE_URL    = `https://${GITHUB_USER}.github.io/${GITHUB_REPO}/`;
 const API_URL     = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/`;
+const STATS_KEY   = 'mtg_flashcard_stats';
 
 const COLOR_ORDER  = ['W','U','B','R','G','M','C'];
 const RARITY_ORDER = ['common','uncommon','rare','mythic'];
@@ -299,20 +342,153 @@ let selectedFile='', currentMeta={}, currentMode='study';
 let quizRarities=new Set(['all']), quizColors=new Set(['all']), quizCount=20;
 let quizQuestions=[], quizIdx=0, quizScore=0, quizMissed=[], quizLocked=false;
 
+// ── STATS STORAGE ──────────────────────────────────────────────────────────
+function loadStats() {
+  try { return JSON.parse(localStorage.getItem(STATS_KEY)) || defaultStats(); }
+  catch { return defaultStats(); }
+}
+
+function defaultStats() {
+  return {
+    totalQuizzes: 0,
+    totalQuestions: 0,
+    totalCorrect: 0,
+    bestStreak: 0,
+    currentStreak: 0,
+    lastQuizDate: null,
+    history: [],       // last 20 quizzes
+    missedCards: {},   // name → count
+    bySets: {},        // set → { quizzes, questions, correct, best }
+  };
+}
+
+function saveStats(stats) {
+  localStorage.setItem(STATS_KEY, JSON.stringify(stats));
+}
+
+function recordQuizResult(score, total, missed) {
+  const stats = loadStats();
+  const set   = currentMeta.expansion || 'Unknown';
+  const pct   = Math.round(score/total*100);
+  const date  = new Date().toLocaleDateString();
+
+  stats.totalQuizzes++;
+  stats.totalQuestions += total;
+  stats.totalCorrect   += score;
+
+  // Streak — consecutive quizzes with >= 50%
+  if (pct >= 50) {
+    stats.currentStreak++;
+    stats.bestStreak = Math.max(stats.bestStreak, stats.currentStreak);
+  } else {
+    stats.currentStreak = 0;
+  }
+  stats.lastQuizDate = date;
+
+  // History (keep last 20)
+  stats.history.unshift({ set, score, total, pct, date });
+  if (stats.history.length > 20) stats.history.pop();
+
+  // Missed cards
+  missed.forEach(m => {
+    stats.missedCards[m.correct.name] = (stats.missedCards[m.correct.name] || 0) + 1;
+  });
+
+  // By set
+  if (!stats.bySets[set]) stats.bySets[set] = { quizzes:0, questions:0, correct:0, best:0 };
+  stats.bySets[set].quizzes++;
+  stats.bySets[set].questions += total;
+  stats.bySets[set].correct   += score;
+  stats.bySets[set].best = Math.max(stats.bySets[set].best, pct);
+
+  saveStats(stats);
+}
+
+function clearStats() {
+  if (confirm('Clear all your stats? This cannot be undone.')) {
+    localStorage.removeItem(STATS_KEY);
+    renderStats();
+  }
+}
+
+// ── RENDER STATS ───────────────────────────────────────────────────────────
+function renderStats() {
+  const s = loadStats();
+  const overallPct = s.totalQuestions > 0
+    ? Math.round(s.totalCorrect / s.totalQuestions * 100) : 0;
+
+  // Streak badge
+  const sb = document.getElementById('streakBadge');
+  sb.innerHTML = s.currentStreak > 1
+    ? `<div class="streak-badge">🔥 ${s.currentStreak} Quiz Streak!</div>` : '';
+
+  // Overview cards
+  document.getElementById('statsOverview').innerHTML = `
+    <div class="stat-card"><div class="sc-val">${s.totalQuizzes}</div><div class="sc-lbl">Total Quizzes</div></div>
+    <div class="stat-card"><div class="sc-val">${overallPct}%</div><div class="sc-lbl">Overall Accuracy</div><div class="sc-sub">${s.totalCorrect}/${s.totalQuestions} correct</div></div>
+    <div class="stat-card"><div class="sc-val">${s.bestStreak}</div><div class="sc-lbl">Best Streak</div></div>
+    <div class="stat-card"><div class="sc-val">${s.lastQuizDate||'—'}</div><div class="sc-lbl">Last Quiz</div></div>
+  `;
+
+  // By set
+  const setList = document.getElementById('setStatsList');
+  const setKeys = Object.keys(s.bySets);
+  if (setKeys.length) {
+    setList.innerHTML = setKeys.map(set => {
+      const d   = s.bySets[set];
+      const pct = Math.round(d.correct/d.questions*100);
+      const col = pct>=70?'#4caf50':pct>=50?'#ffeb3b':'#e94560';
+      return `<div class="history-item">
+        <div class="hi-left"><div class="hi-set">${set}</div><div class="hi-date">${d.quizzes} quiz${d.quizzes!==1?'zes':''} · Best: ${d.best}%</div></div>
+        <div class="hi-right"><div class="hi-score" style="color:${col}">${pct}%</div><div class="hi-pct">${d.correct}/${d.questions}</div></div>
+      </div>`;
+    }).join('');
+  } else {
+    setList.innerHTML = '<div class="empty-stats">No set data yet. Take a quiz!</div>';
+  }
+
+  // History
+  const histList = document.getElementById('historyList');
+  if (s.history.length) {
+    histList.innerHTML = s.history.slice(0,10).map(h => {
+      const col = h.pct>=70?'#4caf50':h.pct>=50?'#ffeb3b':'#e94560';
+      return `<div class="history-item">
+        <div class="hi-left"><div class="hi-set">${h.set}</div><div class="hi-date">${h.date}</div></div>
+        <div class="hi-right"><div class="hi-score" style="color:${col}">${h.score}/${h.total}</div><div class="hi-pct">${h.pct}%</div></div>
+      </div>`;
+    }).join('');
+  } else {
+    histList.innerHTML = '<div class="empty-stats">No quiz history yet.</div>';
+  }
+
+  // Most missed cards
+  const mc = document.getElementById('missedCardsList');
+  const missed = Object.entries(s.missedCards).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  if (missed.length) {
+    mc.innerHTML = missed.map(([name,count]) =>
+      `<div class="missed-card-item"><span class="mc-name">${name}</span><span class="mc-count">Missed ${count}×</span></div>`
+    ).join('');
+  } else {
+    mc.innerHTML = '<div class="empty-stats">No missed cards yet. Keep quizzing!</div>';
+  }
+}
+
 // ── SCREEN MANAGER ─────────────────────────────────────────────────────────
 function showScreen(s) {
-  ['setScreen','loadScreen','studyScreen','quizSetupScreen','quizScreen','quizResultScreen']
+  ['setScreen','loadScreen','studyScreen','quizSetupScreen','quizScreen','quizResultScreen','statsScreen']
     .forEach(id => {
-      const el = document.getElementById(id);
+      const el   = document.getElementById(id);
       const show = (
         (s==='set'        && id==='setScreen') ||
         (s==='load'       && id==='loadScreen') ||
         (s==='study'      && id==='studyScreen') ||
         (s==='quizSetup'  && id==='quizSetupScreen') ||
         (s==='quiz'       && id==='quizScreen') ||
-        (s==='quizResult' && id==='quizResultScreen')
+        (s==='quizResult' && id==='quizResultScreen') ||
+        (s==='stats'      && id==='statsScreen')
       );
-      el.style.display = show ? (id==='setScreen'||id==='quizSetupScreen'||id==='quizResultScreen' ? 'block' : 'flex') : 'none';
+      const block = ['setScreen','quizSetupScreen','quizResultScreen','statsScreen'].includes(id);
+      el.style.display = show ? (block ? 'block' : 'flex') : 'none';
     });
 }
 
@@ -327,29 +503,22 @@ async function scanSets() {
     if (!r.ok) throw new Error(`GitHub API error: ${r.status}`);
     const files = await r.json();
     const jsonFiles = files.filter(f => f.name.startsWith('flashcard_data_') && f.name.endsWith('.json'));
-    if (!jsonFiles.length) {
-      grid.innerHTML = '<div class="no-sets">No flashcard JSON files found.</div>';
-      return;
-    }
+    if (!jsonFiles.length) { grid.innerHTML = '<div class="no-sets">No flashcard JSON files found.</div>'; return; }
     grid.innerHTML = '';
     jsonFiles.forEach(f => {
       const parts = f.name.replace('flashcard_data_','').replace('.json','').split('_');
-      const code  = parts[0];
-      const fmt   = parts.slice(1).join(' ') || 'PremierDraft';
+      const code  = parts[0], fmt = parts.slice(1).join(' ') || 'PremierDraft';
       const el    = document.createElement('div');
       el.className = 'set-card';
       el.innerHTML = `<div class="set-code">${code}</div><div class="set-fmt">${fmt}</div>`;
       el.onclick   = () => selectSet(f.name, el, code, fmt);
       grid.appendChild(el);
     });
-  } catch(e) {
-    grid.innerHTML = '';
-    showError('Could not reach GitHub. ' + e.message);
-  }
+  } catch(e) { grid.innerHTML=''; showError('Could not reach GitHub. '+e.message); }
 }
 
 function selectSet(filename, el, code, fmt) {
-  document.querySelectorAll('.set-card').forEach(x => x.classList.remove('selected'));
+  document.querySelectorAll('.set-card').forEach(x=>x.classList.remove('selected'));
   el.classList.add('selected');
   selectedFile = filename;
   const btn = document.getElementById('loadSetBtn');
@@ -363,35 +532,31 @@ async function loadSelectedSet() {
   document.getElementById('homeBtn').style.display  = 'none';
   document.getElementById('modeTabs').style.display = 'none';
   document.getElementById('filters').style.display  = 'none';
-  setMsg('Loading flashcard data…','');
-  setProgress(10);
+  setMsg('Loading flashcard data…',''); setProgress(10);
   try {
     const r = await fetch(`${BASE_URL}${selectedFile}`);
     if (!r.ok) throw new Error(`Could not load ${selectedFile} (${r.status}).`);
     const data = await r.json();
-    allCards    = sortCards(data.cards || []);
-    currentMeta = data.meta || {};
+    allCards    = sortCards(data.cards||[]);
+    currentMeta = data.meta||{};
     if (!allCards.length) throw new Error('No cards found.');
-    setProgress(100);
-    await sleep(200);
+    setProgress(100); await sleep(200);
     document.getElementById('homeBtn').style.display  = 'block';
     document.getElementById('modeTabs').style.display = 'block';
     switchMode('study');
-  } catch(e) {
-    showScreen('set');
-    showError(e.message);
-  }
+  } catch(e) { showScreen('set'); showError(e.message); }
 }
 
 // ── MODE SWITCH ────────────────────────────────────────────────────────────
 function switchMode(mode) {
   currentMode = mode;
   document.querySelectorAll('.mode-tab').forEach((t,i) => {
-    t.classList.toggle('active', (i===0&&mode==='study')||(i===1&&mode==='quiz'));
+    t.classList.toggle('active',(i===0&&mode==='study')||(i===1&&mode==='quiz')||(i===2&&mode==='stats'));
   });
-  document.getElementById('filters').style.display = mode==='study' ? 'flex' : 'none';
-  if (mode==='study') { showScreen('study'); applyFilters(); }
-  else                { showScreen('quizSetup'); }
+  document.getElementById('filters').style.display = mode==='study'?'flex':'none';
+  if (mode==='study')      { showScreen('study'); applyFilters(); }
+  else if (mode==='quiz')  { showScreen('quizSetup'); }
+  else if (mode==='stats') { showScreen('stats'); renderStats(); }
 }
 
 function goHome() {
@@ -404,8 +569,8 @@ function goHome() {
 // ── STUDY ──────────────────────────────────────────────────────────────────
 function applyFilters() {
   deck = allCards.filter(c =>
-    (filterRarities.has('all') || filterRarities.has(c.rarity)) &&
-    (filterColors.has('all')   || filterColors.has(c.color))
+    (filterRarities.has('all')||filterRarities.has(c.rarity)) &&
+    (filterColors.has('all')  ||filterColors.has(c.color))
   );
   idx=0; flipped=false;
   if (deck.length) render();
@@ -417,11 +582,9 @@ function render() {
   flipped = false;
   document.getElementById('progFill').style.width = ((idx+1)/deck.length*100)+'%';
   document.getElementById('progText').textContent = `${idx+1} / ${deck.length} · ${currentMeta.expansion||''} ${currentMeta.format||''}`;
-
   const imgHtml = c.image
     ? `<img src="${c.image}" alt="${c.name}" loading="lazy">`
     : `<div class="card-img-placeholder"><div style="font-size:3rem">🃏</div><div class="big-name">${c.name}</div></div>`;
-
   document.getElementById('frontFace').innerHTML = `
     <div class="card-header">
       <span class="rarity-badge rarity-${c.rarity}">${c.rarity}</span>
@@ -429,11 +592,9 @@ function render() {
     </div>
     <div class="card-img-area">${imgHtml}</div>
     <div class="card-footer">Tap to reveal stats</div>`;
-
   const grade = calcGrade(c.gihwr);
   const cname = {W:'White',U:'Blue',B:'Black',R:'Red',G:'Green',M:'Multicolor',C:'Colorless'};
   const rank  = getRank(c);
-
   document.getElementById('backFace').innerHTML = `
     <div class="back-name">${c.name}</div>
     <div class="stats-grid">
@@ -453,56 +614,40 @@ function shuffleDeck() { deck=shuffle([...deck]); idx=0; render(); }
 document.querySelectorAll('[data-qfilter]').forEach(p => {
   p.onclick = () => {
     const f=p.dataset.qfilter, v=p.dataset.val;
-
-    if (f === 'count') {
+    if (f==='count') {
       document.querySelectorAll(`[data-qfilter="count"]`).forEach(x=>x.classList.remove('active'));
       p.classList.add('active');
-      quizCount = v==='all' ? 9999 : parseInt(v);
+      quizCount = v==='all'?9999:parseInt(v);
       return;
     }
-
-    // Multi-select for rarity and color
-    const set = f==='rarity' ? quizRarities : quizColors;
-
-    if (v === 'all') {
-      // Selecting All clears everything else
+    const set = f==='rarity'?quizRarities:quizColors;
+    if (v==='all') {
       set.clear(); set.add('all');
       document.querySelectorAll(`[data-qfilter="${f}"]`).forEach(x=>x.classList.remove('active'));
       p.classList.add('active');
     } else {
-      // Deselect All if a specific option is chosen
       set.delete('all');
       document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.remove('active');
       if (set.has(v)) {
-        set.delete(v);
-        p.classList.remove('active');
-        // If nothing selected, revert to All
-        if (set.size === 0) {
-          set.add('all');
-          document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.add('active');
-        }
-      } else {
-        set.add(v);
-        p.classList.add('active');
-      }
+        set.delete(v); p.classList.remove('active');
+        if (set.size===0) { set.add('all'); document.querySelector(`[data-qfilter="${f}"][data-val="all"]`).classList.add('active'); }
+      } else { set.add(v); p.classList.add('active'); }
     }
   };
 });
 
 function startQuiz() {
   let pool = allCards.filter(c =>
-    (quizRarities.has('all') || quizRarities.has(c.rarity)) &&
-    (quizColors.has('all')   || quizColors.has(c.color))
+    (quizRarities.has('all')||quizRarities.has(c.rarity)) &&
+    (quizColors.has('all')  ||quizColors.has(c.color))
   );
-  if (pool.length < 4) { alert('Need at least 4 cards. Try broader filters.'); return; }
+  if (pool.length<4) { alert('Need at least 4 cards. Try broader filters.'); return; }
   pool = shuffle([...pool]);
   const total = Math.min(quizCount, pool.length);
   quizQuestions = [];
   for (let i=0; i<total; i++) {
-    // Pick 4 unique cards
-    const group  = shuffle([...pool]).slice(0, 4);
-    // The correct answer is always the one with the highest GIH win rate
-    const correct = group.reduce((best, c) => c.gihwr > best.gihwr ? c : best, group[0]);
+    const group   = shuffle([...pool]).slice(0,4);
+    const correct = group.reduce((best,c)=>c.gihwr>best.gihwr?c:best, group[0]);
     quizQuestions.push({ correct, options: shuffle(group) });
   }
   quizIdx=0; quizScore=0; quizMissed=[];
@@ -511,7 +656,7 @@ function startQuiz() {
 }
 
 function renderQuizQuestion() {
-  if (quizIdx >= quizQuestions.length) { endQuiz(); return; }
+  if (quizIdx>=quizQuestions.length) { endQuiz(); return; }
   quizLocked = false;
   const q = quizQuestions[quizIdx];
   document.getElementById('quizProgFill').style.width = (quizIdx/quizQuestions.length*100)+'%';
@@ -534,20 +679,14 @@ function pickQuizOption(el, picked, correct) {
   if (quizLocked) return;
   quizLocked = true;
   const allOpts = document.querySelectorAll('.quiz-option');
-
-  // Reveal all win rates
-  allOpts.forEach(opt => opt.classList.add('reveal'));
-
-  // Correct = highest GIH WR among options (should match correct.name)
-  const isCorrect = picked.gihwr === correct.gihwr;
-
+  allOpts.forEach(opt=>opt.classList.add('reveal'));
+  const isCorrect = picked.gihwr===correct.gihwr;
   if (isCorrect) {
     el.classList.remove('reveal'); el.classList.add('correct'); quizScore++;
   } else {
     el.classList.remove('reveal'); el.classList.add('wrong');
-    // Highlight the actual best card
-    allOpts.forEach(opt => {
-      if (opt.querySelector('.opt-name')?.textContent === correct.name) {
+    allOpts.forEach(opt=>{
+      if (opt.querySelector('.opt-name')?.textContent===correct.name) {
         opt.classList.remove('reveal'); opt.classList.add('correct');
       }
     });
@@ -560,36 +699,35 @@ function pickQuizOption(el, picked, correct) {
 function endQuiz() {
   const total = quizQuestions.length;
   const pct   = Math.round(quizScore/total*100);
+  recordQuizResult(quizScore, total, quizMissed);
   document.getElementById('resultScore').textContent = `${quizScore}/${total}`;
   document.getElementById('resultLabel').textContent = `${pct}% correct`;
-  document.getElementById('resultGrade').textContent = pct>=95?'🏆 Perfect Drafter!':pct>=80?'🌟 Strong Pick!':pct>=65?'👍 Getting There!':pct>=50?'📚 Keep Studying!':'💪 Practice Makes Perfect!';
+  document.getElementById('resultGrade').textContent =
+    pct>=95?'🏆 Perfect Drafter!':pct>=80?'🌟 Strong Pick!':pct>=65?'👍 Getting There!':pct>=50?'📚 Keep Studying!':'💪 Practice Makes Perfect!';
   const ml = document.getElementById('missedList');
   if (quizMissed.length) {
-    ml.innerHTML = `<h3>❌ Missed (${quizMissed.length} cards)</h3>` +
+    ml.innerHTML = `<h3>❌ Missed (${quizMissed.length} cards)</h3>`+
       quizMissed.map(m=>`<div class="missed-item"><span class="mi-name">${m.correct.name}</span><span class="mi-wr">${m.correct.gihwr}%</span></div>`).join('');
-    document.getElementById('reviewBtn').style.display = 'block';
+    document.getElementById('reviewBtn').style.display='block';
   } else {
-    ml.innerHTML = '<h3 style="color:var(--correct)">✓ Perfect score!</h3>';
-    document.getElementById('reviewBtn').style.display = 'none';
+    ml.innerHTML='<h3 style="color:var(--correct)">✓ Perfect score!</h3>';
+    document.getElementById('reviewBtn').style.display='none';
   }
   showScreen('quizResult');
 }
 
 function reviewMissed() {
-  deck = quizMissed.map(m=>m.correct);
-  idx=0; flipped=false;
-  document.getElementById('filters').style.display = 'none';
-  showScreen('study');
-  render();
+  deck=quizMissed.map(m=>m.correct); idx=0; flipped=false;
+  document.getElementById('filters').style.display='none';
+  showScreen('study'); render();
 }
 
-// ── FILTERS ────────────────────────────────────────────────────────────────
+// ── STUDY FILTERS ──────────────────────────────────────────────────────────
 document.querySelectorAll('.pill[data-filter]').forEach(p => {
   p.onclick = () => {
     const f=p.dataset.filter, v=p.dataset.val;
-    const set = f==='rarity' ? filterRarities : filterColors;
-
-    if (v === 'all') {
+    const set = f==='rarity'?filterRarities:filterColors;
+    if (v==='all') {
       set.clear(); set.add('all');
       document.querySelectorAll(`.pill[data-filter="${f}"]`).forEach(x=>x.classList.remove('active'));
       p.classList.add('active');
@@ -599,16 +737,14 @@ document.querySelectorAll('.pill[data-filter]').forEach(p => {
       if (set.has(v)) {
         set.delete(v); p.classList.remove('active');
         if (set.size===0) { set.add('all'); document.querySelector(`.pill[data-filter="${f}"][data-val="all"]`).classList.add('active'); }
-      } else {
-        set.add(v); p.classList.add('active');
-      }
+      } else { set.add(v); p.classList.add('active'); }
     }
     applyFilters();
   };
 });
 
 // Keyboard + Swipe
-document.addEventListener('keydown', e => {
+document.addEventListener('keydown', e=>{
   if(currentMode!=='study'||!deck.length) return;
   if(e.key==='ArrowRight'||e.key==='d') navigate(1);
   if(e.key==='ArrowLeft' ||e.key==='a') navigate(-1);
@@ -623,28 +759,10 @@ document.addEventListener('touchend',e=>{
 },{passive:true});
 
 // ── HELPERS ────────────────────────────────────────────────────────────────
-function sortCards(cards) {
-  return [...cards].sort((a,b)=>{
-    const ri=RARITY_ORDER.indexOf(a.rarity)-RARITY_ORDER.indexOf(b.rarity);
-    if(ri!==0) return ri;
-    const ci=COLOR_ORDER.indexOf(a.color)-COLOR_ORDER.indexOf(b.color);
-    if(ci!==0) return ci;
-    return b.gihwr-a.gihwr;
-  });
-}
+function sortCards(cards){return[...cards].sort((a,b)=>{const ri=RARITY_ORDER.indexOf(a.rarity)-RARITY_ORDER.indexOf(b.rarity);if(ri!==0)return ri;const ci=COLOR_ORDER.indexOf(a.color)-COLOR_ORDER.indexOf(b.color);if(ci!==0)return ci;return b.gihwr-a.gihwr;});}
 function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
-function calcGrade(wr){
-  const vals=allCards.filter(c=>c.gihwr>0).map(c=>c.gihwr);
-  const mean=vals.reduce((a,b)=>a+b,0)/vals.length;
-  const std=Math.sqrt(vals.reduce((a,b)=>a+(b-mean)**2,0)/vals.length)||1;
-  const z=(wr-mean)/std;
-  if(z>=2)return'A+';if(z>=1.33)return'A';if(z>=0.67)return'B+';if(z>=0)return'B';
-  if(z>=-0.67)return'C+';if(z>=-1.33)return'C';if(z>=-1.67)return'D';return'F';
-}
-function gradeColor(g){
-  if(g==='A+'||g==='A')return'#4caf50';if(g==='B+'||g==='B')return'#8bc34a';
-  if(g==='C+'||g==='C')return'#ffeb3b';if(g==='D')return'#ff9800';return'#e94560';
-}
+function calcGrade(wr){const vals=allCards.filter(c=>c.gihwr>0).map(c=>c.gihwr);const mean=vals.reduce((a,b)=>a+b,0)/vals.length;const std=Math.sqrt(vals.reduce((a,b)=>a+(b-mean)**2,0)/vals.length)||1;const z=(wr-mean)/std;if(z>=2)return'A+';if(z>=1.33)return'A';if(z>=0.67)return'B+';if(z>=0)return'B';if(z>=-0.67)return'C+';if(z>=-1.33)return'C';if(z>=-1.67)return'D';return'F';}
+function gradeColor(g){if(g==='A+'||g==='A')return'#4caf50';if(g==='B+'||g==='B')return'#8bc34a';if(g==='C+'||g==='C')return'#ffeb3b';if(g==='D')return'#ff9800';return'#e94560';}
 function getRank(card){return allCards.filter(c=>c.rarity===card.rarity&&c.color===card.color).sort((a,b)=>b.gihwr-a.gihwr).findIndex(c=>c.name===card.name)+1;}
 function setMsg(m,s){document.getElementById('loadMsg').textContent=m;document.getElementById('loadSub').textContent=s;}
 function setProgress(p){document.getElementById('loadFill').style.width=p+'%';}
@@ -655,7 +773,7 @@ function sleep(ms){return new Promise(r=>setTimeout(r,ms));}
 // ── PWA ────────────────────────────────────────────────────────────────────
 const mf={name:"MTG Draft Flashcards",short_name:"MTG Cards",start_url:".",display:"standalone",background_color:"#0f0f1a",theme_color:"#0f0f1a",icons:[{src:"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='24' fill='%230f0f1a'/><text y='130' x='20' font-size='130'>🃏</text></svg>",sizes:"192x192",type:"image/svg+xml"}]};
 document.getElementById('manifestLink').href=URL.createObjectURL(new Blob([JSON.stringify(mf)],{type:'application/json'}));
-if('serviceWorker'in navigator){const sw=`const C='mtg-v4';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['./', './index.html']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'text/javascript'}))).catch(()=>{});}
+if('serviceWorker'in navigator){const sw=`const C='mtg-v5';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['./', './index.html']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'text/javascript'}))).catch(()=>{});}
 
 // Start
 showScreen('set');
