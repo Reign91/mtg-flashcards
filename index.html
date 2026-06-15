@@ -852,15 +852,10 @@ function renderRankList() {
     const imgHtml = card.image
       ? `<div class="rank-img-wrap"><img src="${card.image}" alt="${card.name}" loading="lazy"></div>`
       : `<div class="rank-img-placeholder">🃏</div>`;
-    const rarityColors = {common:'#888',uncommon:'#5a7a8a',rare:'#7a6a9a',mythic:'#8b3a00'};
     div.innerHTML = `
       <div class="rank-num">${i+1}</div>
       ${imgHtml}
-      <div class="rank-info">
-        <div class="rank-name">${card.name}</div>
-        <div class="rank-meta" style="color:${rarityColors[card.rarity]||'#888'}">${card.rarity} · ${card.color}</div>
-      </div>
-      <div class="drag-handle">⠿</div>`;
+      <div class="rank-name">${card.name}</div>`;
 
     // Drag events
     div.addEventListener('dragstart', e => {
@@ -1032,5 +1027,7 @@ if('serviceWorker'in navigator){const sw=`const C='mtg-v5';self.addEventListener
 showScreen('set');
 scanSets();
 </script>
+</body>
+</html>
 </body>
 </html>
