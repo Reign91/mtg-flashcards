@@ -128,11 +128,11 @@
   .quiz-option .opt-name { padding:6px 8px; font-size:.72rem; text-align:center; color:var(--text); background:var(--surface); }
   .quiz-option .opt-wr { padding:2px 8px 6px; font-size:.78rem; text-align:center; font-weight:700; display:none; }
   .quiz-option .opt-placeholder { width:100%; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; background:#0a0a18; font-size:.85rem; color:var(--muted); padding:8px; text-align:center; }
-  .quiz-option.correct { border-color:var(--correct) !important; }
-  .quiz-option.wrong   { border-color:var(--wrong) !important; }
-  .quiz-option.correct .opt-wr { display:block; color:var(--correct); }
-  .quiz-option.wrong   .opt-wr { display:block; color:var(--wrong); }
-  .quiz-option.reveal  .opt-wr { display:block; color:var(--muted); }
+  .quiz-option.correct { border-color:var(--correct) !important; border-width:4px !important; background:#0d2e14; }
+  .quiz-option.wrong   { border-color:var(--wrong) !important;   border-width:4px !important; background:#2e0d0d; }
+  .quiz-option.correct .opt-wr { display:block; color:var(--correct); font-size:.9rem; }
+  .quiz-option.wrong   .opt-wr { display:block; color:var(--wrong);   font-size:.9rem; }
+  .quiz-option.reveal  .opt-wr { display:block; color:var(--muted);   font-size:.9rem; }
 
   /* ── QUIZ RESULT ── */
   #quizResultScreen { flex-direction:column; align-items:center; padding:24px 16px; max-width:500px; margin:0 auto; }
@@ -471,9 +471,11 @@ function startQuiz() {
   const total = Math.min(quizCount, pool.length);
   quizQuestions = [];
   for (let i=0; i<total; i++) {
-    const correct = pool[i];
-    const wrong3  = shuffle(pool.filter((_,j)=>j!==i)).slice(0,3);
-    quizQuestions.push({ correct, options: shuffle([correct,...wrong3]) });
+    // Pick 4 unique cards
+    const group  = shuffle([...pool]).slice(0, 4);
+    // The correct answer is always the one with the highest GIH win rate
+    const correct = group.reduce((best, c) => c.gihwr > best.gihwr ? c : best, group[0]);
+    quizQuestions.push({ correct, options: shuffle(group) });
   }
   quizIdx=0; quizScore=0; quizMissed=[];
   showScreen('quiz');
@@ -504,12 +506,18 @@ function pickQuizOption(el, picked, correct) {
   if (quizLocked) return;
   quizLocked = true;
   const allOpts = document.querySelectorAll('.quiz-option');
+
+  // Reveal all win rates
   allOpts.forEach(opt => opt.classList.add('reveal'));
-  const isCorrect = picked.name === correct.name;
+
+  // Correct = highest GIH WR among options (should match correct.name)
+  const isCorrect = picked.gihwr === correct.gihwr;
+
   if (isCorrect) {
     el.classList.remove('reveal'); el.classList.add('correct'); quizScore++;
   } else {
     el.classList.remove('reveal'); el.classList.add('wrong');
+    // Highlight the actual best card
     allOpts.forEach(opt => {
       if (opt.querySelector('.opt-name')?.textContent === correct.name) {
         opt.classList.remove('reveal'); opt.classList.add('correct');
@@ -518,7 +526,7 @@ function pickQuizOption(el, picked, correct) {
     quizMissed.push({ picked, correct });
   }
   quizIdx++;
-  setTimeout(renderQuizQuestion, 1800);
+  setTimeout(renderQuizQuestion, 3000);
 }
 
 function endQuiz() {
