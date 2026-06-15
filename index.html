@@ -24,7 +24,7 @@
   #homeBtn { background:var(--surface); color:var(--muted); border:1px solid var(--border); padding:6px 12px; border-radius:6px; cursor:pointer; font-size:.85rem; display:none; }
 
   #modeTabs { background:var(--surface); border-bottom:1px solid var(--border); display:none; }
-  .mode-tab { display:inline-block; width:33.33%; padding:10px; text-align:center; font-size:.85rem; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; }
+  .mode-tab { display:inline-block; width:25%; padding:10px; text-align:center; font-size:.78rem; cursor:pointer; color:var(--muted); border-bottom:2px solid transparent; }
   .mode-tab.active { color:var(--gold); border-bottom-color:var(--gold); font-weight:700; }
 
   #setScreen, #loadScreen, #studyScreen, #quizSetupScreen, #quizScreen, #quizResultScreen, #statsScreen { display:none; }
@@ -111,7 +111,7 @@
   .setup-section { margin-bottom:18px; }
   .setup-section label { font-size:.8rem; color:var(--muted); display:block; margin-bottom:8px; }
   .pill-row { display:flex; gap:6px; flex-wrap:wrap; }
-  #startQuizBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; margin-top:8px; }
+  #startRankBtn, #startQuizBtn { background:var(--accent); color:#fff; border:none; padding:14px; border-radius:8px; font-size:1rem; font-weight:700; cursor:pointer; width:100%; margin-top:8px; }
 
   /* ── QUIZ ── */
   #quizScreen { flex-direction:column; align-items:center; padding:16px; }
@@ -180,6 +180,7 @@
 
 <div id="modeTabs">
   <span class="mode-tab active" onclick="switchMode('study')">📖 Study</span>
+  <span class="mode-tab" onclick="switchMode('rank')">🏆 Rank</span>
   <span class="mode-tab" onclick="switchMode('quiz')">🎯 Quiz</span>
   <span class="mode-tab" onclick="switchMode('stats')">📊 Stats</span>
 </div>
@@ -242,6 +243,75 @@
     <button class="btn btn-flip"    onclick="flipCard()">↩ Flip</button>
     <button class="btn btn-shuffle" onclick="shuffleDeck()">🔀</button>
     <button class="btn btn-next"    onclick="navigate(1)">Next ▶</button>
+  </div>
+</div>
+
+<!-- RANK SETUP -->
+<div id="rankSetupScreen">
+  <h2>🏆 Rank Mode Setup</h2>
+  <div class="setup-section">
+    <label>Rarity</label>
+    <div class="pill-row">
+      <span class="pill active" data-rfilter="rarity" data-val="all">All</span>
+      <span class="pill" data-rfilter="rarity" data-val="common">Common</span>
+      <span class="pill" data-rfilter="rarity" data-val="uncommon">Uncommon</span>
+      <span class="pill" data-rfilter="rarity" data-val="rare">Rare</span>
+      <span class="pill" data-rfilter="rarity" data-val="mythic">Mythic</span>
+    </div>
+  </div>
+  <div class="setup-section">
+    <label>Color</label>
+    <div class="pill-row">
+      <span class="pill active" data-rfilter="color" data-val="all">All</span>
+      <span class="pill color-W" data-rfilter="color" data-val="W">W</span>
+      <span class="pill color-U" data-rfilter="color" data-val="U">U</span>
+      <span class="pill color-B" data-rfilter="color" data-val="B">B</span>
+      <span class="pill color-R" data-rfilter="color" data-val="R">R</span>
+      <span class="pill color-G" data-rfilter="color" data-val="G">G</span>
+      <span class="pill color-M" data-rfilter="color" data-val="M">Multi</span>
+    </div>
+  </div>
+  <div class="setup-section">
+    <label>Number of Cards to Rank</label>
+    <div class="pill-row">
+      <span class="pill" data-rfilter="count" data-val="5">5</span>
+      <span class="pill active" data-rfilter="count" data-val="10">10</span>
+      <span class="pill" data-rfilter="count" data-val="15">15</span>
+      <span class="pill" data-rfilter="count" data-val="20">20</span>
+      <span class="pill" data-rfilter="count" data-val="all">All</span>
+    </div>
+  </div>
+  <button id="startRankBtn" onclick="startRank()">Start Ranking</button>
+</div>
+
+<!-- RANK SCREEN -->
+<div id="rankScreen">
+  <div id="rankHeader">
+    <h3>🏆 Rank Best → Worst</h3>
+    <span id="rankCountLabel"></span>
+  </div>
+  <div id="rankInstructions">Drag cards to rank them from best pick (#1) to worst</div>
+  <div id="rankList"></div>
+  <button id="submitRankBtn" onclick="submitRanking()">Submit My Ranking</button>
+</div>
+
+<!-- RANK RESULT -->
+<div id="rankResultScreen">
+  <div id="rankResultScore"></div>
+  <div id="rankResultGrade"></div>
+  <div class="rank-compare">
+    <div class="rank-col">
+      <h3>📋 Your Order</h3>
+      <div id="yourRanking"></div>
+    </div>
+    <div class="rank-col">
+      <h3>✅ Correct Order</h3>
+      <div id="correctRanking"></div>
+    </div>
+  </div>
+  <div class="rank-result-btns">
+    <button class="btn-rank-again" onclick="switchMode('rank')">🔁 Rank Again</button>
+    <button class="btn-rank-back"  onclick="switchMode('study')">📖 Back to Study</button>
   </div>
 </div>
 
@@ -475,19 +545,22 @@ function renderStats() {
 
 // ── SCREEN MANAGER ─────────────────────────────────────────────────────────
 function showScreen(s) {
-  ['setScreen','loadScreen','studyScreen','quizSetupScreen','quizScreen','quizResultScreen','statsScreen']
+  ['setScreen','loadScreen','studyScreen','rankSetupScreen','rankScreen','rankResultScreen','quizSetupScreen','quizScreen','quizResultScreen','statsScreen']
     .forEach(id => {
       const el   = document.getElementById(id);
       const show = (
-        (s==='set'        && id==='setScreen') ||
-        (s==='load'       && id==='loadScreen') ||
-        (s==='study'      && id==='studyScreen') ||
-        (s==='quizSetup'  && id==='quizSetupScreen') ||
-        (s==='quiz'       && id==='quizScreen') ||
-        (s==='quizResult' && id==='quizResultScreen') ||
-        (s==='stats'      && id==='statsScreen')
+        (s==='set'         && id==='setScreen') ||
+        (s==='load'        && id==='loadScreen') ||
+        (s==='study'       && id==='studyScreen') ||
+        (s==='rankSetup'   && id==='rankSetupScreen') ||
+        (s==='rank'        && id==='rankScreen') ||
+        (s==='rankResult'  && id==='rankResultScreen') ||
+        (s==='quizSetup'   && id==='quizSetupScreen') ||
+        (s==='quiz'        && id==='quizScreen') ||
+        (s==='quizResult'  && id==='quizResultScreen') ||
+        (s==='stats'       && id==='statsScreen')
       );
-      const block = ['setScreen','quizSetupScreen','quizResultScreen','statsScreen'].includes(id);
+      const block = ['setScreen','rankSetupScreen','rankResultScreen','quizSetupScreen','quizResultScreen','statsScreen'].includes(id);
       el.style.display = show ? (block ? 'block' : 'flex') : 'none';
     });
 }
@@ -551,10 +624,13 @@ async function loadSelectedSet() {
 function switchMode(mode) {
   currentMode = mode;
   document.querySelectorAll('.mode-tab').forEach((t,i) => {
-    t.classList.toggle('active',(i===0&&mode==='study')||(i===1&&mode==='quiz')||(i===2&&mode==='stats'));
+    t.classList.toggle('active',
+      (i===0&&mode==='study')||(i===1&&mode==='rank')||
+      (i===2&&mode==='quiz') ||(i===3&&mode==='stats'));
   });
   document.getElementById('filters').style.display = mode==='study'?'flex':'none';
-  if (mode==='study')      { showScreen('study'); applyFilters(); }
+  if      (mode==='study') { showScreen('study'); applyFilters(); }
+  else if (mode==='rank')  { showScreen('rankSetup'); }
   else if (mode==='quiz')  { showScreen('quizSetup'); }
   else if (mode==='stats') { showScreen('stats'); renderStats(); }
 }
@@ -720,6 +796,183 @@ function reviewMissed() {
   deck=quizMissed.map(m=>m.correct); idx=0; flipped=false;
   document.getElementById('filters').style.display='none';
   showScreen('study'); render();
+}
+
+// ── RANK MODE ──────────────────────────────────────────────────────────────
+let rankRarities=new Set(['all']), rankColors=new Set(['all']), rankCount=10;
+let rankCards=[], dragSrcIdx=null;
+
+document.querySelectorAll('[data-rfilter]').forEach(p => {
+  p.onclick = () => {
+    const f=p.dataset.rfilter, v=p.dataset.val;
+    if (f==='count') {
+      document.querySelectorAll(`[data-rfilter="count"]`).forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+      rankCount = v==='all'?9999:parseInt(v);
+      return;
+    }
+    const set = f==='rarity'?rankRarities:rankColors;
+    if (v==='all') {
+      set.clear(); set.add('all');
+      document.querySelectorAll(`[data-rfilter="${f}"]`).forEach(x=>x.classList.remove('active'));
+      p.classList.add('active');
+    } else {
+      set.delete('all');
+      document.querySelector(`[data-rfilter="${f}"][data-val="all"]`).classList.remove('active');
+      if (set.has(v)) {
+        set.delete(v); p.classList.remove('active');
+        if (set.size===0) { set.add('all'); document.querySelector(`[data-rfilter="${f}"][data-val="all"]`).classList.add('active'); }
+      } else { set.add(v); p.classList.add('active'); }
+    }
+  };
+});
+
+function startRank() {
+  let pool = allCards.filter(c =>
+    (rankRarities.has('all')||rankRarities.has(c.rarity)) &&
+    (rankColors.has('all')  ||rankColors.has(c.color))
+  );
+  if (pool.length < 2) { alert('Not enough cards. Try broader filters.'); return; }
+  // Pick from top cards by GIH WR, then shuffle so order isn't a hint
+  const top = [...pool].sort((a,b)=>b.gihwr-a.gihwr).slice(0, Math.min(rankCount, pool.length));
+  rankCards = shuffle([...top]);
+  document.getElementById('rankCountLabel').textContent = `${rankCards.length} cards`;
+  renderRankList();
+  showScreen('rank');
+}
+
+function renderRankList() {
+  const list = document.getElementById('rankList');
+  list.innerHTML = '';
+  rankCards.forEach((card, i) => {
+    const div = document.createElement('div');
+    div.className = 'rank-item';
+    div.draggable = true;
+    div.dataset.idx = i;
+    const imgHtml = card.image
+      ? `<img class="rank-img" src="${card.image}" alt="${card.name}" loading="lazy">`
+      : `<div class="rank-img-placeholder">🃏</div>`;
+    const rarityColors = {common:'#888',uncommon:'#5a7a8a',rare:'#7a6a9a',mythic:'#8b3a00'};
+    div.innerHTML = `
+      <div class="rank-num">${i+1}</div>
+      ${imgHtml}
+      <div class="rank-info">
+        <div class="rank-name">${card.name}</div>
+        <div class="rank-meta" style="color:${rarityColors[card.rarity]||'#888'}">${card.rarity} · ${card.color}</div>
+      </div>
+      <div class="drag-handle">⠿</div>`;
+
+    // Drag events
+    div.addEventListener('dragstart', e => {
+      dragSrcIdx = i;
+      setTimeout(() => div.classList.add('dragging'), 0);
+      e.dataTransfer.effectAllowed = 'move';
+    });
+    div.addEventListener('dragend', () => div.classList.remove('dragging'));
+    div.addEventListener('dragover', e => { e.preventDefault(); div.classList.add('drag-over'); });
+    div.addEventListener('dragleave', () => div.classList.remove('drag-over'));
+    div.addEventListener('drop', e => {
+      e.preventDefault();
+      div.classList.remove('drag-over');
+      if (dragSrcIdx === null || dragSrcIdx === i) return;
+      const moved = rankCards.splice(dragSrcIdx, 1)[0];
+      rankCards.splice(i, 0, moved);
+      dragSrcIdx = null;
+      renderRankList();
+    });
+
+    // Touch drag support
+    let touchStartY = 0, touchItem = null;
+    div.addEventListener('touchstart', e => {
+      touchStartY = e.touches[0].clientY;
+      touchItem = i;
+      div.classList.add('dragging');
+    }, {passive:true});
+    div.addEventListener('touchmove', e => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      const els = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = els.find(el => el.classList.contains('rank-item') && el !== div);
+      document.querySelectorAll('.rank-item').forEach(el => el.classList.remove('drag-over'));
+      if (target) target.classList.add('drag-over');
+    }, {passive:false});
+    div.addEventListener('touchend', e => {
+      div.classList.remove('dragging');
+      document.querySelectorAll('.rank-item').forEach(el => el.classList.remove('drag-over'));
+      const touch = e.changedTouches[0];
+      const els = document.elementsFromPoint(touch.clientX, touch.clientY);
+      const target = els.find(el => el.classList.contains('rank-item') && el !== div);
+      if (target && touchItem !== null) {
+        const targetIdx = parseInt(target.dataset.idx);
+        const moved = rankCards.splice(touchItem, 1)[0];
+        rankCards.splice(targetIdx, 0, moved);
+        touchItem = null;
+        renderRankList();
+      }
+    }, {passive:true});
+
+    list.appendChild(div);
+  });
+}
+
+function submitRanking() {
+  const correctOrder = [...rankCards].sort((a,b)=>b.gihwr-a.gihwr);
+  // Score: for each card, check position distance
+  let totalScore = 0;
+  rankCards.forEach((card, userPos) => {
+    const correctPos = correctOrder.findIndex(c=>c.name===card.name);
+    const maxDist = rankCards.length - 1;
+    const dist = Math.abs(userPos - correctPos);
+    totalScore += (maxDist - dist) / maxDist;
+  });
+  const pct = Math.round((totalScore / rankCards.length) * 100);
+
+  document.getElementById('rankResultScore').textContent =
+    `${pct}% accuracy on ${rankCards.length} cards`;
+  document.getElementById('rankResultGrade').textContent =
+    pct>=90?'🏆 Expert Drafter!':pct>=75?'🌟 Strong Ranking!':pct>=60?'👍 Good Instincts!':pct>=45?'📚 Keep Studying!':'💪 Practice More!';
+
+  // Your order
+  const yourDiv = document.getElementById('yourRanking');
+  yourDiv.innerHTML = rankCards.map((card, i) => {
+    const correctPos = correctOrder.findIndex(c=>c.name===card.name);
+    const dist = Math.abs(i - correctPos);
+    const dotColor = dist===0?'#4caf50':dist<=1?'#ffeb3b':'#e94560';
+    const imgHtml = card.image
+      ? `<img class="rri-img" src="${card.image}" loading="lazy">`
+      : `<div class="rri-img-ph">🃏</div>`;
+    return `<div class="rank-result-item">
+      <div class="rri-num" style="color:var(--gold)">${i+1}</div>
+      ${imgHtml}
+      <div class="rri-info">
+        <div class="rri-name">${card.name}</div>
+        <div class="rri-wr" style="color:#888">${card.gihwr}%</div>
+      </div>
+      <div class="rri-match" style="background:${dotColor}"></div>
+    </div>`;
+  }).join('');
+
+  // Correct order
+  const correctDiv = document.getElementById('correctRanking');
+  correctDiv.innerHTML = correctOrder.map((card, i) => {
+    const userPos = rankCards.findIndex(c=>c.name===card.name);
+    const dist = Math.abs(i - userPos);
+    const dotColor = dist===0?'#4caf50':dist<=1?'#ffeb3b':'#e94560';
+    const imgHtml = card.image
+      ? `<img class="rri-img" src="${card.image}" loading="lazy">`
+      : `<div class="rri-img-ph">🃏</div>`;
+    return `<div class="rank-result-item">
+      <div class="rri-num" style="color:#4caf50">${i+1}</div>
+      ${imgHtml}
+      <div class="rri-info">
+        <div class="rri-name">${card.name}</div>
+        <div class="rri-wr" style="color:#4caf50">${card.gihwr}%</div>
+      </div>
+      <div class="rri-match" style="background:${dotColor}"></div>
+    </div>`;
+  }).join('');
+
+  showScreen('rankResult');
 }
 
 // ── STUDY FILTERS ──────────────────────────────────────────────────────────
