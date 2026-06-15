@@ -850,7 +850,7 @@ function renderRankList() {
     div.draggable = true;
     div.dataset.idx = i;
     const imgHtml = card.image
-      ? `<div class="rank-img-wrap" style="background-image:url('${card.image}')"></div>`
+      ? `<div class="rank-img-wrap"><img src="${card.image}" alt="${card.name}" loading="lazy"></div>`
       : `<div class="rank-img-placeholder">🃏</div>`;
     const rarityColors = {common:'#888',uncommon:'#5a7a8a',rare:'#7a6a9a',mythic:'#8b3a00'};
     div.innerHTML = `
