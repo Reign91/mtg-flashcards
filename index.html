@@ -165,7 +165,7 @@
 </div>
 
 <!-- SET SCREEN -->
-<div id="setScreen">
+<div id="setScreen" style="display:none">
   <div style="padding:24px 16px; max-width:600px; margin:0 auto;">
     <h2>Your Sets</h2>
     <p>These are the JSON files uploaded to your GitHub. Run the Python script for a new set, upload the JSON to GitHub, then tap Refresh.</p>
@@ -675,6 +675,8 @@ function showScreen(s) {
   document.getElementById('quizSetupScreen').style.display = s==='quizSetup'  ? 'block':'none';
   document.getElementById('quizScreen').style.display      = s==='quiz'       ? 'flex' :'none';
   document.getElementById('quizResultScreen').style.display= s==='quizResult' ? 'flex' :'none';
+  // Always hide set screen when not on set screen
+  if (s !== 'set') document.getElementById('setScreen').style.display = 'none';
 }
 
 function setMsg(m,s){ document.getElementById('loadMsg').textContent=m; document.getElementById('loadSub').textContent=s; }
@@ -689,6 +691,7 @@ document.getElementById('manifestLink').href=URL.createObjectURL(new Blob([JSON.
 if('serviceWorker' in navigator){const sw=`const C='mtg-v3';self.addEventListener('install',e=>e.waitUntil(caches.open(C).then(c=>c.addAll(['./', './index.html']))));self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request))));`;navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'text/javascript'}))).catch(()=>{});}
 
 // Auto-scan on load
+showScreen('set');
 scanSets();
 </script>
 </body>
