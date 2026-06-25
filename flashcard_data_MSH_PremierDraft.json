@@ -1,0 +1,1117 @@
+{
+  "meta": {
+    "expansion": "MSH",
+    "format": "PremierDraft",
+    "top_n": 5,
+    "generated": "2026-06-25"
+  },
+  "cards": [
+    {
+      "name": "Hero in Training",
+      "gihwr": 62.9,
+      "gpwr": 0.0,
+      "alsa": 5.58,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/1/0/105a937b-289c-47b5-96a4-654c697bbb7d.jpg?1780919524"
+    },
+    {
+      "name": "Murdock's Crusade",
+      "gihwr": 61.0,
+      "gpwr": 0.0,
+      "alsa": 6.81,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/9/8/98df64ca-39c3-47e6-8143-4106c8e9cf59.jpg?1780413443"
+    },
+    {
+      "name": "Web Up",
+      "gihwr": 61.0,
+      "gpwr": 0.0,
+      "alsa": 3.9,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/9/a/9a1b057b-229c-4f65-ba4e-12dd342238de.jpg?1780919576"
+    },
+    {
+      "name": "Take Up the Shield",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 7.02,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/5/1/5199d708-8b11-461d-9e91-3e8cd70906f7.jpg?1780919568"
+    },
+    {
+      "name": "Borough Backup",
+      "gihwr": 60.3,
+      "gpwr": 0.0,
+      "alsa": 7.71,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/b/b/bb753ac8-67e1-44b0-b404-37f04c2b7438.jpg?1780919492"
+    },
+    {
+      "name": "Trickster's Stratagem",
+      "gihwr": 62.6,
+      "gpwr": 0.0,
+      "alsa": 6.69,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/6/2/620376d0-dc0c-405f-8121-eb36d9b4f4c2.jpg?1780919676"
+    },
+    {
+      "name": "S.H.I.E.L.D. Deployment Drone",
+      "gihwr": 61.2,
+      "gpwr": 0.0,
+      "alsa": 5.41,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/c/3/c3d0f02f-dfaf-47b6-8053-514417f4dfe2.jpg?1780925755"
+    },
+    {
+      "name": "We Say Thee Nay!",
+      "gihwr": 60.1,
+      "gpwr": 0.0,
+      "alsa": 6.48,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/1/3/13b70321-75bd-4d44-b9f6-5f062a5dda0f.jpg?1780919683"
+    },
+    {
+      "name": "Futurist Forge",
+      "gihwr": 59.5,
+      "gpwr": 0.0,
+      "alsa": 8.16,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/a/5/a50feebf-c660-43f1-9fae-75294703b346.jpg?1780919622"
+    },
+    {
+      "name": "Atlantis Attacks",
+      "gihwr": 59.4,
+      "gpwr": 0.0,
+      "alsa": 7.52,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/4/0/40bc4380-055d-4913-93cb-280c9c1d1a87.jpg?1780919595"
+    },
+    {
+      "name": "Cruel Alliance",
+      "gihwr": 59.9,
+      "gpwr": 0.0,
+      "alsa": 4.78,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/d/8/d895d5a1-d382-438b-8551-e142bb5142af.jpg?1780919710"
+    },
+    {
+      "name": "HYDRA Infiltration",
+      "gihwr": 58.4,
+      "gpwr": 0.0,
+      "alsa": 10.47,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/c/2/c2e446e1-e384-4d5f-8099-544f78c08510.jpg?1780919729"
+    },
+    {
+      "name": "Hour of Defeat",
+      "gihwr": 58.0,
+      "gpwr": 0.0,
+      "alsa": 4.3,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/9/e/9e0034dd-396e-46af-b931-0daa25da4406.jpg?1780919723"
+    },
+    {
+      "name": "Red Room Recruit",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 7.04,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/f/5/f52a5ba3-a618-4f52-9d33-ba85345eb627.jpg?1780919765"
+    },
+    {
+      "name": "Widow's Bite",
+      "gihwr": 55.9,
+      "gpwr": 0.0,
+      "alsa": 6.38,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/d/b/dbee18af-9ade-4251-81a1-f6e7ffbf480f.jpg?1780919813"
+    },
+    {
+      "name": "Lightning Strike",
+      "gihwr": 56.4,
+      "gpwr": 0.0,
+      "alsa": 3.92,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/8/8/88b13bc0-da54-4c3b-917c-7c8345a329f5.jpg?1780919889"
+    },
+    {
+      "name": "HULK SMASH!",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 7.05,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/3/7/374ffb3e-0753-4682-936a-ae6921ace475.jpg?1780413626"
+    },
+    {
+      "name": "Kree Sentinel",
+      "gihwr": 55.0,
+      "gpwr": 0.0,
+      "alsa": 8.74,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/b/a/ba5e441d-d036-4080-9571-6cf76df7b452.jpg?1780919882"
+    },
+    {
+      "name": "Crimson Operative",
+      "gihwr": 54.8,
+      "gpwr": 0.0,
+      "alsa": 8.33,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/c/4/c4bc077c-f220-47a5-aaf4-5324ca23d0c5.jpg?1780919833"
+    },
+    {
+      "name": "Hawkeye's Bow",
+      "gihwr": 54.8,
+      "gpwr": 0.0,
+      "alsa": 10.65,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/4/8/485be72b-d784-4886-bb3a-48cff8f781c6.jpg?1780919849"
+    },
+    {
+      "name": "Undercover Skrull",
+      "gihwr": 59.9,
+      "gpwr": 0.0,
+      "alsa": 5.36,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/9/0/90b9a3c0-3fd6-403e-9d6c-201342fea0ad.jpg?1780920130"
+    },
+    {
+      "name": "Ant-Man's Army",
+      "gihwr": 58.6,
+      "gpwr": 0.0,
+      "alsa": 8.74,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/6/1/61a89566-06c1-404f-8217-e5276e2dc5a2.jpg?1780919965"
+    },
+    {
+      "name": "Go Nuts!",
+      "gihwr": 58.6,
+      "gpwr": 0.0,
+      "alsa": 6.35,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/1/5/152a7b5b-2d95-45d3-8fd9-0ca1d5a79f8b.jpg?1780413688"
+    },
+    {
+      "name": "Pet Avengers",
+      "gihwr": 58.0,
+      "gpwr": 0.0,
+      "alsa": 9.0,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/1/0/108a0b92-2134-4776-a2f7-da92050f1b21.jpg?1780925689"
+    },
+    {
+      "name": "Rapid Rescue",
+      "gihwr": 57.0,
+      "gpwr": 0.0,
+      "alsa": 11.5,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/d/7/d739e636-681e-4423-84e3-91efd02b2c94.jpg?1780920054"
+    },
+    {
+      "name": "Avengers Hangar",
+      "gihwr": 61.5,
+      "gpwr": 0.0,
+      "alsa": 8.61,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/c/5/c5d03ebb-1ce9-4a6b-b13e-a72f0b075ae8.jpg?1780920267"
+    },
+    {
+      "name": "H.E.R.B.I.E. Scout Unit",
+      "gihwr": 58.7,
+      "gpwr": 0.0,
+      "alsa": 7.17,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/3/4/3496d0d4-3fab-4ea4-8986-afe5a7155ec6.jpg?1780920211"
+    },
+    {
+      "name": "Asgardian Citadel",
+      "gihwr": 57.9,
+      "gpwr": 0.0,
+      "alsa": 8.69,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/d/5/d5f88c3d-b17b-46aa-a573-449350f95d46.jpg?1780925568"
+    },
+    {
+      "name": "Surveillance Room",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 8.68,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/8/f/8fb51fbb-ab7f-4484-a3c9-dc50cb6f2756.jpg?1780920317"
+    },
+    {
+      "name": "Birnin Zana Plaza",
+      "gihwr": 57.6,
+      "gpwr": 0.0,
+      "alsa": 9.06,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.scryfall.io/large/front/4/1/41463827-46de-40c4-ac2b-1fdf6aa36f65.jpg?1780920273"
+    },
+    {
+      "name": "Agent 13, Sharon Carter",
+      "gihwr": 61.8,
+      "gpwr": 0.0,
+      "alsa": 4.12,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/1/0/107cb521-9806-47dc-92d8-b43112b63caa.jpg?1781269374"
+    },
+    {
+      "name": "Political Triumph",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 5.75,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/d/e/dec3dd36-b8ca-432b-8973-d37c6efc4c1a.jpg?1780516514"
+    },
+    {
+      "name": "Agent Maria Hill",
+      "gihwr": 61.1,
+      "gpwr": 0.0,
+      "alsa": 4.37,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/9/e/9e327c67-1cf1-4d82-903c-b41c8e7cf747.jpg?1780572341"
+    },
+    {
+      "name": "Red Guardian, Super-Soldier",
+      "gihwr": 61.1,
+      "gpwr": 0.0,
+      "alsa": 4.46,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/c/0/c08f8163-319a-4a31-b15a-93974cacd5b7.jpg?1780919550"
+    },
+    {
+      "name": "Night Nurse, Healer of Heroes",
+      "gihwr": 61.0,
+      "gpwr": 0.0,
+      "alsa": 3.63,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/3/1/3199907b-9f24-4554-942a-8ab5a7701717.jpg?1781065528"
+    },
+    {
+      "name": "Justice, Vance Astrovik",
+      "gihwr": 65.4,
+      "gpwr": 0.0,
+      "alsa": 3.32,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/f/1/f1448731-d50e-4b9c-8eb2-3d85c21516c6.jpg?1780925908"
+    },
+    {
+      "name": "Stature, Size Shifter",
+      "gihwr": 61.0,
+      "gpwr": 0.0,
+      "alsa": 6.37,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/f/e/fe692959-64ca-4065-9f9e-1abe590e3d0f.jpg?1780657786"
+    },
+    {
+      "name": "Falcon, Winged Wonder",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 4.69,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/8/d/8dc209ed-0d4c-4d0c-90e8-04cadc3d4c3d.jpg?1780572667"
+    },
+    {
+      "name": "Falcon's Wing Harness",
+      "gihwr": 58.8,
+      "gpwr": 0.0,
+      "alsa": 6.06,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/2/0/20e93f86-9e20-4e08-9bf7-ae6ebebf6876.jpg?1780572359"
+    },
+    {
+      "name": "Shuri, Wakandan Inventor",
+      "gihwr": 57.0,
+      "gpwr": 0.0,
+      "alsa": 6.37,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/6/5/65005522-555e-4479-939c-be16e0262f6f.jpg?1780413507"
+    },
+    {
+      "name": "Dark Deed",
+      "gihwr": 60.3,
+      "gpwr": 0.0,
+      "alsa": 2.65,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/4/9/49e36cac-3999-40b3-91b3-85af4fded679.jpg?1780413536"
+    },
+    {
+      "name": "Klaw, Sonic Subjugator",
+      "gihwr": 58.5,
+      "gpwr": 0.0,
+      "alsa": 4.49,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/c/7/c79a86f8-24e9-49a2-8b1c-72a72fed1985.jpg?1780919741"
+    },
+    {
+      "name": "Madame Masque",
+      "gihwr": 58.5,
+      "gpwr": 0.0,
+      "alsa": 4.12,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/f/5/f54197b8-6279-43ee-9340-69bd22cf3775.jpg?1780919747"
+    },
+    {
+      "name": "Yellowjacket, Heartless Marauder",
+      "gihwr": 56.6,
+      "gpwr": 0.0,
+      "alsa": 5.09,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/d/8/d8f91212-2ff5-4024-8f14-86bb5c4a9754.jpg?1780919820"
+    },
+    {
+      "name": "Baron Strucker, HYDRA Overlord",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 4.19,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/e/a/eaf2251a-ffaf-4055-9474-7e3d08d89609.jpg?1780572732"
+    },
+    {
+      "name": "Jessica Jones, Private Eye",
+      "gihwr": 59.7,
+      "gpwr": 0.0,
+      "alsa": 6.45,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/b/4/b48278fd-1d95-4ad6-9a51-f1c5a2ab9f4b.jpg?1780572425"
+    },
+    {
+      "name": "Photon Blast Barrage",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 5.68,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/f/8/f85a77d2-e11e-44bc-a1e7-d783cd49d714.jpg?1780413661"
+    },
+    {
+      "name": "Misty Knight, Hero for Hire",
+      "gihwr": 55.5,
+      "gpwr": 0.0,
+      "alsa": 7.85,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/6/b/6b963642-a103-44a0-9eb7-9c3fdde181b7.jpg?1780657800"
+    },
+    {
+      "name": "Speed, Young Avenger",
+      "gihwr": 55.4,
+      "gpwr": 0.0,
+      "alsa": 8.6,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/d/1/d15d187b-dc5d-482d-a79a-b9b98193ad7a.jpg?1780919920"
+    },
+    {
+      "name": "Red Hulk",
+      "gihwr": 55.1,
+      "gpwr": 0.0,
+      "alsa": 5.23,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/e/2/e25468e2-17c6-47b2-8eb6-fcb8ae6f4c17.jpg?1780658474"
+    },
+    {
+      "name": "She-Hulk, Jade Defender",
+      "gihwr": 61.5,
+      "gpwr": 0.0,
+      "alsa": 4.76,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/d/2/d22a8d02-023c-4f71-a771-16b5aa2a05d7.jpg?1780920100"
+    },
+    {
+      "name": "Ka-Zar of the Savage Land",
+      "gihwr": 61.2,
+      "gpwr": 0.0,
+      "alsa": 3.11,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/c/a/caf70fc5-87a0-4b4d-bedd-74dd09569bed.jpg?1780658523"
+    },
+    {
+      "name": "Punishing Punch",
+      "gihwr": 60.9,
+      "gpwr": 0.0,
+      "alsa": 4.03,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/a/3/a33a4cb4-1b57-47ca-8e5e-58ff46a6e0ce.jpg?1780657807"
+    },
+    {
+      "name": "White Tiger, Ava Ayala",
+      "gihwr": 58.8,
+      "gpwr": 0.0,
+      "alsa": 4.4,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/c/1/c1589e2e-32a8-48b8-93eb-a9af344e7084.jpg?1781065378"
+    },
+    {
+      "name": "Hellcat, Undying Vigilante",
+      "gihwr": 57.0,
+      "gpwr": 0.0,
+      "alsa": 6.06,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/d/7/d7922c5f-d6ee-4b62-a537-3be5aa280e10.jpg?1780942695"
+    },
+    {
+      "name": "Killmonger, Scourge of Wakanda",
+      "gihwr": 62.9,
+      "gpwr": 0.0,
+      "alsa": 4.63,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/5/0/5060aa13-4b33-4b3a-8bdb-dd81308fa3e3.jpg?1780413784"
+    },
+    {
+      "name": "Captain America, Living Legend",
+      "gihwr": 61.2,
+      "gpwr": 0.0,
+      "alsa": 5.01,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/6/5/6516f292-469d-4092-b099-97c698f373cd.jpg?1780413757"
+    },
+    {
+      "name": "Spider-Woman, Secret Agent",
+      "gihwr": 60.3,
+      "gpwr": 0.0,
+      "alsa": 3.89,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/a/0/a0325cb5-4c43-418a-8f1b-cf5bf29e74d7.jpg?1780413818"
+    },
+    {
+      "name": "Black Panther, Vanguard",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 4.62,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/9/e/9e308f77-206b-4c9d-bfba-f4c476ea574a.jpg?1780413744"
+    },
+    {
+      "name": "U.S.Agent, John Walker",
+      "gihwr": 58.6,
+      "gpwr": 0.0,
+      "alsa": 4.26,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/3/5/35e11911-799c-4d82-9109-3ca27964bef0.jpg?1780572955"
+    },
+    {
+      "name": "Avengers Tower",
+      "gihwr": 61.6,
+      "gpwr": 0.0,
+      "alsa": 6.72,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/8/8/88f0d9c9-8a1f-4b5a-b6f9-821ddd658d27.jpg?1780573028"
+    },
+    {
+      "name": "Baxter Building",
+      "gihwr": 58.3,
+      "gpwr": 0.0,
+      "alsa": 7.32,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/1/a/1abc652f-8e9d-4df7-bc4e-d8b515a40fec.jpg?1780544612"
+    },
+    {
+      "name": "Villainous Hideout",
+      "gihwr": 57.0,
+      "gpwr": 0.0,
+      "alsa": 7.09,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/8/2/822b0249-e1df-453d-8b60-75a5196ed818.jpg?1780925824"
+    },
+    {
+      "name": "Viv Vision, Teen Synthezoid",
+      "gihwr": 55.3,
+      "gpwr": 0.0,
+      "alsa": 5.84,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/8/5/85cc170a-ecd2-4870-b675-7ece88813995.jpg?1780920249"
+    },
+    {
+      "name": "S.H.I.E.L.D. Helicarrier",
+      "gihwr": 54.7,
+      "gpwr": 0.0,
+      "alsa": 9.03,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.scryfall.io/large/front/3/6/364dc091-3161-4cd7-838c-742b9325fc32.jpg?1780920223"
+    },
+    {
+      "name": "Agent Phil Coulson",
+      "gihwr": 68.1,
+      "gpwr": 0.0,
+      "alsa": 1.78,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/1/3/1383e587-df58-4b45-9067-b9399e90b9ed.jpg?1780453064"
+    },
+    {
+      "name": "Captain America, Wings of Freedom",
+      "gihwr": 63.6,
+      "gpwr": 0.0,
+      "alsa": 1.62,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/c/8/c87ca9ce-5034-4137-99cc-c2b28f298912.jpg?1780658296"
+    },
+    {
+      "name": "Nick Fury, Agent of S.H.I.E.L.D.",
+      "gihwr": 62.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/3/a/3aa6fc02-ef76-426b-accd-6c0ef88b2a5e.jpg?1780696905"
+    },
+    {
+      "name": "Origin of the Avengers",
+      "gihwr": 59.1,
+      "gpwr": 0.0,
+      "alsa": 2.01,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/9/b/9b0701e8-e365-425a-b897-92f4df9edcb8.jpg?1780516509"
+    },
+    {
+      "name": "The Sentry, Golden Guardian",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 2.18,
+      "color": "W",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/3/f/3f56c0e7-5b07-48e3-b0ca-5d09ddc8de9a.jpg?1778243735"
+    },
+    {
+      "name": "Leader, Super-Genius",
+      "gihwr": 68.0,
+      "gpwr": 0.0,
+      "alsa": 1.88,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/2/c/2c8aab8d-2dfe-49c8-9aa8-536b0587b467.jpg?1780413468"
+    },
+    {
+      "name": "The Wondrous Wasp",
+      "gihwr": 66.8,
+      "gpwr": 0.0,
+      "alsa": 2.12,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/4/8/484e80a4-1d5f-4c27-98a8-ee2ef9d6cbdc.jpg?1780657794"
+    },
+    {
+      "name": "Secret Invasion",
+      "gihwr": 59.6,
+      "gpwr": 0.0,
+      "alsa": 2.61,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/e/3/e361b2f4-cd2f-44e9-a56d-c1d6b5ae742d.jpg?1780413499"
+    },
+    {
+      "name": "S.H.I.E.L.D. Flying Car",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 2.51,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/8/e/8e651410-b829-4468-b866-a9dd15f909ad.jpg?1780539471"
+    },
+    {
+      "name": "Ms. Marvel, Kamala Khan",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/9/d/9dd2d627-10fc-4045-8545-03bcf75e60ca.jpg?1780572678"
+    },
+    {
+      "name": "Elektra, Daughter of the Hand",
+      "gihwr": 62.8,
+      "gpwr": 0.0,
+      "alsa": 1.82,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/a/c/ac3e586c-d654-4631-beda-a5e29cf04717.jpg?1780413542"
+    },
+    {
+      "name": "Super-Skrull",
+      "gihwr": 60.7,
+      "gpwr": 0.0,
+      "alsa": 2.42,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/1/1/11fc8221-756a-4919-9272-38793e9c1ad9.jpg?1778243894"
+    },
+    {
+      "name": "Doom Reigns Supreme",
+      "gihwr": 53.6,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/9/b/9b99894b-c774-45c2-9ee9-4d6a8e7522f5.jpg?1778243888"
+    },
+    {
+      "name": "Thunderbolts Conspiracy",
+      "gihwr": 49.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/f/4/f498c1a4-54d2-4e87-952f-8cf7e408930c.jpg?1778243910"
+    },
+    {
+      "name": "Construct a Cosmic Cube",
+      "gihwr": 49.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/4/4/448de757-ac16-4529-b851-1a1331b821a5.jpg?1780457773"
+    },
+    {
+      "name": "Hawkeye, Master Marksman",
+      "gihwr": 60.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/9/9/9991b684-0ae0-4aa4-8f22-a9c473f5d69c.jpg?1780572843"
+    },
+    {
+      "name": "Avengers Disassembled",
+      "gihwr": 54.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/7/2/72d3e750-870b-497d-80d7-e3df097db554.jpg?1780572805"
+    },
+    {
+      "name": "Fin Fang Foom",
+      "gihwr": 53.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/7/7/7777fac1-7bf5-4454-960d-26ec3183e392.jpg?1780572831"
+    },
+    {
+      "name": "Quicksilver, Brash Blur",
+      "gihwr": 50.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/2/d/2d5819ca-165d-4f4c-9500-3ac206994880.jpg?1778243916"
+    },
+    {
+      "name": "The Unbeatable Squirrel Girl",
+      "gihwr": 62.4,
+      "gpwr": 0.0,
+      "alsa": 2.08,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/d/8/d8b94ebb-0b3a-4e68-8c0c-3a61ac32f3ef.jpg?1780413721"
+    },
+    {
+      "name": "Epic Fight",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/d/5/d521b80b-4b0b-4d69-bd95-4c83feaf2145.jpg?1781065469"
+    },
+    {
+      "name": "Heroic Feast",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/3/2/32d05c3d-cf03-492e-a956-2e77c36e36c4.jpg?1780919992"
+    },
+    {
+      "name": "Mole Man, Moloid Master",
+      "gihwr": 57.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/1/b/1b406cc5-75c9-430a-83a2-de0f2a8aeae6.jpg?1780572872"
+    },
+    {
+      "name": "World War Hulk",
+      "gihwr": 54.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/9/0/9032f05b-5c21-4996-90c1-268dc6dffbaa.jpg?1778243944"
+    },
+    {
+      "name": "The Super Hero Civil War",
+      "gihwr": 71.3,
+      "gpwr": 0.0,
+      "alsa": 1.82,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/f/b/fbd1f333-5640-41f8-b9dd-1c322ac7724a.jpg?1780539596"
+    },
+    {
+      "name": "Absorbing Man",
+      "gihwr": 64.3,
+      "gpwr": 0.0,
+      "alsa": 3.71,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/7/1/7114ef87-53ff-43e9-864c-9faa455d86ef.jpg?1780572929"
+    },
+    {
+      "name": "The Mighty Thor, Jane Foster",
+      "gihwr": 64.1,
+      "gpwr": 0.0,
+      "alsa": 2.32,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/0/8/082cc8cc-bbea-4ca7-a0e8-da1f865d6626.jpg?1780657826"
+    },
+    {
+      "name": "Vision Quest",
+      "gihwr": 63.5,
+      "gpwr": 0.0,
+      "alsa": 4.32,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/c/0/c01afea6-645d-4d4f-bdaa-90794a628bcd.jpg?1780920186"
+    },
+    {
+      "name": "The Ruinous Wrecking Crew",
+      "gihwr": 63.1,
+      "gpwr": 0.0,
+      "alsa": 2.64,
+      "color": "M",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/4/d/4d8c8ceb-84cd-46d2-9230-ab6ca4569334.jpg?1780539580"
+    },
+    {
+      "name": "Super-Adaptoid",
+      "gihwr": 59.6,
+      "gpwr": 0.0,
+      "alsa": 2.02,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/f/b/fbbd8609-5a00-4188-96fe-77251579b88d.jpg?1780920229"
+    },
+    {
+      "name": "Hidden Lair",
+      "gihwr": 59.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/0/7/0742ddb6-71ed-444e-91ad-84f876725a4a.jpg?1780434091"
+    },
+    {
+      "name": "The Vision",
+      "gihwr": 59.1,
+      "gpwr": 0.0,
+      "alsa": 1.24,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/2/9/2961cf20-33c8-4e66-9d0f-6daca8ea7880.jpg?1778243975"
+    },
+    {
+      "name": "Captain America's Shield",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/4/b/4b5433ac-0d36-4472-bf8b-d22f0ffd367b.jpg?1780590301"
+    },
+    {
+      "name": "Gathering Place",
+      "gihwr": 56.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "rare",
+      "image": "https://cards.scryfall.io/large/front/0/8/081cdbd0-5081-4a9e-90ba-f5baf4ac137e.jpg?1780434055"
+    },
+    {
+      "name": "Captain Marvel, Earth's Protector",
+      "gihwr": 73.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/e/b/eb098550-22e6-4079-8c59-ed9ec2f764e3.jpg?1780413361"
+    },
+    {
+      "name": "Avengers Assemble!",
+      "gihwr": 66.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/b/f/bf736399-af74-4f52-9159-67ea67d0cf83.jpg?1780413354"
+    },
+    {
+      "name": "Jennifer Walters",
+      "gihwr": 66.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/6/1/61237530-ad49-469c-a952-67c92315708e.jpg?1780666746"
+    },
+    {
+      "name": "Monica Rambeau",
+      "gihwr": 61.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/3/f/3f995518-b12a-4623-9ab3-b79a5cef3cba.jpg?1780463659"
+    },
+    {
+      "name": "Captain America, Super-Soldier",
+      "gihwr": 60.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/3/3/33631d6c-c584-42ff-afe5-2647b5fb321f.jpg?1778243648"
+    },
+    {
+      "name": "The Mind Stone",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/8/7/87f1e69a-6d74-4982-afda-82613637799a.jpg?1780414743"
+    },
+    {
+      "name": "Bruce Banner",
+      "gihwr": 62.5,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/e/0/e0dbbdcf-84e1-494f-8b8c-0a094f603fa9.jpg?1778243776"
+    },
+    {
+      "name": "Tony Stark",
+      "gihwr": 61.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/4/c/4cea42fd-035e-4b8f-8b1d-ff363b694f14.jpg?1780463636"
+    },
+    {
+      "name": "Kang the Conqueror",
+      "gihwr": 60.5,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/7/9/79747b45-fd7b-4023-9a9c-4d9dab2429fe.jpg?1780458239"
+    },
+    {
+      "name": "Namor the Sub-Mariner",
+      "gihwr": 54.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/7/a/7aaefcf9-fbe1-4767-92a5-09825761d116.jpg?1778243782"
+    },
+    {
+      "name": "Multiversal Incursion",
+      "gihwr": 52.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/8/a/8a505f6f-933c-4644-838f-897f5e4133b0.jpg?1780413491"
+    },
+    {
+      "name": "Doctor Doom",
+      "gihwr": 65.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/9/b/9b1f213a-e1d4-4a0f-954b-c83915698d98.jpg?1778243813"
+    },
+    {
+      "name": "M.O.D.O.K.",
+      "gihwr": 64.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/3/8/38e87542-50f7-4812-9338-84e4b9b7bb44.jpg?1780413618"
+    },
+    {
+      "name": "Black Widow, Super Spy",
+      "gihwr": 60.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/6/3/63ce0909-7d7d-410d-ab6c-c87fa3e23877.jpg?1780919701"
+    },
+    {
+      "name": "Mj\u00f6lnir, Hammer of Thor",
+      "gihwr": 63.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/e/0/e0c7f566-5351-44e3-a346-b84b0eb10209.jpg?1780526037"
+    },
+    {
+      "name": "Thor, God of Thunder",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/c/d/cddd314c-c271-475a-b076-01a8599c8015.jpg?1780413681"
+    },
+    {
+      "name": "Earth's Mightiest Heroes",
+      "gihwr": 57.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/b/3/b38b9bd6-1dd7-4bbc-8a82-ce391c1172e1.jpg?1780658507"
+    },
+    {
+      "name": "Shang-Chi, Master of Kung Fu",
+      "gihwr": 53.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/2/e/2edbb62f-ad45-4422-850b-68dcc18b4c73.jpg?1780920091"
+    },
+    {
+      "name": "The Coming of Galactus",
+      "gihwr": 64.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/0/4/04a38b92-619e-4fe8-b0cb-6fa31f0824ff.jpg?1778243954"
+    },
+    {
+      "name": "King T'Challa",
+      "gihwr": 62.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/a/d/add7d3ce-aa58-4da0-8c2a-cfd01c3a8975.jpg?1780629578"
+    },
+    {
+      "name": "Thanos, the Mad Titan",
+      "gihwr": 56.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/e/6/e669c0b2-0011-4feb-9263-f1ecc0a98f18.jpg?1780412364"
+    },
+    {
+      "name": "Cosmic Cube",
+      "gihwr": 61.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/d/1/d1cf1ead-fe91-4328-89ab-6d0bc9ff6cbe.jpg?1780658779"
+    },
+    {
+      "name": "Iron Man Armor",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/3/6/361c2f3b-f04e-446b-a683-9195e238daf0.jpg?1780920218"
+    },
+    {
+      "name": "Ultron, Artificial Malevolence",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "mythic",
+      "image": "https://cards.scryfall.io/large/front/3/2/32ddd5ac-57ed-4e78-8932-a65980191f6e.jpg?1780572984"
+    }
+  ]
+}
