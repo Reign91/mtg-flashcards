@@ -1,0 +1,595 @@
+{
+  "meta": {
+    "expansion": "TRK",
+    "format": "PremierDraft",
+    "top_n": 5,
+    "generated": "2026-11-11"
+  },
+  "cards": [
+    {
+      "name": "Oberth-Class Starship",
+      "gihwr": 55.7,
+      "gpwr": 0.0,
+      "alsa": 6.66,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/7/e/7efe3788-ecf7-4b56-8970-bc324092941c.webp?1793361187"
+    },
+    {
+      "name": "Oberth-Class Starship",
+      "gihwr": 55.7,
+      "gpwr": 0.0,
+      "alsa": 6.66,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/7/e/7efe3788-ecf7-4b56-8970-bc324092941c.webp?1793361187"
+    },
+    {
+      "name": "Tactical Officer",
+      "gihwr": 55.0,
+      "gpwr": 0.0,
+      "alsa": 8.84,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/3/1/317704a8-a3c2-400c-bbe0-2cbc6fe10710.webp?1785981383"
+    },
+    {
+      "name": "Tactical Officer",
+      "gihwr": 55.0,
+      "gpwr": 0.0,
+      "alsa": 8.84,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/3/1/317704a8-a3c2-400c-bbe0-2cbc6fe10710.webp?1785981383"
+    },
+    {
+      "name": "Shields Up!",
+      "gihwr": 54.3,
+      "gpwr": 0.0,
+      "alsa": 8.4,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/0/b/0b60c9af-8ea9-491d-a4a4-226a2143e7f3.webp?1785981369"
+    },
+    {
+      "name": "Interstellar Effigy",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 6.93,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/4/b/4b7d505f-2a6b-4525-87c7-19e06d49c9df.webp?1793361241"
+    },
+    {
+      "name": "Interstellar Effigy",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 6.93,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/4/b/4b7d505f-2a6b-4525-87c7-19e06d49c9df.webp?1793361241"
+    },
+    {
+      "name": "Starfleet Spanner Jockey",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 9.94,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/1/6/16bc9660-2bef-4926-b0e6-f49b22817bea.webp?1793361250"
+    },
+    {
+      "name": "Starfleet Spanner Jockey",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 9.94,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/1/6/16bc9660-2bef-4926-b0e6-f49b22817bea.webp?1793361250"
+    },
+    {
+      "name": "Suurok-Class Science Vessel",
+      "gihwr": 57.1,
+      "gpwr": 0.0,
+      "alsa": 6.71,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/7/6/7608943e-329e-41f9-b098-a0a94b01e6a1.webp?1793361260"
+    },
+    {
+      "name": "Relentless Drednok",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 7.41,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/c/e/ce538db8-373d-4554-821e-cd96e795e37a.webp?1786005690"
+    },
+    {
+      "name": "Relentless Drednok",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 7.41,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/c/e/ce538db8-373d-4554-821e-cd96e795e37a.webp?1786005690"
+    },
+    {
+      "name": "Fugitive Listener",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 7.32,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/d/bd04c738-b4e3-481e-9a68-d257524bf40e.webp?1793361283"
+    },
+    {
+      "name": "Fugitive Listener",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 7.32,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/d/bd04c738-b4e3-481e-9a68-d257524bf40e.webp?1793361283"
+    },
+    {
+      "name": "He's Dead, Jim",
+      "gihwr": 57.3,
+      "gpwr": 0.0,
+      "alsa": 3.49,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/2/c/2c309b0d-94b4-405e-be6c-18b407323e51.webp?1785981492"
+    },
+    {
+      "name": "Cantankerous Captain",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 10.2,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/2/c/2c053ec5-d1ea-4526-8a0d-e4dfafb8ecdf.webp?1786005671"
+    },
+    {
+      "name": "Cantankerous Captain",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 10.2,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/2/c/2c053ec5-d1ea-4526-8a0d-e4dfafb8ecdf.webp?1786005671"
+    },
+    {
+      "name": "Boarding Action",
+      "gihwr": 60.8,
+      "gpwr": 0.0,
+      "alsa": 8.42,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/3/a/3a0d33cd-f81c-4950-81ed-9536061eca8a.webp?1793361310"
+    },
+    {
+      "name": "Boarding Action",
+      "gihwr": 60.8,
+      "gpwr": 0.0,
+      "alsa": 8.42,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/3/a/3a0d33cd-f81c-4950-81ed-9536061eca8a.webp?1793361310"
+    },
+    {
+      "name": "Starfleet Security",
+      "gihwr": 60.3,
+      "gpwr": 0.0,
+      "alsa": 10.81,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/6/2/62acde0e-791d-4259-83bc-3690e498f3b0.webp?1793359516"
+    },
+    {
+      "name": "Temporal Conqueror",
+      "gihwr": 62.3,
+      "gpwr": 0.0,
+      "alsa": 7.72,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/0/b0bb51a7-1ae2-45d0-8be9-5454a3c8f751.webp?1793361377"
+    },
+    {
+      "name": "Temporal Conqueror",
+      "gihwr": 62.3,
+      "gpwr": 0.0,
+      "alsa": 7.72,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/0/b0bb51a7-1ae2-45d0-8be9-5454a3c8f751.webp?1793361377"
+    },
+    {
+      "name": "Common Goal",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 5.9,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/4/f/4fddc950-fbc5-4cf7-b694-dcd54ffccb31.webp?1785981568"
+    },
+    {
+      "name": "Common Goal",
+      "gihwr": 61.4,
+      "gpwr": 0.0,
+      "alsa": 5.9,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/4/f/4fddc950-fbc5-4cf7-b694-dcd54ffccb31.webp?1785981568"
+    },
+    {
+      "name": "Moopsy",
+      "gihwr": 60.5,
+      "gpwr": 0.0,
+      "alsa": 8.74,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/d/f/dfbaf597-6be2-4aa0-88ae-cc4c94878add.webp?1785981590"
+    },
+    {
+      "name": "Earth, Sector 001",
+      "gihwr": 61.3,
+      "gpwr": 0.0,
+      "alsa": 7.66,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/5/2/5278d354-97c4-4c21-a902-2f9252b151eb.webp?1792632943"
+    },
+    {
+      "name": "Earth, Sector 001",
+      "gihwr": 61.3,
+      "gpwr": 0.0,
+      "alsa": 7.66,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/5/2/5278d354-97c4-4c21-a902-2f9252b151eb.webp?1792632943"
+    },
+    {
+      "name": "Ferenginar",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 8.02,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/1/7/17fab75f-7ff9-4c50-a6f7-03a85cd275bf.webp?1792632949"
+    },
+    {
+      "name": "Ferenginar",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 8.02,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/1/7/17fab75f-7ff9-4c50-a6f7-03a85cd275bf.webp?1792632949"
+    },
+    {
+      "name": "Orion",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 8.6,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/d/e/dec37ff4-d6e9-4b87-865b-125b17162465.webp?1792632952"
+    },
+    {
+      "name": "Hologram Janeway",
+      "gihwr": 56.5,
+      "gpwr": 0.0,
+      "alsa": 3.94,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/0/2/02d29047-a7b8-43fb-8b90-b35ba34da5f9.webp?1793100636"
+    },
+    {
+      "name": "Hologram Janeway",
+      "gihwr": 56.5,
+      "gpwr": 0.0,
+      "alsa": 3.94,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/0/2/02d29047-a7b8-43fb-8b90-b35ba34da5f9.webp?1793100636"
+    },
+    {
+      "name": "Command Subadjunct",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/8/5/853bf74d-0b61-43df-9018-0b40b624a9d1.webp?1792753641"
+    },
+    {
+      "name": "Command Subadjunct",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/8/5/853bf74d-0b61-43df-9018-0b40b624a9d1.webp?1792753641"
+    },
+    {
+      "name": "Brad Boimler, Eager Ensign",
+      "gihwr": 55.5,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/a/6/a6bf1525-2212-46d0-ad4d-1dbaa2e3b3cd.webp?1784036739"
+    },
+    {
+      "name": "Cloak and Phaser",
+      "gihwr": 62.5,
+      "gpwr": 0.0,
+      "alsa": 5.72,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/d/2d9fb7e7-582d-41e7-be9e-98372505ea44.webp?1793187986"
+    },
+    {
+      "name": "Cloak and Phaser",
+      "gihwr": 62.5,
+      "gpwr": 0.0,
+      "alsa": 5.72,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/d/2d9fb7e7-582d-41e7-be9e-98372505ea44.webp?1793187986"
+    },
+    {
+      "name": "Highly Illogical",
+      "gihwr": 55.9,
+      "gpwr": 0.0,
+      "alsa": 7.71,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/1/1/11c94c5f-abf4-429e-8703-c5db9abd79bf.webp?1784065440"
+    },
+    {
+      "name": "Highly Illogical",
+      "gihwr": 55.9,
+      "gpwr": 0.0,
+      "alsa": 7.71,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/1/1/11c94c5f-abf4-429e-8703-c5db9abd79bf.webp?1784065440"
+    },
+    {
+      "name": "Ensign Pavel Chekov",
+      "gihwr": 55.2,
+      "gpwr": 0.0,
+      "alsa": 6.43,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/a/4/a441c12e-1a2f-4b04-83dd-407bf6040efe.webp?1792753698"
+    },
+    {
+      "name": "Blastoneuron",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 5.76,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/c/1/c1855a4c-c7d1-407c-b134-4c43968cbdd3.webp?1792753729"
+    },
+    {
+      "name": "Blastoneuron",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 5.76,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/c/1/c1855a4c-c7d1-407c-b134-4c43968cbdd3.webp?1792753729"
+    },
+    {
+      "name": "D'Ghor Bloodletter",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 4.4,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/5/0/5075645d-ef69-4559-953e-c3140153bd75.webp?1792753733"
+    },
+    {
+      "name": "D'Ghor Bloodletter",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 4.4,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/5/0/5075645d-ef69-4559-953e-c3140153bd75.webp?1792753733"
+    },
+    {
+      "name": "Storied Veteran",
+      "gihwr": 56.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/3/b/3b80995c-8e9a-4a9c-8854-59439a58166f.webp?1792753937"
+    },
+    {
+      "name": "La'An Noonien-Singh, Security",
+      "gihwr": 60.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/a/f/afe08bef-b184-4b91-8d69-0101e183c3ff.webp?1785981540"
+    },
+    {
+      "name": "La'An Noonien-Singh, Security",
+      "gihwr": 60.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/a/f/afe08bef-b184-4b91-8d69-0101e183c3ff.webp?1785981540"
+    },
+    {
+      "name": "Transporter Malfunction",
+      "gihwr": 60.8,
+      "gpwr": 0.0,
+      "alsa": 3.46,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/8/5/85b108c3-00b5-4dfb-90de-57fa483c4926.webp?1793274273"
+    },
+    {
+      "name": "Transporter Malfunction",
+      "gihwr": 60.8,
+      "gpwr": 0.0,
+      "alsa": 3.46,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/8/5/85b108c3-00b5-4dfb-90de-57fa483c4926.webp?1793274273"
+    },
+    {
+      "name": "Khan, Despot by Design",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 5.75,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/f/d/fd283ef1-fd8c-4288-8efa-6e81c92b3415.webp?1793013585"
+    },
+    {
+      "name": "Hologram Stalker",
+      "gihwr": 64.7,
+      "gpwr": 0.0,
+      "alsa": 3.68,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/6/b/6bd8a87b-ca7a-4a15-b96f-1a673ee44f3e.webp?1792668500"
+    },
+    {
+      "name": "Hologram Stalker",
+      "gihwr": 64.7,
+      "gpwr": 0.0,
+      "alsa": 3.68,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/6/b/6bd8a87b-ca7a-4a15-b96f-1a673ee44f3e.webp?1792668500"
+    },
+    {
+      "name": "Species 8472",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 5.24,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/b/3/b3d74723-4c9e-4fe7-8276-05d5f1b7ba0c.webp?1793273864"
+    },
+    {
+      "name": "Species 8472",
+      "gihwr": 60.6,
+      "gpwr": 0.0,
+      "alsa": 5.24,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/b/3/b3d74723-4c9e-4fe7-8276-05d5f1b7ba0c.webp?1793273864"
+    },
+    {
+      "name": "Sylvia Tilly, Joy of Discovery",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 5.33,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/f/e/fe6e03b5-cd96-430b-9c74-96eca0212a81.webp?1792989779"
+    },
+    {
+      "name": "The Duras Sisters",
+      "gihwr": 60.2,
+      "gpwr": 0.0,
+      "alsa": 4.46,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/7/e/7eb112eb-2abf-4ba3-b9bd-b45ffa80f7eb.webp?1792508321"
+    },
+    {
+      "name": "The Duras Sisters",
+      "gihwr": 60.2,
+      "gpwr": 0.0,
+      "alsa": 4.46,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/7/e/7eb112eb-2abf-4ba3-b9bd-b45ffa80f7eb.webp?1792508321"
+    },
+    {
+      "name": "Vash, Freelance Archaeologist",
+      "gihwr": 58.8,
+      "gpwr": 0.0,
+      "alsa": 5.13,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/d/1/d1f51765-f336-4ca2-a0f5-e42dc352c0fa.webp?1792508403"
+    },
+    {
+      "name": "Vash, Freelance Archaeologist",
+      "gihwr": 58.8,
+      "gpwr": 0.0,
+      "alsa": 5.13,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/d/1/d1f51765-f336-4ca2-a0f5-e42dc352c0fa.webp?1792508403"
+    },
+    {
+      "name": "Spock, Always Your Friend",
+      "gihwr": 58.6,
+      "gpwr": 0.0,
+      "alsa": 6.04,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/1/b/1be731d5-8b21-4883-91c0-dd9070b1eadd.webp?1792508391"
+    },
+    {
+      "name": "Spatial Anomaly",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/f/2f683f37-4291-410d-b179-ed6139c06877.webp?1793108360"
+    },
+    {
+      "name": "Spatial Anomaly",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/f/2f683f37-4291-410d-b179-ed6139c06877.webp?1793108360"
+    },
+    {
+      "name": "Temporal Anomaly",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 7.93,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/d/2/d2000219-0a57-48e6-ab0f-d5ad0fb7bcf6.webp?1793361445"
+    },
+    {
+      "name": "Temporal Anomaly",
+      "gihwr": 59.2,
+      "gpwr": 0.0,
+      "alsa": 7.93,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/d/2/d2000219-0a57-48e6-ab0f-d5ad0fb7bcf6.webp?1793361445"
+    },
+    {
+      "name": "U.S.S. Cerritos, Following Up",
+      "gihwr": 57.0,
+      "gpwr": 0.0,
+      "alsa": 4.22,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/7/6/76bf7521-5024-4fdc-9ea1-5e10f2647efb.webp?1793361418"
+    }
+  ]
+}
