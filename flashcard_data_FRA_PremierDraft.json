@@ -1,0 +1,595 @@
+{
+  "meta": {
+    "expansion": "FRA",
+    "format": "PremierDraft",
+    "top_n": 5,
+    "generated": "2026-11-11"
+  },
+  "cards": [
+    {
+      "name": "Memory Trap",
+      "gihwr": 59.4,
+      "gpwr": 0.0,
+      "alsa": 3.92,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/2/f/2f5345ae-4489-4d05-b2d5-c71285254f05.webp?1788866058"
+    },
+    {
+      "name": "Surgical Precision",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 5.41,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/d/3/d3acf176-ef02-4729-88c4-0f0dfbfdada4.webp?1789385570"
+    },
+    {
+      "name": "Shatterwing Pegasus",
+      "gihwr": 55.5,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/e/2/e29095de-59ec-4562-ba8e-73f952e457ae.webp?1789385580"
+    },
+    {
+      "name": "Blossom-Blessed Angel",
+      "gihwr": 55.2,
+      "gpwr": 0.0,
+      "alsa": 6.38,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/5/e/5e77fbf0-9d1f-4e7d-a02e-43065d11b0d9.webp?1789692643"
+    },
+    {
+      "name": "Campus Crier",
+      "gihwr": 55.2,
+      "gpwr": 0.0,
+      "alsa": 7.14,
+      "color": "W",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/6/0/6047b14c-91d5-4f8e-af3f-057a541e2546.webp?1788878120"
+    },
+    {
+      "name": "Icy Reception",
+      "gihwr": 59.0,
+      "gpwr": 0.0,
+      "alsa": 5.93,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/8/d/8d754b96-5e44-45af-9c7a-b0da59fbe4c3.webp?1788779540"
+    },
+    {
+      "name": "Mindseeker Oculus",
+      "gihwr": 57.5,
+      "gpwr": 0.0,
+      "alsa": 3.49,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/f/5/f5324741-353a-4a70-adb2-b631b00806dd.webp?1789556707"
+    },
+    {
+      "name": "Protege's Awakening",
+      "gihwr": 57.5,
+      "gpwr": 0.0,
+      "alsa": 5.03,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/a/0/a08c7ec2-4c6a-4db2-85a7-41afe8731523.webp?1790558750"
+    },
+    {
+      "name": "Surveillance Phantasm",
+      "gihwr": 57.3,
+      "gpwr": 0.0,
+      "alsa": 5.8,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/9/d/9df8a06d-c7de-49af-8c01-06dca3dfef4b.webp?1789385597"
+    },
+    {
+      "name": "Unsummon",
+      "gihwr": 57.3,
+      "gpwr": 0.0,
+      "alsa": 6.55,
+      "color": "U",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/d/d/ddad9f16-52d5-49de-82b0-b1a5294a9c44.webp?1789556722"
+    },
+    {
+      "name": "Extended Absence",
+      "gihwr": 59.9,
+      "gpwr": 0.0,
+      "alsa": 3.31,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/e/b/eb4b6ed8-782e-4473-abc9-d50bf2275c6a.webp?1789556713"
+    },
+    {
+      "name": "Theoretical Necromancer",
+      "gihwr": 56.8,
+      "gpwr": 0.0,
+      "alsa": 8.22,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/e/3/e36a7908-1e22-494b-adb4-e72ac0974d62.webp?1789556734"
+    },
+    {
+      "name": "Last Gasp",
+      "gihwr": 55.8,
+      "gpwr": 0.0,
+      "alsa": 4.58,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/2/3/2381d123-d8c7-4822-98fe-b1c365beb5ed.webp?1789127524"
+    },
+    {
+      "name": "Rank Rat",
+      "gihwr": 55.7,
+      "gpwr": 0.0,
+      "alsa": 8.58,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/4/f/4ff6da82-d7dd-4b59-b7e6-30670cea7169.webp?1789556727"
+    },
+    {
+      "name": "Void Extrapolator",
+      "gihwr": 54.5,
+      "gpwr": 0.0,
+      "alsa": 9.95,
+      "color": "B",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/0/e/0eae2efb-bf25-48ee-9c07-9098008110ad.webp?1789556787"
+    },
+    {
+      "name": "Chandra's Emberling",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/3/a/3a64c5f4-9cfc-4d19-bd99-13d619b1aa9d.webp?1789385708"
+    },
+    {
+      "name": "Wrath of the Bloodmane",
+      "gihwr": 55.0,
+      "gpwr": 0.0,
+      "alsa": 5.34,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/5/b5b55617-684a-4036-be9b-a3b24fc9cd5a.webp?1789385820"
+    },
+    {
+      "name": "No Admittance",
+      "gihwr": 54.0,
+      "gpwr": 0.0,
+      "alsa": 4.29,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/1/1/11ba4fdd-cc03-4bb6-a493-91a9785771d0.webp?1788878170"
+    },
+    {
+      "name": "Heartstring Puller",
+      "gihwr": 53.4,
+      "gpwr": 0.0,
+      "alsa": 9.11,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/c/b/cbfe3354-7ced-4773-9a4e-a937ae9f94f8.webp?1789556808"
+    },
+    {
+      "name": "Awaken the Inferno",
+      "gihwr": 52.9,
+      "gpwr": 0.0,
+      "alsa": 5.86,
+      "color": "R",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/c/5/c596c4ec-8480-4be9-a45d-700398a126f6.webp?1789556812"
+    },
+    {
+      "name": "Something Worth Saving",
+      "gihwr": 59.1,
+      "gpwr": 0.0,
+      "alsa": 8.77,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/0/2/02ee7817-40af-4fcf-a2df-eb218b669281.webp?1788878199"
+    },
+    {
+      "name": "Compel Brutality",
+      "gihwr": 56.5,
+      "gpwr": 0.0,
+      "alsa": 5.94,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/d/bd32d736-7a58-46b9-90b4-2cac3c3e80a1.webp?1788521235"
+    },
+    {
+      "name": "Arcane Amphisbaena",
+      "gihwr": 56.1,
+      "gpwr": 0.0,
+      "alsa": 5.74,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/1/b/1bf923c4-f0b7-4271-978c-fd2e79fe1cc8.webp?1788878190"
+    },
+    {
+      "name": "Bestial Incursion",
+      "gihwr": 55.6,
+      "gpwr": 0.0,
+      "alsa": 6.26,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/e/0/e0de5f66-f0df-4866-9f73-104ce50411b4.webp?1789127248"
+    },
+    {
+      "name": "Sureshot Sower",
+      "gihwr": 55.5,
+      "gpwr": 0.0,
+      "alsa": 9.23,
+      "color": "G",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/6/b635389c-e286-4edb-80d1-23dbe4a18857.webp?1789614751"
+    },
+    {
+      "name": "Twinned Vision",
+      "gihwr": 58.2,
+      "gpwr": 0.0,
+      "alsa": 5.49,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/5/5/55f85984-0137-4899-8993-bbc8c4794d33.webp?1789556940"
+    },
+    {
+      "name": "Fatehold Chronologist",
+      "gihwr": 58.1,
+      "gpwr": 0.0,
+      "alsa": 5.48,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/2/9/29e7ec16-0c16-48aa-8e09-ce6e0d5bd40b.webp?1789060173"
+    },
+    {
+      "name": "Tam's Resistance",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 7.49,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/3/b3d33df2-a77b-4c2e-ba7f-2cc9c1505f9b.webp?1788878215"
+    },
+    {
+      "name": "Konstrari Improviser",
+      "gihwr": 56.3,
+      "gpwr": 0.0,
+      "alsa": 6.67,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/4/2/42e28bd2-486b-45d4-8840-6e33c19c2d57.webp?1789556881"
+    },
+    {
+      "name": "Blessed Ghoul",
+      "gihwr": 55.6,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/b/bb975803-9bf2-401e-9414-d272df314398.webp?1789556847"
+    },
+    {
+      "name": "Keeper of the Quiet Hour",
+      "gihwr": 58.2,
+      "gpwr": 0.0,
+      "alsa": 8.56,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/6/b6331218-dbb8-44a9-8ba5-5fb1ab41c5c0.webp?1788878239"
+    },
+    {
+      "name": "Theorix Annex",
+      "gihwr": 57.4,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/9/7/97bbbd23-ecb1-4407-ac14-dede08532a1e.webp?1789557008"
+    },
+    {
+      "name": "Room of Refuge",
+      "gihwr": 56.6,
+      "gpwr": 0.0,
+      "alsa": 6.93,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/9/a/9a467560-6676-4fc2-9400-768a79650aa4.webp?1789557010"
+    },
+    {
+      "name": "Formidable Commons",
+      "gihwr": 56.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/e/6/e6ca6c3e-f145-42d6-8a17-90770c15afaf.webp?1789556960"
+    },
+    {
+      "name": "Transformative Commons",
+      "gihwr": 55.6,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "common",
+      "image": "https://cards.17landscapes.com/display/front/b/5/b57d5be7-3157-4b49-aeb8-d7368ca7e9dd.webp?1789557014"
+    },
+    {
+      "name": "Way of the Healer",
+      "gihwr": 55.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/5/0/50326a2a-7e10-464b-a97e-e880bda0558c.webp?1789729503"
+    },
+    {
+      "name": "Generous Revival",
+      "gihwr": 55.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/f/8/f82f181b-a43b-4cec-b8f6-f6c1dd4c64fd.webp?1788433351"
+    },
+    {
+      "name": "Your Fate Ends Here",
+      "gihwr": 55.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/5/25000a17-b701-4d69-b2ef-2c74029199d3.webp?1789729751"
+    },
+    {
+      "name": "Tomik, Orzhov Lawmage",
+      "gihwr": 55.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/7/c/7ca95235-6e54-4ff8-bc2e-6a3d483ff007.webp?1789729766"
+    },
+    {
+      "name": "Prophesied End",
+      "gihwr": 54.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "W",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/1/f/1f95399a-9766-4f3d-aa6a-ece55e0530d9.webp?1788951920"
+    },
+    {
+      "name": "Fblthp, Impossibly Lost",
+      "gihwr": 63.6,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/a/3/a3a2edbb-d144-4670-acad-17316cea98d2.webp?1789127697"
+    },
+    {
+      "name": "Plan for All Outcomes",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/c/4/c4effc17-0d0e-423a-b5f2-597ea6c71f67.webp?1790746542"
+    },
+    {
+      "name": "Proft, Consulting Detective",
+      "gihwr": 57.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/b/8/b8466593-40fe-4557-89b2-760c1c92087b.webp?1789127178"
+    },
+    {
+      "name": "Countersculpt",
+      "gihwr": 56.9,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/1/4/145b928d-a7ff-4fe5-ae4d-bbae7b1d955b.webp?1788878107"
+    },
+    {
+      "name": "Geist of Saint Thalia",
+      "gihwr": 56.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "U",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/9/c/9c334530-0880-46b5-a358-9603eee3cecf.webp?1789128026"
+    },
+    {
+      "name": "Multiply by Zero",
+      "gihwr": 62.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/9/0/90d684a4-9639-4792-8760-2011a7a85370.webp?1789644823"
+    },
+    {
+      "name": "Break Under Pressure",
+      "gihwr": 60.4,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/4/6/46974d94-e900-43e4-92b5-4fb9b9f7cf46.webp?1789385622"
+    },
+    {
+      "name": "Gallia, Tragic Host",
+      "gihwr": 56.4,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/4/9/498fa810-8522-4020-b773-52ad404c9f65.webp?1789385697"
+    },
+    {
+      "name": "Rewrite Regrets",
+      "gihwr": 55.5,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/4/5/453cfde7-c460-4b55-9472-b714e16f24bb.webp?1788952087"
+    },
+    {
+      "name": "Tinybones, Pocket Nuisance",
+      "gihwr": 54.2,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "B",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/f/2f47ddf7-35b6-4205-8045-f057914c5f64.webp?1788329294"
+    },
+    {
+      "name": "Violent Echoes",
+      "gihwr": 54.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/a/d/ad03ba90-2442-4a71-94df-2088b5b63662.webp?1789127599"
+    },
+    {
+      "name": "Fulminous Forte",
+      "gihwr": 53.6,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/1/9/19acb2b5-3b3e-43f0-bd81-8426ed3d9c55.webp?1789614832"
+    },
+    {
+      "name": "Kiora of Fire and Ashes",
+      "gihwr": 52.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/0/8/08657053-86f9-4c52-abf0-d9cdd443ae3b.webp?1789127995"
+    },
+    {
+      "name": "Pia, Determined Rebuilder",
+      "gihwr": 52.6,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "R",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/d/d/dd3faaf4-45ca-4714-8dbe-37102ec131cf.webp?1789385851"
+    },
+    {
+      "name": "Way of the Wildspeaker",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/a/2/a252cb01-537b-4afe-9abc-81a98c4a1439.webp?1789729602"
+    },
+    {
+      "name": "Fblthp, Knows the Way",
+      "gihwr": 57.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/8/28fbb55a-5c9d-45ee-bf42-a84b1048f5d2.webp?1789127976"
+    },
+    {
+      "name": "Restore with Empathy",
+      "gihwr": 56.5,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/3/5/3546b93b-a7d1-451d-a369-22cc8ddcd00d.webp?1788865848"
+    },
+    {
+      "name": "Way of the Paradox",
+      "gihwr": 56.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/9/8/98dc5470-507a-4364-8480-42607255e56c.webp?1789729606"
+    },
+    {
+      "name": "Heartwood Crafter",
+      "gihwr": 55.0,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "G",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/9/1/910a1f41-17fd-4ab0-9597-7151e79dc760.webp?1789127630"
+    },
+    {
+      "name": "Recursive Recruitment",
+      "gihwr": 59.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/6/8/68fddb6a-86d4-4ebb-907d-fdcaadebc4b3.webp?1789556898"
+    },
+    {
+      "name": "Craftwork Crusher",
+      "gihwr": 57.8,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/0/3/03f9839c-aa07-4ee7-847b-091e47ab80c4.webp?1789470711"
+    },
+    {
+      "name": "Fatehold Charm",
+      "gihwr": 57.7,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/c/f/cfc54011-647e-4428-bcdb-59400e1da49d.webp?1789127637"
+    },
+    {
+      "name": "Bloombrute",
+      "gihwr": 57.5,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/6/b/6b804503-9c70-4b1f-bb13-a65fb6dd3ef8.webp?1789644843"
+    },
+    {
+      "name": "Theorix Charm",
+      "gihwr": 57.1,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "M",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/2/8/2835c9aa-0904-44db-8da2-e8c4e04201aa.webp?1789127659"
+    },
+    {
+      "name": "Archive Arbiter",
+      "gihwr": 58.3,
+      "gpwr": 0.0,
+      "alsa": 0.0,
+      "color": "C",
+      "rarity": "uncommon",
+      "image": "https://cards.17landscapes.com/display/front/0/2/024bce1e-a5f3-4292-bc17-d0355a5d65e1.webp?1789614867"
+    }
+  ]
+}
